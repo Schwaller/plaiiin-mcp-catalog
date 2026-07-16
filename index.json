@@ -1,5 +1,18 @@
 [
   {
+    "id": "playwright-mcp-server",
+    "name": "ExecuteAutomation Playwright",
+    "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More \ud83d\udd0c",
+    "iconSystemName": "sparkles",
+    "runtime": "docker",
+    "image": "mcp/mcp-playwright:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/executeautomation/mcp-playwright",
+    "category": "AI & Knowledge"
+  },
+  {
     "id": "gemini-api-docs",
     "name": "Gemini API Docs",
     "description": "Search and retrieve Google Gemini API documentation.",
@@ -32,6 +45,72 @@
         "help": "Required by hdx. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "novita",
+    "name": "Novita",
+    "description": "Seamless interaction with Novita AI platform resources.",
+    "iconSystemName": "sparkles",
+    "runtime": "docker",
+    "image": "mcp/novita:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/novitalabs/novita-mcp-server",
+    "category": "AI & Knowledge"
+  },
+  {
+    "id": "okta-mcp-fctr",
+    "name": "Okta",
+    "description": "Secure Okta identity and access management via Model Context Protocol (MCP). Access Okta users, groups, applications, logs, and policies through AI assistants with enterprise-grade security.",
+    "iconSystemName": "sparkles",
+    "runtime": "docker",
+    "image": "mcp/okta-mcp-fctr:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/fctr-id/okta-mcp-server",
+    "category": "AI & Knowledge",
+    "fields": [
+      {
+        "id": "OKTA_API_TOKEN",
+        "kind": "secret",
+        "label": "Okta Api Token",
+        "help": "Okta API token with read permissions for users, groups, apps, logs, and policies",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "OKTA_CLIENT_ORGURL",
+        "kind": "text",
+        "label": "Okta Client Orgurl",
+        "help": "Okta organization URL (e.g., https://dev-123456.okta.com)",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "LOG_LEVEL",
+        "kind": "choice",
+        "label": "Log Level",
+        "help": "Logging level for server output",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "DEBUG",
+          "INFO",
+          "WARNING",
+          "ERROR"
+        ]
+      },
+      {
+        "id": "OKTA_CONCURRENT_LIMIT",
+        "kind": "text",
+        "label": "Okta Concurrent Limit",
+        "help": "Maximum concurrent requests to Okta API",
+        "required": false,
+        "binds": "envVar"
       }
     ]
   },
@@ -126,6 +205,1272 @@
         "label": "Wolfram Api Key",
         "help": "Required by wolfram-alpha. Stored in your Keychain, never on disk.",
         "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-cloudwatch",
+    "name": "Amazon CloudWatch",
+    "description": "Metrics, alarms, and logs analysis.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cloudwatch-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-cloudwatch-appsignals",
+    "name": "Amazon CloudWatch Application Signals",
+    "description": "Application performance monitoring and insights.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cloudwatch-appsignals-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-dynamodb",
+    "name": "Amazon DynamoDB",
+    "description": "Complete DynamoDB operations and table management.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/dynamodb-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-elasticache",
+    "name": "Amazon ElastiCache",
+    "description": "ElastiCache control plane operations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/elasticache-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-memcached",
+    "name": "Amazon ElastiCache for Memcached",
+    "description": "High-speed caching with Memcached.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/memcached-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "MEMCACHED_HOST",
+        "kind": "text",
+        "label": "Memcached Host",
+        "help": "Sets MEMCACHED_HOST.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "MEMCACHED_PORT",
+        "kind": "text",
+        "label": "Memcached Port",
+        "help": "Sets MEMCACHED_PORT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-valkey",
+    "name": "Amazon ElastiCache/MemoryDB for Valkey",
+    "description": "Advanced data structures with Valkey.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/valkey-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "VALKEY_HOST",
+        "kind": "text",
+        "label": "Valkey Host",
+        "help": "Sets VALKEY_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "VALKEY_PORT",
+        "kind": "text",
+        "label": "Valkey Port",
+        "help": "Sets VALKEY_PORT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "amazon-kendra-index",
+    "name": "Amazon Kendra Index",
+    "description": "Enterprise search and RAG enhancement.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/amazon-kendra-index-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "KENDRA_INDEX_ID",
+        "kind": "text",
+        "label": "Kendra Index Id",
+        "help": "Sets KENDRA_INDEX_ID.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "aws-location",
+    "name": "Amazon Location Service",
+    "description": "Place search, geocoding, and route optimization.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-location-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-location. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for aws-location. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "aws-msk",
+    "name": "Amazon MSK",
+    "description": "Managed Kafka cluster operations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-msk-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-msk. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for aws-msk. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "amazon-neptune",
+    "name": "Amazon Neptune",
+    "description": "Graph database queries with Cypher and Gremlin.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/amazon-neptune-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "NEPTUNE_ENDPOINT",
+        "kind": "text",
+        "label": "Neptune Endpoint",
+        "help": "Sets NEPTUNE_ENDPOINT.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "amazon-qbusiness-anonymous",
+    "name": "Amazon Q Business",
+    "description": "AI assistant for ingested content with anonymous access.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/amazon-qbusiness-anonymous-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for amazon-qbusiness-anonymous. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for amazon-qbusiness-anonymous. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "QBUSINESS_APPLICATION_ID",
+        "kind": "text",
+        "label": "Qbusiness Application Id",
+        "help": "Sets QBUSINESS_APPLICATION_ID.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-redshift",
+    "name": "Amazon Redshift",
+    "description": "Data warehouse operations and queries.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/redshift-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-timestream-for-influxdb",
+    "name": "Amazon Timestream for InfluxDB",
+    "description": "Time-series database operations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/timestream-for-influxdb-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "aws-api",
+    "name": "AWS API",
+    "description": "Comprehensive AWS API support with command validation and access to all services.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-api-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-api. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for aws-api. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_API_MCP_PROFILE_NAME",
+        "kind": "text",
+        "label": "Aws Api Mcp Profile Name",
+        "help": "Sets AWS_API_MCP_PROFILE_NAME.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "aws-appsync",
+    "name": "AWS AppSync",
+    "description": "Manage applications powered by AWS AppSync.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-appsync-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-appsync. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for aws-appsync. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "aws-bedrock-custom-model-import",
+    "name": "AWS Bedrock Custom Model Import",
+    "description": "Manage custom models in Bedrock.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-bedrock-custom-model-import-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-bedrock-custom-model-import. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for aws-bedrock-custom-model-import. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      },
+      {
+        "id": "BEDROCK_MODEL_IMPORT_S3_BUCKET",
+        "kind": "text",
+        "label": "Bedrock Model Import S3 Bucket",
+        "help": "Sets BEDROCK_MODEL_IMPORT_S3_BUCKET.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "aws-bedrock-data-automation",
+    "name": "AWS Bedrock Data Automation",
+    "description": "Analyze documents, images, videos, and audio.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-bedrock-data-automation-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_BUCKET_NAME",
+        "kind": "text",
+        "label": "Aws Bucket Name",
+        "help": "Sets AWS_BUCKET_NAME.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-billing-cost-management",
+    "name": "AWS Billing and Cost Management",
+    "description": "Billing and cost management.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/billing-cost-management-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "STORAGE_LENS_MANIFEST_LOCATION",
+        "kind": "text",
+        "label": "Storage Lens Manifest Location",
+        "help": "Sets STORAGE_LENS_MANIFEST_LOCATION.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-ccapi",
+    "name": "AWS Cloud Control API",
+    "description": "Direct resource management with security scanning.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/ccapi-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for awslabs-ccapi. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-cfn",
+    "name": "AWS CloudFormation",
+    "description": "CloudFormation resource management via Cloud Control API.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cfn-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for awslabs-cfn. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for awslabs-cfn. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-cloudtrail",
+    "name": "AWS CloudTrail",
+    "description": "AWS CloudTrail audit logging and monitoring.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cloudtrail-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-cost-explorer",
+    "name": "AWS Cost Explorer",
+    "description": "Detailed cost analysis and reporting.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cost-explorer-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for awslabs-cost-explorer. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for awslabs-cost-explorer. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "aws-dataprocessing",
+    "name": "AWS Data Processing",
+    "description": "Data processing and transformation services.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-dataprocessing-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "aws-healthomics",
+    "name": "AWS HealthOmics",
+    "description": "Generate, run, debug lifescience workflows.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-healthomics-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-iam",
+    "name": "AWS IAM",
+    "description": "IAM user, role, group, and policy management.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/iam-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for awslabs-iam. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "aws-iot-sitewise",
+    "name": "AWS IoT SiteWise",
+    "description": "Industrial IoT asset management.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-iot-sitewise-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "aws-kb-retrieval-server",
+    "name": "AWS KB Retrieval (Archived)",
+    "description": "An MCP server implementation for retrieving information from the AWS Knowledge Base using the Bedrock Agent Runtime.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-kb-retrieval-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/modelcontextprotocol/servers",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-kb-retrieval-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-nova-canvas",
+    "name": "AWS Labs Nova Canvas",
+    "description": "AI image generation using Amazon Nova Canvas.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/nova-canvas-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for awslabs-nova-canvas. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for awslabs-nova-canvas. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "aws-pricing",
+    "name": "AWS Pricing",
+    "description": "AWS service pricing and cost estimates.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-pricing-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for aws-pricing. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for aws-pricing. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "awslabs-s3-tables",
+    "name": "AWS S3 Tables",
+    "description": "Manage S3 Tables for analytics.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/s3-tables-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "AWS",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for awslabs-s3-tables. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_SESSION_TOKEN",
+        "kind": "secret",
+        "label": "Aws Session Token",
+        "help": "Secret for awslabs-s3-tables. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_REGION",
+        "kind": "text",
+        "label": "Aws Region",
+        "help": "Sets AWS_REGION.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_PROFILE",
+        "kind": "text",
+        "label": "Aws Profile",
+        "help": "Sets AWS_PROFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
         "binds": "secretKey"
       }
     ]
@@ -334,6 +1679,40 @@
     "category": "Business & Finance"
   },
   {
+    "id": "quantconnect",
+    "name": "QuantConnect",
+    "description": "The QuantConnect MCP Server is a bridge for AIs (such as Claude and OpenAI o3 Pro) to interact with our cloud platform. When equipped with our MCP, the AI can perform tasks on your behalf through our API such as updating projects, writing strategies, backtesting, and deploying s\u2026",
+    "iconSystemName": "dollarsign.circle",
+    "runtime": "docker",
+    "image": "mcp/quantconnect:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/QuantConnect/mcp-server",
+    "category": "Business & Finance",
+    "fields": [
+      {
+        "id": "QUANTCONNECT_USER_ID",
+        "kind": "text",
+        "label": "Quantconnect User Id",
+        "help": "Sets QUANTCONNECT_USER_ID.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "QUANTCONNECT_API_TOKEN",
+        "kind": "secret",
+        "label": "Quantconnect Api Token",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ],
+    "env": {
+      "AGENT_NAME": "MCP Server"
+    }
+  },
+  {
     "id": "stripe",
     "name": "Stripe",
     "description": "Manage payments, customers and subscriptions via the Stripe API.",
@@ -376,6 +1755,154 @@
         "help": "Required by triplewhale. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "zerodha-kite",
+    "name": "Zerodha Kite Connect",
+    "description": "MCP server for Zerodha Kite Connect API - India's leading stock broker trading platform. Execute trades, manage portfolios, and access real-time market data for NSE, BSE, and other Indian exchanges.",
+    "iconSystemName": "dollarsign.circle",
+    "runtime": "docker",
+    "image": "mcp/zerodha-kite:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/anshuljain90/zerodha-kite-mcp",
+    "category": "Business & Finance",
+    "fields": [
+      {
+        "id": "KITE_API_SECRET",
+        "kind": "secret",
+        "label": "Kite Api Secret",
+        "help": "Secret for zerodha-kite. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "KITE_API_KEY",
+        "kind": "secret",
+        "label": "Kite Api Key",
+        "help": "Your Kite Connect API key from the developer console",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "KITE_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Kite Access Token",
+        "help": "Access token obtained after OAuth authentication (optional - can be generated at runtime)",
+        "required": false,
+        "binds": "secretKey"
+      },
+      {
+        "id": "KITE_REDIRECT_URL",
+        "kind": "text",
+        "label": "Kite Redirect Url",
+        "help": "OAuth redirect URL configured in your Kite Connect app",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "mcp-api-gateway",
+    "name": "API Gateway",
+    "description": "A universal MCP (Model Context Protocol) server to integrate any API with Claude Desktop using only Docker configurations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/api-gateway:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/rflpazini/mcp-api-gateway",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "API_1_NAME",
+        "kind": "text",
+        "label": "Api 1 Name",
+        "help": "Sets API_1_NAME.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "API_1_SWAGGER_URL",
+        "kind": "text",
+        "label": "Api 1 Swagger Url",
+        "help": "Sets API_1_SWAGGER_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "API_1_HEADER_AUTHORIZATION",
+        "kind": "text",
+        "label": "Api 1 Header Authorization",
+        "help": "Sets API_1_HEADER_AUTHORIZATION.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "atlas-docs",
+    "name": "Atlas Docs",
+    "description": "Atlas Docs",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/atlas-docs:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/CartographAI/atlas-docs-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "ATLAS_API_URL",
+        "kind": "text",
+        "label": "Atlas Api Url",
+        "help": "Sets ATLAS_API_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "audiense-insights",
+    "name": "Audiense Insights",
+    "description": "Audiense Insights",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/audiense-insights:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/AudienseCo/mcp-audiense-insights",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "AUDIENSE_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Audiense Client Secret",
+        "help": "Secret for audiense-insights. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "TWITTER_BEARER_TOKEN",
+        "kind": "secret",
+        "label": "Twitter Bearer Token",
+        "help": "Secret for audiense-insights. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AUDIENSE_CLIENT_ID",
+        "kind": "text",
+        "label": "Audiense Client Id",
+        "help": "Sets AUDIENSE_CLIENT_ID.",
+        "required": true,
+        "binds": "envVar"
       }
     ]
   },
@@ -445,6 +1972,68 @@
     "category": "Cloud & DevOps"
   },
   {
+    "id": "bitrefill",
+    "name": "Bitrefill",
+    "description": "Bitrefill",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/bitrefill:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/bitrefill/bitrefill-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "BITREFILL_API_SECRET",
+        "kind": "secret",
+        "label": "Bitrefill Api Secret",
+        "help": "Secret for bitrefill. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "BITREFILL_API_ID",
+        "kind": "text",
+        "label": "Bitrefill Api Id",
+        "help": "Sets BITREFILL_API_ID.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "box",
+    "name": "Box",
+    "description": "Box",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/box:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/dgageot/mcp-server-box",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "BOX_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Box Client Secret",
+        "help": "Secret for box. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "BOX_CLIENT_ID",
+        "kind": "text",
+        "label": "Box Client Id",
+        "help": "Sets BOX_CLIENT_ID.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "buildkite",
     "name": "Buildkite",
     "description": "Inspect Buildkite builds, jobs, logs and pipelines.",
@@ -468,6 +2057,115 @@
     ]
   },
   {
+    "id": "cdata-connectcloud",
+    "name": "CData Connect Cloud",
+    "description": "CData Connect Cloud",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cdata-connectcloud:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/CDataSoftware/connectcloud-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "CDATA_PAT",
+        "kind": "secret",
+        "label": "Cdata Pat",
+        "help": "Secret for cdata-connectcloud. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CDATA_USERNAME",
+        "kind": "text",
+        "label": "Cdata Username",
+        "help": "Sets CDATA_USERNAME.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "circleci",
+    "name": "CircleCI",
+    "description": "CircleCI",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/circleci:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/cmrigney/mcp-server-circleci",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "CIRCLECI_TOKEN",
+        "kind": "secret",
+        "label": "Circleci Token",
+        "help": "Secret for circleci. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CIRCLECI_BASE_URL",
+        "kind": "text",
+        "label": "Circleci Base Url",
+        "help": "Sets CIRCLECI_BASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "cloud-run-mcp",
+    "name": "Cloud Run",
+    "description": "MCP server to deploy apps to Cloud Run",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/cloud-run-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/GoogleCloudPlatform/cloud-run-mcp",
+    "category": "Cloud & DevOps",
+    "env": {
+      "GOOGLE_APPLICATION_CREDENTIALS": "/app/.config/gcloud/application_default_credentials.json"
+    }
+  },
+  {
+    "id": "dart",
+    "name": "Dart AI",
+    "description": "Dart AI",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/dart:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/its-dart/dart-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "DART_TOKEN",
+        "kind": "secret",
+        "label": "Dart Token",
+        "help": "Secret for dart. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DART_HOST",
+        "kind": "text",
+        "label": "Dart Host",
+        "help": "Sets DART_HOST.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "databutton",
     "name": "Databutton",
     "description": "Build and deploy data apps with Databutton.",
@@ -479,6 +2177,274 @@
     "secretKeys": [],
     "docsURL": "https://github.com/databutton/databutton-mcp",
     "category": "Cloud & DevOps"
+  },
+  {
+    "id": "descope",
+    "name": "Descope",
+    "description": "The Descope Model Context Protocol (MCP) server provides an interface to interact with Descope's Management APIs, enabling the search and retrieval of project-related information.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/descope:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/descope-sample-apps/descope-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "DESCOPE_MANAGEMENT_KEY",
+        "kind": "secret",
+        "label": "Descope Management Key",
+        "help": "Secret for descope. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DESCOPE_PROJECT_ID",
+        "kind": "text",
+        "label": "Descope Project Id",
+        "help": "Sets DESCOPE_PROJECT_ID.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "devhub-cms",
+    "name": "DevHub CMS",
+    "description": "DevHub CMS",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/devhub-cms:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/devhub/devhub-cms-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "DEVHUB_API_KEY",
+        "kind": "secret",
+        "label": "Devhub Api Key",
+        "help": "Secret for devhub-cms. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DEVHUB_API_SECRET",
+        "kind": "secret",
+        "label": "Devhub Api Secret",
+        "help": "Secret for devhub-cms. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DEVHUB_BASE_URL",
+        "kind": "text",
+        "label": "Devhub Base Url",
+        "help": "Sets DEVHUB_BASE_URL.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "dockerhub",
+    "name": "Docker Hub",
+    "description": "Docker Hub official MCP server",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/dockerhub:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/docker/hub-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "HUB_PAT_TOKEN",
+        "kind": "secret",
+        "label": "Hub Pat Token",
+        "help": "Instructions for creating a personal access token can be found [in the Docker Docs](https://docs.docker.com/security/access-tokens/)",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "edubase",
+    "name": "EduBase",
+    "description": "EduBase",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/edubase:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/EduBase/MCP",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "EDUBASE_API_KEY",
+        "kind": "secret",
+        "label": "Edubase Api Key",
+        "help": "Secret for edubase. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "EDUBASE_API_APP",
+        "kind": "text",
+        "label": "Edubase Api App",
+        "help": "Sets EDUBASE_API_APP.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "EDUBASE_API_URL",
+        "kind": "text",
+        "label": "Edubase Api Url",
+        "help": "Sets EDUBASE_API_URL.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "fibery",
+    "name": "Fibery",
+    "description": "Interact with your Fibery workspace.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/fibery:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/Fibery-inc/fibery-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "FIBERY_API_TOKEN",
+        "kind": "secret",
+        "label": "Fibery Api Token",
+        "help": "Secret for fibery. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "FIBERY_HOST",
+        "kind": "text",
+        "label": "Fibery Host",
+        "help": "Sets FIBERY_HOST.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "flexprice",
+    "name": "FlexPrice",
+    "description": "FlexPrice",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/flexprice:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/flexprice/mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "API_KEY",
+        "kind": "secret",
+        "label": "Api Key",
+        "help": "Secret for flexprice. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "BASE_URL",
+        "kind": "text",
+        "label": "Base Url",
+        "help": "Sets BASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab (Archived)",
+    "description": "MCP Server for the GitLab API, enabling project management, file operations, and more.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/gitlab:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/modelcontextprotocol/servers",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "GITLAB_PERSONAL_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Gitlab Personal Access Token",
+        "help": "Secret for gitlab. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "GITLAB_API_URL",
+        "kind": "text",
+        "label": "Gitlab Api Url",
+        "help": "api url - optional for self-hosted instances",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "glif",
+    "name": "glif.app",
+    "description": "glif.app",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/glif:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/glifxyz/glif-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "GLIF_API_TOKEN",
+        "kind": "secret",
+        "label": "Glif Api Token",
+        "help": "Secret for glif. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "GLIF_IDS",
+        "kind": "text",
+        "label": "Glif Ids",
+        "help": "Sets GLIF_IDS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "IGNORE_SAVED_GLIFS",
+        "kind": "choice",
+        "label": "Ignore Saved Glifs",
+        "help": "Sets IGNORE_SAVED_GLIFS.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      }
+    ]
   },
   {
     "id": "heroku",
@@ -527,6 +2493,881 @@
     ]
   },
   {
+    "id": "husqvarna-automower",
+    "name": "Husqvarna Automower",
+    "description": "Husqvarna Automower",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/husqvarna-automower:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/jeanlaurent/mcp-husqvarna-automower",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "HUSQVARNA_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Husqvarna Client Secret",
+        "help": "Secret for husqvarna-automower. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "HUSQVARNA_CLIENT_ID",
+        "kind": "text",
+        "label": "Husqvarna Client Id",
+        "help": "Sets HUSQVARNA_CLIENT_ID.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "hyperspell",
+    "name": "Hyperspell",
+    "description": "Hyperspell",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/hyperspell:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/hyperspell/hyperspell-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "HYPERSPELL_TOKEN",
+        "kind": "secret",
+        "label": "Hyperspell Token",
+        "help": "Secret for hyperspell. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "USE_RESOURCES",
+        "kind": "choice",
+        "label": "Use Resources",
+        "help": "Sets USE_RESOURCES.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "id": "HYPERSPELL_COLLECTION",
+        "kind": "text",
+        "label": "Hyperspell Collection",
+        "help": "Sets HYPERSPELL_COLLECTION.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "iaptic",
+    "name": "Iaptic",
+    "description": "Iaptic",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/iaptic:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/iaptic/mcp-server-iaptic",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "IAPTIC_API_KEY",
+        "kind": "secret",
+        "label": "Iaptic Api Key",
+        "help": "Secret for iaptic. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "IAPTIC_APP_NAME",
+        "kind": "text",
+        "label": "Iaptic App Name",
+        "help": "Sets IAPTIC_APP_NAME.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "jetbrains",
+    "name": "JetBrains",
+    "description": "JetBrains",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/jetbrains:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/GannaChernyshova/mcp-jetbrains",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "IDE_PORT",
+        "kind": "text",
+        "label": "Ide Port",
+        "help": "Sets IDE_PORT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "kagisearch",
+    "name": "Kagi Search",
+    "description": "Kagi Search",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/kagisearch:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/kagisearch/kagimcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "KAGI_API_KEY",
+        "kind": "secret",
+        "label": "Kagi Api Key",
+        "help": "Secret for kagisearch. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "KAGI_SUMMARIZER_ENGINE",
+        "kind": "text",
+        "label": "Kagi Summarizer Engine",
+        "help": "Sets KAGI_SUMMARIZER_ENGINE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "keboola-mcp",
+    "name": "Keboola",
+    "description": "Keboola MCP Server is an open-source bridge between your Keboola project and modern AI tools.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/keboola-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/keboola/mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "KBC_STORAGE_TOKEN",
+        "kind": "secret",
+        "label": "Kbc Storage Token",
+        "help": "Secret for keboola-mcp. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "KBC_WORKSPACE_SCHEMA",
+        "kind": "text",
+        "label": "Kbc Workspace Schema",
+        "help": "Sets KBC_WORKSPACE_SCHEMA.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "kong",
+    "name": "Kong Konnect",
+    "description": "Kong Konnect",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/kong:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/Kong/mcp-konnect",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "KONNECT_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Konnect Access Token",
+        "help": "Secret for kong. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "KONNECT_REGION",
+        "kind": "text",
+        "label": "Konnect Region",
+        "help": "Sets KONNECT_REGION.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "lara",
+    "name": "Lara Translate",
+    "description": "Connect to Lara Translate API, enabling powerful translation capabilities with support for language detection and context-aware translations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/lara:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/translated/lara-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "LARA_ACCESS_KEY_SECRET",
+        "kind": "secret",
+        "label": "Lara Access Key Secret",
+        "help": "Secret for lara. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "LARA_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Lara Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "line",
+    "name": "LINE",
+    "description": "LINE",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/line:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/line/line-bot-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "CHANNEL_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Channel Access Token",
+        "help": "Secret for line. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DESTINATION_USER_ID",
+        "kind": "text",
+        "label": "Destination User Id",
+        "help": "Sets DESTINATION_USER_ID.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "multiversx-mx",
+    "name": "MultiversX",
+    "description": "MultiversX",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/multiversx-mx:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/multiversx/mx-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "MVX_NETWORK",
+        "kind": "text",
+        "label": "Mvx Network",
+        "help": "Sets MVX_NETWORK.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "MVX_WALLET",
+        "kind": "text",
+        "label": "Mvx Wallet",
+        "help": "Sets MVX_WALLET.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "neo4j",
+    "name": "Neo4j",
+    "description": "Official MCP server for Neo4j. Interact with Neo4j using Cypher graph queries.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/neo4j:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neo4j/mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "NEO4J_PASSWORD",
+        "kind": "secret",
+        "label": "Neo4J Password",
+        "help": "Secret for neo4j. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "NEO4J_URI",
+        "kind": "text",
+        "label": "Neo4J Uri",
+        "help": "Sets NEO4J_URI.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_USERNAME",
+        "kind": "text",
+        "label": "Neo4J Username",
+        "help": "Sets NEO4J_USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_DATABASE",
+        "kind": "text",
+        "label": "Neo4J Database",
+        "help": "Sets NEO4J_DATABASE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_READ_ONLY",
+        "kind": "choice",
+        "label": "Neo4J Read Only",
+        "help": "Sets NEO4J_READ_ONLY.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "id": "NEO4J_TELEMETRY",
+        "kind": "choice",
+        "label": "Neo4J Telemetry",
+        "help": "Sets NEO4J_TELEMETRY.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "neo4j-cloud-aura-api",
+    "name": "Neo4j Cloud Aura Api",
+    "description": "Manage Neo4j Aura database instances through the Neo4j Aura API.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/neo4j-cloud-aura-api:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "NEO4J_AURA_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Neo4J Aura Client Secret",
+        "help": "Secret for neo4j-cloud-aura-api. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "NEO4J_AURA_CLIENT_ID",
+        "kind": "text",
+        "label": "Neo4J Aura Client Id",
+        "help": "Sets NEO4J_AURA_CLIENT_ID.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_TRANSPORT",
+        "kind": "text",
+        "label": "Neo4J Transport",
+        "help": "Sets NEO4J_TRANSPORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_HOST",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Host",
+        "help": "Sets NEO4J_MCP_SERVER_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PORT",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Port",
+        "help": "Sets NEO4J_MCP_SERVER_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PATH",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Path",
+        "help": "Sets NEO4J_MCP_SERVER_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOW_ORIGINS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allow Origins",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOW_ORIGINS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOWED_HOSTS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allowed Hosts",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOWED_HOSTS.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "neo4j-cypher",
+    "name": "Neo4j Cypher",
+    "description": "Interact with Neo4j using Cypher graph queries.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/neo4j-cypher:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "NEO4J_PASSWORD",
+        "kind": "secret",
+        "label": "Neo4J Password",
+        "help": "Secret for neo4j-cypher. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "NEO4J_URL",
+        "kind": "text",
+        "label": "Neo4J Url",
+        "help": "Sets NEO4J_URL.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_USERNAME",
+        "kind": "text",
+        "label": "Neo4J Username",
+        "help": "Sets NEO4J_USERNAME.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_DATABASE",
+        "kind": "text",
+        "label": "Neo4J Database",
+        "help": "Sets NEO4J_DATABASE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_NAMESPACE",
+        "kind": "text",
+        "label": "Neo4J Namespace",
+        "help": "Sets NEO4J_NAMESPACE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_TRANSPORT",
+        "kind": "text",
+        "label": "Neo4J Transport",
+        "help": "Sets NEO4J_TRANSPORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_HOST",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Host",
+        "help": "Sets NEO4J_MCP_SERVER_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PORT",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Port",
+        "help": "Sets NEO4J_MCP_SERVER_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PATH",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Path",
+        "help": "Sets NEO4J_MCP_SERVER_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOW_ORIGINS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allow Origins",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOW_ORIGINS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOWED_HOSTS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allowed Hosts",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOWED_HOSTS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_READ_TIMEOUT",
+        "kind": "text",
+        "label": "Neo4J Read Timeout",
+        "help": "Sets NEO4J_READ_TIMEOUT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_RESPONSE_TOKEN_LIMIT",
+        "kind": "secret",
+        "label": "Neo4J Response Token Limit",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      },
+      {
+        "id": "NEO4J_READ_ONLY",
+        "kind": "choice",
+        "label": "Neo4J Read Only",
+        "help": "Sets NEO4J_READ_ONLY.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "id": "NEO4J_SCHEMA_SAMPLE_SIZE",
+        "kind": "text",
+        "label": "Neo4J Schema Sample Size",
+        "help": "Sets NEO4J_SCHEMA_SAMPLE_SIZE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "neo4j-data-modeling",
+    "name": "Neo4j Data Modeling",
+    "description": "MCP server that assists in creating, validating and visualizing graph data models.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/neo4j-data-modeling:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "NEO4J_TRANSPORT",
+        "kind": "text",
+        "label": "Neo4J Transport",
+        "help": "Sets NEO4J_TRANSPORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_HOST",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Host",
+        "help": "Sets NEO4J_MCP_SERVER_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PORT",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Port",
+        "help": "Sets NEO4J_MCP_SERVER_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PATH",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Path",
+        "help": "Sets NEO4J_MCP_SERVER_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOW_ORIGINS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allow Origins",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOW_ORIGINS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOWED_HOSTS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allowed Hosts",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOWED_HOSTS.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "neo4j-memory",
+    "name": "Neo4j Memory",
+    "description": "Provide persistent memory capabilities through Neo4j graph database integration.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/neo4j-memory:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "NEO4J_PASSWORD",
+        "kind": "secret",
+        "label": "Neo4J Password",
+        "help": "Secret for neo4j-memory. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "NEO4J_URL",
+        "kind": "text",
+        "label": "Neo4J Url",
+        "help": "Sets NEO4J_URL.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_USERNAME",
+        "kind": "text",
+        "label": "Neo4J Username",
+        "help": "Sets NEO4J_USERNAME.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_DATABASE",
+        "kind": "text",
+        "label": "Neo4J Database",
+        "help": "Sets NEO4J_DATABASE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_TRANSPORT",
+        "kind": "text",
+        "label": "Neo4J Transport",
+        "help": "Sets NEO4J_TRANSPORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_HOST",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Host",
+        "help": "Sets NEO4J_MCP_SERVER_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PORT",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Port",
+        "help": "Sets NEO4J_MCP_SERVER_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_PATH",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Path",
+        "help": "Sets NEO4J_MCP_SERVER_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOW_ORIGINS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allow Origins",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOW_ORIGINS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "NEO4J_MCP_SERVER_ALLOWED_HOSTS",
+        "kind": "text",
+        "label": "Neo4J Mcp Server Allowed Hosts",
+        "help": "Sets NEO4J_MCP_SERVER_ALLOWED_HOSTS.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "openapi-schema",
+    "name": "OpenAPI Schema",
+    "description": "OpenAPI Schema",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/openapi-schema:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/slimslenderslacks/mcp-openapi-schema",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "opik",
+    "name": "Opik",
+    "description": "Opik",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/opik:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/comet-ml/opik-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "OPIK_API_KEY",
+        "kind": "secret",
+        "label": "Opik Api Key",
+        "help": "Secret for opik. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "OPIK_API_BASE_URL",
+        "kind": "text",
+        "label": "Opik Api Base Url",
+        "help": "Sets OPIK_API_BASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "OPIK_WORKSPACE_NAME",
+        "kind": "text",
+        "label": "Opik Workspace Name",
+        "help": "Sets OPIK_WORKSPACE_NAME.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "oxylabs",
+    "name": "Oxylabs",
+    "description": "A Model Context Protocol (MCP) server that enables AI assistants like Claude to seamlessly access web data through Oxylabs' powerful web scraping technology.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/oxylabs:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/oxylabs/oxylabs-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "OXYLABS_PASSWORD",
+        "kind": "secret",
+        "label": "Oxylabs Password",
+        "help": "Secret for oxylabs. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "OXYLABS_USERNAME",
+        "kind": "text",
+        "label": "Oxylabs Username",
+        "help": "Sets OXYLABS_USERNAME.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "pica",
+    "name": "Pica",
+    "description": "Provides access to Pica's integrations, actions, execution, and code generation capabilities.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/pica-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/picahq/mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "PICA_SECRET",
+        "kind": "secret",
+        "label": "Pica Secret",
+        "help": "Secret for pica. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "PICA_BASE_URL",
+        "kind": "text",
+        "label": "Pica Base Url",
+        "help": "The Pica API base URL",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "pulumi",
     "name": "Pulumi",
     "description": "Author and manage Pulumi infrastructure-as-code.",
@@ -546,6 +3387,53 @@
         "help": "Required by pulumi. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "puppeteer",
+    "name": "Puppeteer (Archived)",
+    "description": "Browser automation and web scraping using Puppeteer.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/puppeteer:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/modelcontextprotocol/servers",
+    "category": "Cloud & DevOps",
+    "env": {
+      "DOCKER_CONTAINER": "true"
+    }
+  },
+  {
+    "id": "razorpay",
+    "name": "Razorpay",
+    "description": "Razorpay",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/razorpay:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/razorpay/razorpay-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "RAZORPAY_KEY_SECRET",
+        "kind": "secret",
+        "label": "Razorpay Key Secret",
+        "help": "Secret for razorpay. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "RAZORPAY_KEY_ID",
+        "kind": "text",
+        "label": "Razorpay Key Id",
+        "help": "Sets RAZORPAY_KEY_ID.",
+        "required": true,
+        "binds": "envVar"
       }
     ]
   },
@@ -573,6 +3461,155 @@
     ]
   },
   {
+    "id": "risken",
+    "name": "RISKEN",
+    "description": "RISKEN",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/risken:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/ca-risken/risken-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "RISKEN_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Risken Access Token",
+        "help": "Secret for risken. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "RISKEN_URL",
+        "kind": "text",
+        "label": "Risken Url",
+        "help": "Sets RISKEN_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "sequa",
+    "name": "Sequa.AI",
+    "description": "Stop stitching context for Copilot and Cursor. With Sequa MCP, your AI tools know your entire codebase and docs out of the box.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/sequa:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/sequa-ai/sequa-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "API_KEY",
+        "kind": "secret",
+        "label": "Api Key",
+        "help": "Secret for sequa. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "MCP_SERVER_URL",
+        "kind": "text",
+        "label": "Mcp Server Url",
+        "help": "Sets MCP_SERVER_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "smartbear",
+    "name": "SmartBear",
+    "description": "MCP server for AI access to SmartBear tools, including BugSnag, Reflect, API Hub, PactFlow.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/smartbear:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/SmartBear/smartbear-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "BUGSNAG_AUTH_TOKEN",
+        "kind": "secret",
+        "label": "Bugsnag Auth Token",
+        "help": "Secret for smartbear. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "REFLECT_API_TOKEN",
+        "kind": "secret",
+        "label": "Reflect Api Token",
+        "help": "Secret for smartbear. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "API_HUB_API_KEY",
+        "kind": "secret",
+        "label": "Api Hub Api Key",
+        "help": "Secret for smartbear. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "PACT_BROKER_TOKEN",
+        "kind": "secret",
+        "label": "Pact Broker Token",
+        "help": "Secret for smartbear. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "PACT_BROKER_PASSWORD",
+        "kind": "secret",
+        "label": "Pact Broker Password",
+        "help": "Secret for smartbear. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "BUGSNAG_PROJECT_API_KEY",
+        "kind": "secret",
+        "label": "Bugsnag Project Api Key",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      },
+      {
+        "id": "BUGSNAG_ENDPOINT",
+        "kind": "text",
+        "label": "Bugsnag Endpoint",
+        "help": "Sets BUGSNAG_ENDPOINT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "PACT_BROKER_BASE_URL",
+        "kind": "text",
+        "label": "Pact Broker Base Url",
+        "help": "Sets PACT_BROKER_BASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "PACT_BROKER_USERNAME",
+        "kind": "text",
+        "label": "Pact Broker Username",
+        "help": "Sets PACT_BROKER_USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "tembo",
     "name": "Tembo",
     "description": "Manage Tembo managed-Postgres platform resources.",
@@ -592,6 +3629,194 @@
         "help": "Required by tembo. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "temporal",
+    "name": "Temporal",
+    "description": "MCP support for Temporal. A comprehensive set of tools for interacting with workflows and their adjacent configurations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/temporal:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/GethosTheWalrus/temporal-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "TEMPORAL_HOST",
+        "kind": "text",
+        "label": "Temporal Host",
+        "help": "Sets TEMPORAL_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "TEMPORAL_NAMESPACE",
+        "kind": "text",
+        "label": "Temporal Namespace",
+        "help": "Sets TEMPORAL_NAMESPACE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "TEMPORAL_TLS_ENABLED",
+        "kind": "text",
+        "label": "Temporal Tls Enabled",
+        "help": "Sets TEMPORAL_TLS_ENABLED.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "TEMPORAL_TLS_CLIENT_CERT_PATH",
+        "kind": "text",
+        "label": "Temporal Tls Client Cert Path",
+        "help": "Sets TEMPORAL_TLS_CLIENT_CERT_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "TEMPORAL_TLS_CLIENT_KEY_PATH",
+        "kind": "text",
+        "label": "Temporal Tls Client Key Path",
+        "help": "Sets TEMPORAL_TLS_CLIENT_KEY_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "TEMPORAL_API_KEY",
+        "kind": "secret",
+        "label": "Temporal Api Key",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "testkube",
+    "name": "Testkube",
+    "description": "The Testkube MCP Server exposes continuous testing capabilities (test orchestration, execution, troubleshooting and anlysis) to AI tools and workflows",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/testkube:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/kubeshop/testkube",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "TK_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Tk Access Token",
+        "help": "Secret for testkube. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "TK_ORG_ID",
+        "kind": "secret",
+        "label": "Tk Org Id",
+        "help": "Secret for testkube. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "TK_ENV_ID",
+        "kind": "secret",
+        "label": "Tk Env Id",
+        "help": "Secret for testkube. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "TK_CONTROL_PLANE_URL",
+        "kind": "text",
+        "label": "Tk Control Plane Url",
+        "help": "The URL of the Testkube Control Plane",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "text-to-graphql",
+    "name": "Text-to-GraphQL",
+    "description": "Transform natural language queries into GraphQL queries using an AI agent. Provides schema management, query validation, execution, and history tracking.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/text-to-graphql:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/Arize-ai/text-to-graphql-mcp",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "OPENAI_API_KEY",
+        "kind": "secret",
+        "label": "Openai Api Key",
+        "help": "OpenAI API key for LLM operations",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "GRAPHQL_ENDPOINT",
+        "kind": "secret",
+        "label": "Graphql Endpoint",
+        "help": "GraphQL API endpoint URL",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "GRAPHQL_API_KEY",
+        "kind": "secret",
+        "label": "Graphql Api Key",
+        "help": "API key for your GraphQL service",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "tigris",
+    "name": "Tigris Data",
+    "description": "Tigris is a globally distributed S3-compatible object storage service that provides low latency anywhere in the world, enabling developers to store and access any amount of data for a wide range of use cases.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/tigris:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/tigrisdata/tigris-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "AWS_SECRET_ACCESS_KEY",
+        "kind": "secret",
+        "label": "Aws Secret Access Key",
+        "help": "Secret for tigris. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_ACCESS_KEY_ID",
+        "kind": "secret",
+        "label": "Aws Access Key Id",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "AWS_ENDPOINT_URL_S3",
+        "kind": "text",
+        "label": "Aws Endpoint Url S3",
+        "help": "Sets AWS_ENDPOINT_URL_S3.",
+        "required": true,
+        "binds": "envVar"
       }
     ]
   },
@@ -642,6 +3867,92 @@
     ]
   },
   {
+    "id": "mcp-reddit",
+    "name": "Reddit",
+    "description": "This server provides AI agents with tools to fetch, post and search on Reddit.",
+    "iconSystemName": "bubble.left.and.bubble.right",
+    "runtime": "docker",
+    "image": "mcp/reddit-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/KrishnaRandad2023/mcp-reddit",
+    "category": "Communication",
+    "fields": [
+      {
+        "id": "REDDIT_CLIENT_ID",
+        "kind": "secret",
+        "label": "Reddit Client Id",
+        "help": "Secret for mcp-reddit. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "REDDIT_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Reddit Client Secret",
+        "help": "Secret for mcp-reddit. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "REDDIT_PASSWORD",
+        "kind": "secret",
+        "label": "Reddit Password",
+        "help": "Secret for mcp-reddit. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "USERNAME",
+        "kind": "text",
+        "label": "Username",
+        "help": "Sets USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "resend",
+    "name": "Resend",
+    "description": "Resend",
+    "iconSystemName": "bubble.left.and.bubble.right",
+    "runtime": "docker",
+    "image": "mcp/resend:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/slimslenderslacks/mcp-send-email",
+    "category": "Communication",
+    "fields": [
+      {
+        "id": "RESEND_API_KEY",
+        "kind": "secret",
+        "label": "Resend Api Key",
+        "help": "Secret for resend. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "REPLY_TO_EMAIL_ADDRESSES",
+        "kind": "text",
+        "label": "Reply To Email Addresses",
+        "help": "comma separated list of reply to email addresses",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "SENDER_EMAIL_ADDRESS",
+        "kind": "text",
+        "label": "Sender Email Address",
+        "help": "sender email address",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "securenote-link-mcp-server",
     "name": "Securenote.link",
     "description": "Share secrets and sensitive notes securely with an agent.",
@@ -653,6 +3964,76 @@
     "secretKeys": [],
     "docsURL": "https://github.com/jackalterman/securenote-link-MCP-server",
     "category": "Communication"
+  },
+  {
+    "id": "slack",
+    "name": "Slack (Archived)",
+    "description": "Interact with Slack Workspaces over the Slack API.",
+    "iconSystemName": "bubble.left.and.bubble.right",
+    "runtime": "docker",
+    "image": "mcp/slack:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/modelcontextprotocol/servers",
+    "category": "Communication",
+    "fields": [
+      {
+        "id": "SLACK_BOT_TOKEN",
+        "kind": "secret",
+        "label": "Slack Bot Token",
+        "help": "Secret for slack. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "SLACK_TEAM_ID",
+        "kind": "text",
+        "label": "Slack Team Id",
+        "help": "Sets SLACK_TEAM_ID.",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "SLACK_CHANNEL_IDS",
+        "kind": "text",
+        "label": "Slack Channel Ids",
+        "help": "Sets SLACK_CHANNEL_IDS.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "astra-db",
+    "name": "Astra DB",
+    "description": "Astra DB",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/astra-db:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/datastax/astra-db-mcp",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "ASTRA_DB_APPLICATION_TOKEN",
+        "kind": "secret",
+        "label": "Astra Db Application Token",
+        "help": "Secret for astra-db. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ASTRA_DB_API_ENDPOINT",
+        "kind": "text",
+        "label": "Astra Db Api Endpoint",
+        "help": "Sets ASTRA_DB_API_ENDPOINT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
   },
   {
     "id": "atlan",
@@ -709,6 +4090,179 @@
     ]
   },
   {
+    "id": "cockroachdb",
+    "name": "CockroachDB",
+    "description": "Enable AI agents to manage, monitor, and query CockroachDB using natural language. Perform complex database operations, cluster management, and query execution seamlessly through AI-driven workflows. Integrate effortlessly with MCP clients for scalable and high-performance data\u2026",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/cockroachdb:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/amineelkouhen/mcp-cockroachdb",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "CRDB_PWD",
+        "kind": "secret",
+        "label": "Crdb Pwd",
+        "help": "Secret for cockroachdb. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CRDB_HOST",
+        "kind": "text",
+        "label": "Crdb Host",
+        "help": "Sets CRDB_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_PORT",
+        "kind": "text",
+        "label": "Crdb Port",
+        "help": "Sets CRDB_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_DATABASE",
+        "kind": "text",
+        "label": "Crdb Database",
+        "help": "Sets CRDB_DATABASE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_USERNAME",
+        "kind": "text",
+        "label": "Crdb Username",
+        "help": "Sets CRDB_USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_SSL_MODE",
+        "kind": "text",
+        "label": "Crdb Ssl Mode",
+        "help": "Sets CRDB_SSL_MODE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_SSL_CA_PATH",
+        "kind": "text",
+        "label": "Crdb Ssl Ca Path",
+        "help": "Sets CRDB_SSL_CA_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_SSL_KEYFILE",
+        "kind": "text",
+        "label": "Crdb Ssl Keyfile",
+        "help": "Sets CRDB_SSL_KEYFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CRDB_SSL_CERTFILE",
+        "kind": "text",
+        "label": "Crdb Ssl Certfile",
+        "help": "Sets CRDB_SSL_CERTFILE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "couchbase",
+    "name": "Couchbase",
+    "description": "Couchbase is a distributed document database with a powerful search engine and in-built operational and analytical capabilities.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/couchbase:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/Couchbase-Ecosystem/mcp-server-couchbase",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "CB_PASSWORD",
+        "kind": "secret",
+        "label": "Cb Password",
+        "help": "Password for the Couchbase cluster with access to the bucket.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CB_CONNECTION_STRING",
+        "kind": "text",
+        "label": "Cb Connection String",
+        "help": "Connection string for the Couchbase cluster.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CB_USERNAME",
+        "kind": "text",
+        "label": "Cb Username",
+        "help": "Username for the Couchbase cluster with access to the bucket.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CB_BUCKET_NAME",
+        "kind": "text",
+        "label": "Cb Bucket Name",
+        "help": "Bucket in the Couchbase cluster to use for the MCP server.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CB_MCP_READ_ONLY_QUERY_MODE",
+        "kind": "text",
+        "label": "Cb Mcp Read Only Query Mode",
+        "help": "Setting to \"true\" (default) enables read-only query mode while running SQL++ queries.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "dreamfactory-mcp",
+    "name": "DreamFactory",
+    "description": "DreamFactory is a REST API generation platform with support for hundreds of data sources, including Microsoft SQL Server, MySQL, PostgreSQL, and MongoDB. The DreamFactory MCP Server makes it easy for users to securely interact with their data sources via an MCP client.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/df-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/dreamfactorysoftware/df-mcp",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "DREAMFACTORY_URL",
+        "kind": "text",
+        "label": "Dreamfactory Url",
+        "help": "Sets DREAMFACTORY_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "DREAMFACTORY_API_KEY",
+        "kind": "secret",
+        "label": "Dreamfactory Api Key",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
     "id": "maestro-mcp-server",
     "name": "Maestro",
     "description": "Query Bitcoin blockchain data via Maestro.",
@@ -728,6 +4282,53 @@
         "help": "Required by maestro-mcp-server. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "metabase",
+    "name": "Metabase",
+    "description": "A comprehensive MCP server for Metabase with 70+ tools.",
+    "iconSystemName": "chart.bar",
+    "runtime": "docker",
+    "image": "mcp/metabase:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/easecloudio/mcp-metabase-server",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "METABASE_API_KEY",
+        "kind": "secret",
+        "label": "Metabase Api Key",
+        "help": "Secret for metabase. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "METABASE_PASSWORD",
+        "kind": "secret",
+        "label": "Metabase Password",
+        "help": "Secret for metabase. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "METABASE_URL",
+        "kind": "text",
+        "label": "Metabase Url",
+        "help": "Sets METABASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "METABASE_USERNAME",
+        "kind": "text",
+        "label": "Metabase Username",
+        "help": "Sets METABASE_USERNAME.",
+        "required": false,
+        "binds": "envVar"
       }
     ]
   },
@@ -774,6 +4375,384 @@
         "help": "Required by neon. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "clickhouse",
+    "name": "Official ClickHouse",
+    "description": "Official ClickHouse MCP Server",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/clickhouse:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/ClickHouse/mcp-clickhouse",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "CLICKHOUSE_PASSWORD",
+        "kind": "secret",
+        "label": "Clickhouse Password",
+        "help": "Secret for clickhouse. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CLICKHOUSE_HOST",
+        "kind": "text",
+        "label": "Clickhouse Host",
+        "help": "Sets CLICKHOUSE_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CLICKHOUSE_PORT",
+        "kind": "text",
+        "label": "Clickhouse Port",
+        "help": "Sets CLICKHOUSE_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CLICKHOUSE_USER",
+        "kind": "text",
+        "label": "Clickhouse User",
+        "help": "Sets CLICKHOUSE_USER.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CLICKHOUSE_SECURE",
+        "kind": "text",
+        "label": "Clickhouse Secure",
+        "help": "Sets CLICKHOUSE_SECURE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CLICKHOUSE_VERIFY",
+        "kind": "text",
+        "label": "Clickhouse Verify",
+        "help": "Sets CLICKHOUSE_VERIFY.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CLICKHOUSE_CONNECT_TIMEOUT",
+        "kind": "text",
+        "label": "Clickhouse Connect Timeout",
+        "help": "Sets CLICKHOUSE_CONNECT_TIMEOUT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CLICKHOUSE_SEND_RECEIVE_TIMEOUT",
+        "kind": "text",
+        "label": "Clickhouse Send Receive Timeout",
+        "help": "Sets CLICKHOUSE_SEND_RECEIVE_TIMEOUT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "oracle",
+    "name": "Oracle Database",
+    "description": "Connect to Oracle databases via MCP, providing secure read-only access with support for schema exploration, query execution, and metadata inspection",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/oracle:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/samscarrow/oracle-mcp-server",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "ORACLE_PASSWORD",
+        "kind": "secret",
+        "label": "Oracle Password",
+        "help": "Secret for oracle. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ORACLE_CONNECTION_STRING",
+        "kind": "text",
+        "label": "Oracle Connection String",
+        "help": "Sets ORACLE_CONNECTION_STRING.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "ORACLE_USER",
+        "kind": "text",
+        "label": "Oracle User",
+        "help": "Sets ORACLE_USER.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "pinecone",
+    "name": "Pinecone Assistant",
+    "description": "Pinecone Assistant",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/pinecone:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/pinecone-io/assistant-mcp",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "PINECONE_API_KEY",
+        "kind": "secret",
+        "label": "Pinecone Api Key",
+        "help": "Secret for pinecone. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "PINECONE_ASSISTANT_HOST",
+        "kind": "text",
+        "label": "Pinecone Assistant Host",
+        "help": "Sets PINECONE_ASSISTANT_HOST.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "description": "Access to Redis database operations.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/redis:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/redis/mcp-redis",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "REDIS_PWD",
+        "kind": "secret",
+        "label": "Redis Pwd",
+        "help": "Secret for redis. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "REDIS_HOST",
+        "kind": "text",
+        "label": "Redis Host",
+        "help": "Sets REDIS_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_PORT",
+        "kind": "text",
+        "label": "Redis Port",
+        "help": "Sets REDIS_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_USERNAME",
+        "kind": "text",
+        "label": "Redis Username",
+        "help": "Sets REDIS_USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_SSL",
+        "kind": "choice",
+        "label": "Redis Ssl",
+        "help": "Sets REDIS_SSL.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "id": "REDIS_CA_PATH",
+        "kind": "text",
+        "label": "Redis Ca Path",
+        "help": "Sets REDIS_CA_PATH.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_SSL_KEYFILE",
+        "kind": "text",
+        "label": "Redis Ssl Keyfile",
+        "help": "Sets REDIS_SSL_KEYFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_SSL_CERTFILE",
+        "kind": "text",
+        "label": "Redis Ssl Certfile",
+        "help": "Sets REDIS_SSL_CERTFILE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_CERT_REQS",
+        "kind": "text",
+        "label": "Redis Cert Reqs",
+        "help": "Sets REDIS_CERT_REQS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_CA_CERTS",
+        "kind": "text",
+        "label": "Redis Ca Certs",
+        "help": "Sets REDIS_CA_CERTS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "REDIS_CLUSTER_MODE",
+        "kind": "choice",
+        "label": "Redis Cluster Mode",
+        "help": "Sets REDIS_CLUSTER_MODE.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redis-cloud",
+    "name": "Redis Cloud",
+    "description": "MCP Server for Redis Cloud's API, allowing you to manage your Redis Cloud resources using natural language.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/redis-cloud:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/redis/mcp-redis-cloud",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "SECRET_KEY",
+        "kind": "secret",
+        "label": "Secret Key",
+        "help": "Secret for redis-cloud. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "API_KEY",
+        "kind": "secret",
+        "label": "Api Key",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "schemacrawler-ai",
+    "name": "SchemaCrawler AI",
+    "description": "The SchemaCrawler AI MCP Server enables natural language interaction with your database schema using an MCP client in \"Agent\" mode. It allows users to explore tables, columns, foreign keys, triggers, stored procedures and more simply by asking questions like \"Explain the code fo\u2026",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/schemacrawler-ai:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/schemacrawler/SchemaCrawler-AI",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "SCHCRWLR_DATABASE_USER",
+        "kind": "secret",
+        "label": "Schcrwlr Database User",
+        "help": "--user Database user name",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "SCHCRWLR_DATABASE_PASSWORD",
+        "kind": "secret",
+        "label": "Schcrwlr Database Password",
+        "help": "--password Database user password",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "SCHCRWLR_JDBC_URL",
+        "kind": "text",
+        "label": "Schcrwlr Jdbc Url",
+        "help": "Sets SCHCRWLR_JDBC_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SCHCRWLR_SERVER",
+        "kind": "text",
+        "label": "Schcrwlr Server",
+        "help": "Sets SCHCRWLR_SERVER.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SCHCRWLR_HOST",
+        "kind": "text",
+        "label": "Schcrwlr Host",
+        "help": "Sets SCHCRWLR_HOST.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SCHCRWLR_PORT",
+        "kind": "text",
+        "label": "Schcrwlr Port",
+        "help": "Sets SCHCRWLR_PORT.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SCHCRWLR_DATABASE",
+        "kind": "text",
+        "label": "Schcrwlr Database",
+        "help": "Sets SCHCRWLR_DATABASE.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SCHCRWLR_INFO_LEVEL",
+        "kind": "text",
+        "label": "Schcrwlr Info Level",
+        "help": "Sets SCHCRWLR_INFO_LEVEL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SCHCRWLR_LOG_LEVEL",
+        "kind": "text",
+        "label": "Schcrwlr Log Level",
+        "help": "Sets SCHCRWLR_LOG_LEVEL.",
+        "required": false,
+        "binds": "envVar"
       }
     ]
   },
@@ -1070,6 +5049,59 @@
     ]
   },
   {
+    "id": "unreal-engine-mcp-server",
+    "name": "Unreal Engine",
+    "description": "A comprehensive Model Context Protocol (MCP) server that enables AI assistants to control Unreal Engine via Remote Control API. Built with TypeScript and designed for game development automation.",
+    "iconSystemName": "gamecontroller",
+    "runtime": "docker",
+    "image": "mcp/unreal-engine-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/ChiR24/Unreal_mcp",
+    "category": "Games",
+    "fields": [
+      {
+        "id": "UE_HOST",
+        "kind": "text",
+        "label": "Ue Host",
+        "help": "Unreal Engine host address. Use: host.docker.internal for local UE on Windows/Mac Docker, 127.0.0.1 for Linux without Docker, or actual IP address (e.g., 192.1\u2026",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "UE_RC_HTTP_PORT",
+        "kind": "text",
+        "label": "Ue Rc Http Port",
+        "help": "Remote Control HTTP port",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "UE_RC_WS_PORT",
+        "kind": "text",
+        "label": "Ue Rc Ws Port",
+        "help": "Remote Control WebSocket port",
+        "required": true,
+        "binds": "envVar"
+      },
+      {
+        "id": "LOG_LEVEL",
+        "kind": "choice",
+        "label": "Log Level",
+        "help": "Logging level",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "debug",
+          "info",
+          "warn",
+          "error"
+        ]
+      }
+    ]
+  },
+  {
     "id": "openbnb-airbnb",
     "name": "Airbnb Search",
     "description": "Search Airbnb listings and pull listing details.",
@@ -1250,6 +5282,146 @@
     "category": "Media"
   },
   {
+    "id": "dynatrace-mcp-server",
+    "name": "Dynatrace",
+    "description": "This MCP Server allows interaction with the Dynatrace observability platform, brining real-time observability data directly into your development workflow.",
+    "iconSystemName": "waveform.path.ecg",
+    "runtime": "docker",
+    "image": "mcp/dynatrace-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/dynatrace-oss/dynatrace-mcp",
+    "category": "Monitoring",
+    "fields": [
+      {
+        "id": "OAUTH_CLIENT_ID",
+        "kind": "secret",
+        "label": "Oauth Client Id",
+        "help": "Secret for dynatrace-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "OAUTH_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Oauth Client Secret",
+        "help": "Secret for dynatrace-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DT_ENVIRONMENT",
+        "kind": "text",
+        "label": "Dt Environment",
+        "help": "Sets DT_ENVIRONMENT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "description": "Grafana",
+    "iconSystemName": "waveform.path.ecg",
+    "runtime": "docker",
+    "image": "mcp/grafana:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/grafana/mcp-grafana",
+    "category": "Monitoring",
+    "fields": [
+      {
+        "id": "GRAFANA_API_KEY",
+        "kind": "secret",
+        "label": "Grafana Api Key",
+        "help": "Secret for grafana. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "GRAFANA_URL",
+        "kind": "text",
+        "label": "Grafana Url",
+        "help": "Sets GRAFANA_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "suzieq",
+    "name": "Suzieq",
+    "description": "MCP Server to interact with a SuzieQ network observability instance via its REST API",
+    "iconSystemName": "waveform.path.ecg",
+    "runtime": "docker",
+    "image": "mcp/suzieq-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/PovedaAqui/suzieq-mcp",
+    "category": "Monitoring",
+    "fields": [
+      {
+        "id": "SUZIEQ_API_KEY",
+        "kind": "secret",
+        "label": "Suzieq Api Key",
+        "help": "Secret for suzieq. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "SUZIEQ_API_ENDPOINT",
+        "kind": "text",
+        "label": "Suzieq Api Endpoint",
+        "help": "Sets SUZIEQ_API_ENDPOINT.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "thingsboard",
+    "name": "ThingsBoard",
+    "description": "Connect your AI workflows to the ThingsBoard IoT Platform through this MCP server. Enables LLMs to query device telemetry, manage IoT entities (devices, assets, customers), and analyze sensor data - all through natural language. Perfect for building AI-powered IoT monitoring, pr\u2026",
+    "iconSystemName": "waveform.path.ecg",
+    "runtime": "docker",
+    "image": "mcp/thingsboard:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/thingsboard/thingsboard-mcp",
+    "category": "Monitoring",
+    "fields": [
+      {
+        "id": "THINGSBOARD_USERNAME",
+        "kind": "secret",
+        "label": "Thingsboard Username",
+        "help": "Secret for thingsboard. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "THINGSBOARD_PASSWORD",
+        "kind": "secret",
+        "label": "Thingsboard Password",
+        "help": "Secret for thingsboard. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "THINGSBOARD_URL",
+        "kind": "text",
+        "label": "Thingsboard Url",
+        "help": "URL of your ThingsBoard Platform instance",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "mcp-hackernews",
     "name": "Hacker News",
     "description": "Read stories, comments and users from Hacker News.",
@@ -1261,6 +5433,272 @@
     "secretKeys": [],
     "docsURL": "https://github.com/AayushBahukhandi/hackernews-mcp",
     "category": "News"
+  },
+  {
+    "id": "airtable-mcp-server",
+    "name": "Airtable",
+    "description": "Provides AI assistants with direct access to Airtable bases, allowing them to read schemas, query records, and interact with your Airtable data. Supports listing bases, retrieving table structures, and searching through records to help automate workflows and answer questions abo\u2026",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/airtable-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/domdomegg/airtable-mcp-server",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "AIRTABLE_API_KEY",
+        "kind": "secret",
+        "label": "Airtable Api Key",
+        "help": "Secret for airtable-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "NODE_ENV",
+        "kind": "text",
+        "label": "Node Env",
+        "help": "Sets NODE_ENV.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "apify-mcp-server",
+    "name": "Apify",
+    "description": "Apify is the world's largest marketplace of tools for web scraping, data extraction, and web automation. You can extract structured data from social media, e-commerce, search engines, maps, travel sites, or any other website.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/apify-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/apify/actors-mcp-server",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "APIFY_TOKEN",
+        "kind": "secret",
+        "label": "Apify Token",
+        "help": "Secret for apify-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "TOOLS",
+        "kind": "text",
+        "label": "Tools",
+        "help": "Comma-separated list of tools to enable. Can be either a tool category, a specific tool, or an Apify Actor. For example: \"actors,docs,apify/rag-web-browser\". F\u2026",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "atlassian",
+    "name": "Atlassian",
+    "description": "Tools for Atlassian products (Confluence and Jira). This integration supports both Atlassian Cloud and Jira Server/Data Center deployments.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/atlassian:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/sooperset/mcp-atlassian",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "CONFLUENCE_API_TOKEN",
+        "kind": "secret",
+        "label": "Confluence Api Token",
+        "help": "Secret for atlassian. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CONFLUENCE_PERSONAL_TOKEN",
+        "kind": "secret",
+        "label": "Confluence Personal Token",
+        "help": "Secret for atlassian. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "JIRA_API_TOKEN",
+        "kind": "secret",
+        "label": "Jira Api Token",
+        "help": "Secret for atlassian. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "JIRA_PERSONAL_TOKEN",
+        "kind": "secret",
+        "label": "Jira Personal Token",
+        "help": "Secret for atlassian. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CONFLUENCE_URL",
+        "kind": "text",
+        "label": "Confluence Url",
+        "help": "Sets CONFLUENCE_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CONFLUENCE_USERNAME",
+        "kind": "text",
+        "label": "Confluence Username",
+        "help": "Sets CONFLUENCE_USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "JIRA_URL",
+        "kind": "text",
+        "label": "Jira Url",
+        "help": "Sets JIRA_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "JIRA_USERNAME",
+        "kind": "text",
+        "label": "Jira Username",
+        "help": "Sets JIRA_USERNAME.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "camunda",
+    "name": "Camunda BPM Process Engine",
+    "description": "Tools to interact with the Camunda 7 Community Edition Engine using the Model Context Protocol (MCP). Whether you're automating workflows, querying process instances, or integrating with external systems, Camunda MCP Server is your agentic solution for seamless interaction with\u2026",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/camunda:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/lepoco/mcp-camunda",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "CAMUNDA_HOST",
+        "kind": "text",
+        "label": "Camunda Host",
+        "help": "Sets CAMUNDA_HOST.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "charmhealth-mcp-server",
+    "name": "CharmHealth",
+    "description": "An MCP server for CharmHealth EHR that allows LLMs and MCP clients to interact with patient records, encounters, and practice information.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/charmhealth-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/CharmHealth/charm-mcp-server",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "CHARMHEALTH_API_KEY",
+        "kind": "secret",
+        "label": "Charmhealth Api Key",
+        "help": "Secret for charmhealth-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CHARMHEALTH_REFRESH_TOKEN",
+        "kind": "secret",
+        "label": "Charmhealth Refresh Token",
+        "help": "Secret for charmhealth-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CHARMHEALTH_BASE_URL",
+        "kind": "text",
+        "label": "Charmhealth Base Url",
+        "help": "Sets CHARMHEALTH_BASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CHARMHEALTH_CLIENT_ID",
+        "kind": "text",
+        "label": "Charmhealth Client Id",
+        "help": "Sets CHARMHEALTH_CLIENT_ID.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CHARMHEALTH_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Charmhealth Client Secret",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      },
+      {
+        "id": "CHARMHEALTH_REDIRECT_URI",
+        "kind": "text",
+        "label": "Charmhealth Redirect Uri",
+        "help": "Sets CHARMHEALTH_REDIRECT_URI.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "CHARMHEALTH_TOKEN_URL",
+        "kind": "secret",
+        "label": "Charmhealth Token Url",
+        "help": "Stored in your Keychain, never on disk.",
+        "required": false,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+    "description": "Bridges n8n's workflow automation platform with AI models, providing access to 543 n8n nodes, workflow templates, and AI-capable automation tools.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/n8n:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/czlonkowski/n8n-mcp",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "N8N_API_KEY",
+        "kind": "secret",
+        "label": "N8N Api Key",
+        "help": "Secret for n8n. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "N8N_API_URL",
+        "kind": "text",
+        "label": "N8N Api Url",
+        "help": "The URL of your n8n instance (use http://host.docker.internal:5678 for local instances)",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
   },
   {
     "id": "notion",
@@ -1282,6 +5720,221 @@
         "help": "Required by notion. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "description": "Obsidian",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/obsidian:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/docker/mcp-obsidian",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "OBSIDIAN_API_KEY",
+        "kind": "secret",
+        "label": "Obsidian Api Key",
+        "help": "Find your API key in your Obsidian settings in the **Local REST API** section under **Plugins**.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ],
+    "env": {
+      "OBSIDIAN_HOST": "host.docker.internal"
+    }
+  },
+  {
+    "id": "onlyoffice-docspace",
+    "name": "ONLYOFFICE DocSpace",
+    "description": "ONLYOFFICE DocSpace is a room-based collaborative platform which allows organizing a clear file structure depending on users' needs or project goals.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/onlyoffice-docspace:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/ONLYOFFICE/docspace-mcp",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "DOCSPACE_API_KEY",
+        "kind": "secret",
+        "label": "Docspace Api Key",
+        "help": "Secret for onlyoffice-docspace. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "DOCSPACE_BASE_URL",
+        "kind": "text",
+        "label": "Docspace Base Url",
+        "help": "Sets DOCSPACE_BASE_URL.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "openapi",
+    "name": "OpenAPI Toolkit",
+    "description": "Fetch, validate, and generate code or curl from any OpenAPI or Swagger spec - all from a single URL.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/openapi:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/lepoco/openapi.client",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "MODE",
+        "kind": "text",
+        "label": "Mode",
+        "help": "Sets MODE.",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "pluggedin-mcp-proxy",
+    "name": "Plugged.in Proxy",
+    "description": "A unified MCP proxy that aggregates multiple MCP servers into one interface, enabling seamless tool discovery and management across all your AI interactions. Manage all your MCP servers from a single connection point with RAG capabilities and real-time notifications.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/pluggedin-mcp-proxy:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/VeriTeknik/pluggedin-mcp-proxy",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "PLUGGEDIN_API_KEY",
+        "kind": "secret",
+        "label": "Pluggedin Api Key",
+        "help": "Secret for pluggedin-mcp-proxy. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "PLUGGEDIN_API_BASE_URL",
+        "kind": "text",
+        "label": "Pluggedin Api Base Url",
+        "help": "Base URL for the Plugged.in API (optional, defaults to https://plugged.in for cloud or http://localhost:12005 for self-hosted)",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
+    "id": "pomodash",
+    "name": "PomoDash",
+    "description": "Connect your AI assistant to PomoDash for seamless task and project management",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/pomodash:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/dannyytv/pomodash-mcp-server",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "POMODASH_API_KEY",
+        "kind": "secret",
+        "label": "Pomodash Api Key",
+        "help": "Secret for pomodash. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ],
+    "env": {
+      "POMODASH_API_URL": "https://mcp.pomodash.mindsnapz.de"
+    }
+  },
+  {
+    "id": "rust-mcp-filesystem",
+    "name": "Rust Filesystem",
+    "description": "The Rust MCP Filesystem is a high-performance, asynchronous, and lightweight Model Context Protocol (MCP) server built in Rust for secure and efficient filesystem operations. Designed with security in mind, it operates in read-only mode by default and restricts clients from upda\u2026",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/rust-mcp-filesystem:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/rust-mcp-stack/rust-mcp-filesystem",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "ENABLE_ROOTS",
+        "kind": "choice",
+        "label": "Enable Roots",
+        "help": "Enable dynamic directory access control via MCP client-side Roots.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      },
+      {
+        "id": "ALLOW_WRITE",
+        "kind": "choice",
+        "label": "Allow Write",
+        "help": "Enable read/write mode. If false, the app operates in read-only mode.",
+        "required": false,
+        "binds": "envVar",
+        "options": [
+          "true",
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sonarqube",
+    "name": "SonarQube",
+    "description": "Interact with SonarQube Cloud, Server and Community build over the web API. Analyze code to identify quality and security issues.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/sonarqube:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/SonarSource/sonarqube-mcp-server",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "SONARQUBE_TOKEN",
+        "kind": "secret",
+        "label": "Sonarqube Token",
+        "help": "Secret for sonarqube. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "SONARQUBE_URL",
+        "kind": "text",
+        "label": "Sonarqube Url",
+        "help": "URL of the SonarQube instance, to provide only for SonarQube Server or Community Build",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "SONARQUBE_ORG",
+        "kind": "text",
+        "label": "Sonarqube Org",
+        "help": "Organization key for SonarQube Cloud, not required for SonarQube Server or Community Build",
+        "required": false,
+        "binds": "envVar"
       }
     ]
   },
@@ -1332,6 +5985,32 @@
     ]
   },
   {
+    "id": "brave",
+    "name": "Brave Search",
+    "description": "Search the Web for pages, images, news, videos, and more using the Brave Search API.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/brave-search:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/brave/brave-search-mcp-server",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "BRAVE_API_KEY",
+        "kind": "secret",
+        "label": "Brave Api Key",
+        "help": "See [Getting an API key](https://github.com/brave/brave-search-mcp-server?tab=readme-ov-file#getting-an-api-key)",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ],
+    "env": {
+      "BRAVE_MCP_TRANSPORT": "stdio"
+    }
+  },
+  {
     "id": "dappier",
     "name": "Dappier",
     "description": "Real-time web and premium content search via Dappier.",
@@ -1355,6 +6034,37 @@
     ]
   },
   {
+    "id": "elasticsearch",
+    "name": "Elasticsearch",
+    "description": "Interact with your Elasticsearch indices through natural language conversations.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/elasticsearch:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/elastic/mcp-server-elasticsearch",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "ES_API_KEY",
+        "kind": "secret",
+        "label": "Es Api Key",
+        "help": "Secret for elasticsearch. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ES_URL",
+        "kind": "text",
+        "label": "Es Url",
+        "help": "Sets ES_URL.",
+        "required": true,
+        "binds": "envVar"
+      }
+    ]
+  },
+  {
     "id": "exa",
     "name": "Exa",
     "description": "Neural web search built for AI, with full-content retrieval.",
@@ -1374,6 +6084,85 @@
         "help": "Required by exa. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "firecrawl",
+    "name": "Firecrawl",
+    "description": "Firecrawl",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/firecrawl:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/mendableai/firecrawl-mcp-server",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "FIRECRAWL_API_KEY",
+        "kind": "secret",
+        "label": "Firecrawl Api Key",
+        "help": "If you don't have an account, create one and get a key from [here](https://www.firecrawl.dev/app/api-keys)",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "FIRECRAWL_API_URL",
+        "kind": "text",
+        "label": "Firecrawl Api Url",
+        "help": "Sets FIRECRAWL_API_URL.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIRECRAWL_RETRY_MAX_ATTEMPTS",
+        "kind": "text",
+        "label": "Firecrawl Retry Max Attempts",
+        "help": "Sets FIRECRAWL_RETRY_MAX_ATTEMPTS.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIRECRAWL_RETRY_INITIAL_DELAY",
+        "kind": "text",
+        "label": "Firecrawl Retry Initial Delay",
+        "help": "Sets FIRECRAWL_RETRY_INITIAL_DELAY.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIRECRAWL_RETRY_MAX_DELAY",
+        "kind": "text",
+        "label": "Firecrawl Retry Max Delay",
+        "help": "Sets FIRECRAWL_RETRY_MAX_DELAY.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIRECRAWL_RETRY_BACKOFF_FACTOR",
+        "kind": "text",
+        "label": "Firecrawl Retry Backoff Factor",
+        "help": "Sets FIRECRAWL_RETRY_BACKOFF_FACTOR.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIRECRAWL_CREDIT_WARNING_THRESHOLD",
+        "kind": "text",
+        "label": "Firecrawl Credit Warning Threshold",
+        "help": "Sets FIRECRAWL_CREDIT_WARNING_THRESHOLD.",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIRECRAWL_CREDIT_CRITICAL_THRESHOLD",
+        "kind": "text",
+        "label": "Firecrawl Credit Critical Threshold",
+        "help": "Sets FIRECRAWL_CREDIT_CRITICAL_THRESHOLD.",
+        "required": false,
+        "binds": "envVar"
       }
     ]
   },
@@ -1509,6 +6298,72 @@
     ]
   },
   {
+    "id": "firewalla-mcp-server",
+    "name": "Firewalla",
+    "description": "Real-time network monitoring, security analysis, and firewall management through 28 specialized tools. Access security alerts, network flows, device status, and firewall rules directly from your Firewalla device.",
+    "iconSystemName": "lock.shield",
+    "runtime": "docker",
+    "image": "mcp/firewalla-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/amittell/firewalla-mcp-server",
+    "category": "Security",
+    "fields": [
+      {
+        "id": "FIREWALLA_MSP_TOKEN",
+        "kind": "secret",
+        "label": "Firewalla Msp Token",
+        "help": "Secret for firewalla-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "FIREWALLA_MSP_ID",
+        "kind": "text",
+        "label": "Firewalla Msp Id",
+        "help": "Your Firewalla MSP domain (e.g., yourdomain.firewalla.net)",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "FIREWALLA_BOX_ID",
+        "kind": "text",
+        "label": "Firewalla Box Id",
+        "help": "Your Firewalla Box Global ID",
+        "required": false,
+        "binds": "envVar"
+      }
+    ],
+    "env": {
+      "MCP_WAVE0_ENABLED": "true",
+      "MCP_READ_ONLY_MODE": "false",
+      "MCP_CACHE_ENABLED": "true",
+      "MCP_DEBUG_MODE": "false",
+      "NODE_ENV": "production",
+      "LOG_LEVEL": "info",
+      "MCP_CACHE_TTL": "300",
+      "MCP_RATE_LIMIT_WINDOW": "60000",
+      "MCP_RATE_LIMIT_MAX_REQUESTS": "100"
+    }
+  },
+  {
+    "id": "ramparts",
+    "name": "Ramparts Security Scanner",
+    "description": "A comprehensive security scanner for MCP servers with YARA rules and static analysis capabilities.",
+    "iconSystemName": "lock.shield",
+    "runtime": "docker",
+    "image": "mcp/ramparts:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/getjavelin/ramparts",
+    "category": "Security",
+    "env": {
+      "RUST_LOG": "info"
+    }
+  },
+  {
     "id": "sentry",
     "name": "Sentry",
     "description": "Retrieve and analyze application errors from Sentry.",
@@ -1589,5 +6444,100 @@
     "secretKeys": [],
     "docsURL": "https://github.com/HaroldFinchIFT/vuln-nist-mcp-server",
     "category": "Security"
+  },
+  {
+    "id": "zscaler-mcp-server",
+    "name": "Zscaler",
+    "description": "Manage the Zscaler Zero Trust Exchange platform via 300+ tools across ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), ZTW (workload segmentation), ZMS (microsegmentation), EASM (attack surface management), Z-Insights (security analy\u2026",
+    "iconSystemName": "lock.shield",
+    "runtime": "docker",
+    "image": "mcp/zscaler-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/zscaler/zscaler-mcp-server",
+    "category": "Security",
+    "fields": [
+      {
+        "id": "ZSCALER_CLIENT_ID",
+        "kind": "secret",
+        "label": "Zscaler Client Id",
+        "help": "Secret for zscaler-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ZSCALER_CLIENT_SECRET",
+        "kind": "secret",
+        "label": "Zscaler Client Secret",
+        "help": "Secret for zscaler-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ZSCALER_CUSTOMER_ID",
+        "kind": "secret",
+        "label": "Zscaler Customer Id",
+        "help": "Secret for zscaler-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ZSCALER_VANITY_DOMAIN",
+        "kind": "secret",
+        "label": "Zscaler Vanity Domain",
+        "help": "Secret for zscaler-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ZSCALER_CLOUD",
+        "kind": "secret",
+        "label": "Zscaler Cloud",
+        "help": "Secret for zscaler-mcp-server. Stored in your Keychain.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ZSCALER_MCP_WRITE_ENABLED",
+        "kind": "text",
+        "label": "Zscaler Mcp Write Enabled",
+        "help": "Enable write operations (true/false)",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "ZSCALER_MCP_WRITE_TOOLS",
+        "kind": "text",
+        "label": "Zscaler Mcp Write Tools",
+        "help": "Comma-separated write tool patterns to allow (e.g. zpa_create_*,zia_update_*)",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "ZSCALER_MCP_DISABLED_SERVICES",
+        "kind": "text",
+        "label": "Zscaler Mcp Disabled Services",
+        "help": "Comma-separated services to disable (zcc,zdx,zpa,zia,ztw,zid,zeasm,zins,zms)",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "ZSCALER_MCP_DISABLED_TOOLS",
+        "kind": "text",
+        "label": "Zscaler Mcp Disabled Tools",
+        "help": "Comma-separated tool name patterns to disable (e.g. zia_delete_*,zpa_bulk_*)",
+        "required": false,
+        "binds": "envVar"
+      },
+      {
+        "id": "ZSCALER_MCP_SKIP_CONFIRMATIONS",
+        "kind": "text",
+        "label": "Zscaler Mcp Skip Confirmations",
+        "help": "Skip HMAC confirmation prompts for destructive operations (true/false)",
+        "required": false,
+        "binds": "envVar"
+      }
+    ]
   }
 ]
