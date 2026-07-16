@@ -254,8 +254,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS CloudTrail screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudtrail-1.png)
+![AWS CloudTrail screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudtrail-1.png)
 
-![AWS CloudTrail screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudtrail-2.png)
+![AWS CloudTrail screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudtrail-2.png)
 
-![AWS CloudTrail screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudtrail-3.png)
+![AWS CloudTrail screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudtrail-3.png)

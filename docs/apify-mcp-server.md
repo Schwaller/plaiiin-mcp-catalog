@@ -341,8 +341,8 @@ Use this to paginate through the search results. For example, if you want to get
 
 ## Screenshots
 
-![Apify screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/apify-mcp-server-1.png)
+![Apify screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/apify-mcp-server-1.png)
 
-![Apify screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/apify-mcp-server-2.jpg)
+![Apify screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/apify-mcp-server-2.jpg)
 
-![Apify screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/apify-mcp-server-3.png)
+![Apify screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/apify-mcp-server-3.png)

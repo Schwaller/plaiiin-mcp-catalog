@@ -55,4 +55,4 @@ Create or reuse a Browserbase session
 
 ## Screenshots
 
-![Browserbase screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/browserbase-1.png)
+![Browserbase screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/browserbase-1.png)

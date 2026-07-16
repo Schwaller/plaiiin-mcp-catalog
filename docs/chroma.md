@@ -147,4 +147,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Chroma screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/chroma-1.png)
+![Chroma screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/chroma-1.png)

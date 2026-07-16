@@ -69,8 +69,8 @@ List available tools
 
 ## Screenshots
 
-![DreamFactory screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/dreamfactory-mcp-1.png)
+![DreamFactory screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/dreamfactory-mcp-1.png)
 
-![DreamFactory screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/dreamfactory-mcp-2.png)
+![DreamFactory screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/dreamfactory-mcp-2.png)
 
-![DreamFactory screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/dreamfactory-mcp-3.png)
+![DreamFactory screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/dreamfactory-mcp-3.png)

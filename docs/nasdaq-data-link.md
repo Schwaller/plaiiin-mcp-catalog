@@ -84,8 +84,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Nasdaq Data Link screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/nasdaq-data-link-1.gif)
+![Nasdaq Data Link screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/nasdaq-data-link-1.gif)
 
-![Nasdaq Data Link screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/nasdaq-data-link-2.gif)
+![Nasdaq Data Link screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/nasdaq-data-link-2.gif)
 
-![Nasdaq Data Link screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/nasdaq-data-link-3.gif)
+![Nasdaq Data Link screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/nasdaq-data-link-3.gif)

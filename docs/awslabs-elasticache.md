@@ -526,8 +526,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon ElastiCache screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-elasticache-1.png)
+![Amazon ElastiCache screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-elasticache-1.png)
 
-![Amazon ElastiCache screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-elasticache-2.png)
+![Amazon ElastiCache screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-elasticache-2.png)
 
-![Amazon ElastiCache screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-elasticache-3.png)
+![Amazon ElastiCache screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-elasticache-3.png)

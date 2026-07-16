@@ -113,8 +113,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS Labs Nova Canvas screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-nova-canvas-1.png)
+![AWS Labs Nova Canvas screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-nova-canvas-1.png)
 
-![AWS Labs Nova Canvas screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-nova-canvas-2.png)
+![AWS Labs Nova Canvas screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-nova-canvas-2.png)
 
-![AWS Labs Nova Canvas screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-nova-canvas-3.png)
+![AWS Labs Nova Canvas screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-nova-canvas-3.png)

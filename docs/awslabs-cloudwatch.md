@@ -393,8 +393,8 @@ Example 3 (Metrics Insight
 
 ## Screenshots
 
-![Amazon CloudWatch screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudwatch-1.png)
+![Amazon CloudWatch screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudwatch-1.png)
 
-![Amazon CloudWatch screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudwatch-2.png)
+![Amazon CloudWatch screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudwatch-2.png)
 
-![Amazon CloudWatch screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudwatch-3.png)
+![Amazon CloudWatch screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudwatch-3.png)

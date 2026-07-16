@@ -39,4 +39,4 @@ Search for devices that match the provided search criteria with comprehensive fi
 
 ## Screenshots
 
-![Cylera screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/cylera-mcp-server-1.png)
+![Cylera screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/cylera-mcp-server-1.png)

@@ -53,4 +53,4 @@ Perform web search using Explorium Search capabilities
 
 ## Screenshots
 
-![Explorium B2B Data screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/explorium-1.png)
+![Explorium B2B Data screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/explorium-1.png)

@@ -438,8 +438,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS Pricing screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-pricing-1.png)
+![AWS Pricing screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-pricing-1.png)
 
-![AWS Pricing screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-pricing-2.png)
+![AWS Pricing screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-pricing-2.png)
 
-![AWS Pricing screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-pricing-3.png)
+![AWS Pricing screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-pricing-3.png)

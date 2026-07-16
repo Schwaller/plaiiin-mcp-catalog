@@ -156,8 +156,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS CDK screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-cdk-mcp-server-1.png)
+![AWS CDK screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-cdk-mcp-server-1.png)
 
-![AWS CDK screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-cdk-mcp-server-2.png)
+![AWS CDK screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-cdk-mcp-server-2.png)
 
-![AWS CDK screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-cdk-mcp-server-3.png)
+![AWS CDK screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-cdk-mcp-server-3.png)

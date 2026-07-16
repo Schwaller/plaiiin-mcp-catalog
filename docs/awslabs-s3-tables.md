@@ -509,8 +509,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS S3 Tables screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-s3-tables-1.png)
+![AWS S3 Tables screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-s3-tables-1.png)
 
-![AWS S3 Tables screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-s3-tables-2.png)
+![AWS S3 Tables screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-s3-tables-2.png)
 
-![AWS S3 Tables screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-s3-tables-3.png)
+![AWS S3 Tables screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-s3-tables-3.png)

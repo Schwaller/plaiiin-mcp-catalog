@@ -354,8 +354,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS HealthOmics screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-healthomics-1.png)
+![AWS HealthOmics screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-healthomics-1.png)
 
-![AWS HealthOmics screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-healthomics-2.png)
+![AWS HealthOmics screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-healthomics-2.png)
 
-![AWS HealthOmics screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-healthomics-3.png)
+![AWS HealthOmics screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-healthomics-3.png)

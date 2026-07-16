@@ -194,8 +194,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS Documentation screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-documentation-1.png)
+![AWS Documentation screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-documentation-1.png)
 
-![AWS Documentation screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-documentation-2.png)
+![AWS Documentation screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-documentation-2.png)
 
-![AWS Documentation screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-documentation-3.png)
+![AWS Documentation screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-documentation-3.png)

@@ -105,4 +105,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Node.js Sandbox screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/node-code-sandbox-1.png)
+![Node.js Sandbox screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/node-code-sandbox-1.png)

@@ -304,8 +304,8 @@ It's useful for calculating relevant dates when a user asks about the last N mon
 
 ## Screenshots
 
-![AWS Cost Explorer screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cost-explorer-1.png)
+![AWS Cost Explorer screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cost-explorer-1.png)
 
-![AWS Cost Explorer screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cost-explorer-2.png)
+![AWS Cost Explorer screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cost-explorer-2.png)
 
-![AWS Cost Explorer screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cost-explorer-3.png)
+![AWS Cost Explorer screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cost-explorer-3.png)

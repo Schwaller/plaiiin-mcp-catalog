@@ -68,4 +68,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Shodan screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/cyreslab-ai-shodan-1.png)
+![Shodan screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/cyreslab-ai-shodan-1.png)

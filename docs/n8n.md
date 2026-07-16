@@ -420,4 +420,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![n8n screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/n8n-1.png)
+![n8n screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/n8n-1.png)

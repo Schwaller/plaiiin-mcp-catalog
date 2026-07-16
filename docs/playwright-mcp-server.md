@@ -295,4 +295,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![ExecuteAutomation Playwright screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/playwright-mcp-server-1.png)
+![ExecuteAutomation Playwright screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/playwright-mcp-server-1.png)

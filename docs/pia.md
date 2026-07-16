@@ -89,4 +89,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Program Integrity Alliance screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/pia-1.png)
+![Program Integrity Alliance screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/pia-1.png)

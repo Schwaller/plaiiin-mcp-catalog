@@ -205,8 +205,8 @@ Returns:
 
 ## Screenshots
 
-![Amazon ElastiCache for Memcached screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-memcached-1.png)
+![Amazon ElastiCache for Memcached screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-memcached-1.png)
 
-![Amazon ElastiCache for Memcached screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-memcached-2.png)
+![Amazon ElastiCache for Memcached screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-memcached-2.png)
 
-![Amazon ElastiCache for Memcached screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-memcached-3.png)
+![Amazon ElastiCache for Memcached screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-memcached-3.png)

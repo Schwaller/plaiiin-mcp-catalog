@@ -200,8 +200,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS CloudFormation screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cfn-1.png)
+![AWS CloudFormation screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cfn-1.png)
 
-![AWS CloudFormation screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cfn-2.png)
+![AWS CloudFormation screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cfn-2.png)
 
-![AWS CloudFormation screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cfn-3.png)
+![AWS CloudFormation screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cfn-3.png)

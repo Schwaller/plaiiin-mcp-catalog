@@ -150,4 +150,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Docker Hub screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/dockerhub-1.gif)
+![Docker Hub screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/dockerhub-1.gif)

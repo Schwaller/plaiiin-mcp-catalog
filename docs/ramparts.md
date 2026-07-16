@@ -44,4 +44,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Ramparts Security Scanner screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/ramparts-1.png)
+![Ramparts Security Scanner screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/ramparts-1.png)

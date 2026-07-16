@@ -59,4 +59,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Text-to-GraphQL screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/text-to-graphql-1.gif)
+![Text-to-GraphQL screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/text-to-graphql-1.gif)

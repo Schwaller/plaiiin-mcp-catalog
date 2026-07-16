@@ -393,6 +393,6 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Testkube screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/testkube-1.png)
+![Testkube screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/testkube-1.png)
 
-![Testkube screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/testkube-2.png)
+![Testkube screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/testkube-2.png)

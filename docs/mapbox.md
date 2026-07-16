@@ -358,4 +358,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Mapbox screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/mapbox-1.gif)
+![Mapbox screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/mapbox-1.gif)

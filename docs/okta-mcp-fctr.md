@@ -586,6 +586,6 @@ Return
 
 ## Screenshots
 
-![Okta screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/okta-mcp-fctr-1.gif)
+![Okta screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/okta-mcp-fctr-1.gif)
 
-![Okta screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/okta-mcp-fctr-2.png)
+![Okta screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/okta-mcp-fctr-2.png)

@@ -629,8 +629,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![EduBase screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/edubase-1.gif)
+![EduBase screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/edubase-1.gif)
 
-![EduBase screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/edubase-2.png)
+![EduBase screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/edubase-2.png)
 
-![EduBase screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/edubase-3.jpg)
+![EduBase screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/edubase-3.jpg)

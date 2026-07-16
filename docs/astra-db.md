@@ -186,6 +186,6 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Astra DB screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/astra-db-1.png)
+![Astra DB screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/astra-db-1.png)
 
-![Astra DB screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/astra-db-2.png)
+![Astra DB screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/astra-db-2.png)

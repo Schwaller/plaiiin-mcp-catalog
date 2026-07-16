@@ -139,8 +139,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon MSK screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-msk-1.png)
+![Amazon MSK screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-msk-1.png)
 
-![Amazon MSK screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-msk-2.png)
+![Amazon MSK screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-msk-2.png)
 
-![Amazon MSK screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-msk-3.png)
+![Amazon MSK screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-msk-3.png)

@@ -41,8 +41,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon Neptune screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-neptune-1.png)
+![Amazon Neptune screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-neptune-1.png)
 
-![Amazon Neptune screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-neptune-2.png)
+![Amazon Neptune screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-neptune-2.png)
 
-![Amazon Neptune screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-neptune-3.png)
+![Amazon Neptune screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-neptune-3.png)

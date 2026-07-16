@@ -283,4 +283,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Rust Filesystem screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/rust-mcp-filesystem-1.png)
+![Rust Filesystem screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/rust-mcp-filesystem-1.png)

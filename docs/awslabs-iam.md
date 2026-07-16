@@ -386,8 +386,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS IAM screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-iam-1.png)
+![AWS IAM screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-iam-1.png)
 
-![AWS IAM screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-iam-2.png)
+![AWS IAM screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-iam-2.png)
 
-![AWS IAM screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-iam-3.png)
+![AWS IAM screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-iam-3.png)

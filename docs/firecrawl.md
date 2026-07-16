@@ -558,4 +558,4 @@ Full `body` requests require: `name`, `schedule` (with `cron` or `text`), and `t
 
 ## Screenshots
 
-![Firecrawl screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/firecrawl-1.png)
+![Firecrawl screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/firecrawl-1.png)

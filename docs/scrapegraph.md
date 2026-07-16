@@ -162,4 +162,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![ScrapeGraph screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/scrapegraph-1.png)
+![ScrapeGraph screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/scrapegraph-1.png)

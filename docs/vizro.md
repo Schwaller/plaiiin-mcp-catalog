@@ -109,8 +109,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Vizro screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/vizro-1.png)
+![Vizro screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/vizro-1.png)
 
-![Vizro screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/vizro-2.png)
+![Vizro screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/vizro-2.png)
 
-![Vizro screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/vizro-3.png)
+![Vizro screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/vizro-3.png)

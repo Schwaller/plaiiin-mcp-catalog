@@ -247,4 +247,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![NPM Sentinel screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/npm-sentinel-1.png)
+![NPM Sentinel screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/npm-sentinel-1.png)

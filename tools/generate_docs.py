@@ -19,6 +19,11 @@ import re
 import urllib.request
 
 RAW_BASE = "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/"
+# Screenshots live on the orphan `assets` branch so the catalog-source tarball
+# (codeload .../tar.gz/HEAD of the DEFAULT branch) stays tiny — 166 images made
+# it 144 MB once, which broke the Bridge's source refresh. img/ is gitignored
+# on main and committed on `assets` only.
+ASSETS_BASE = "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/"
 HUB_API = "https://hub.docker.com/v2/repositories/"
 IMG_EXTS = (".png", ".jpg", ".jpeg", ".gif", ".webp")
 BADGE_HINTS = ("shields.io", "badge", "codecov", "travis", "opencollective", "colab")
@@ -137,7 +142,7 @@ def build_doc(entry, md_dir, img_dir):
             (img_dir / name).write_bytes(get(u))
         except Exception:
             continue
-        section.append(f"![{entry['name']} screenshot {i}]({RAW_BASE}docs/img/{name})")
+        section.append(f"![{entry['name']} screenshot {i}]({ASSETS_BASE}img/{name})")
         section.append("")
     if section:
         body = body.rstrip() + "\n\n## Screenshots\n\n" + "\n".join(section)
@@ -154,7 +159,7 @@ def main():
 
     repo = pathlib.Path(__file__).resolve().parent.parent
     docs_dir = repo / "docs"
-    img_dir = docs_dir / "img"
+    img_dir = repo / "img"
     docs_dir.mkdir(exist_ok=True)
     img_dir.mkdir(exist_ok=True)
 

@@ -83,8 +83,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Pref Editor screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/pref-editor-1.png)
+![Pref Editor screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/pref-editor-1.png)
 
-![Pref Editor screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/pref-editor-2.png)
+![Pref Editor screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/pref-editor-2.png)
 
-![Pref Editor screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/pref-editor-3.png)
+![Pref Editor screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/pref-editor-3.png)

@@ -357,8 +357,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon Redshift screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-redshift-1.png)
+![Amazon Redshift screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-redshift-1.png)
 
-![Amazon Redshift screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-redshift-2.png)
+![Amazon Redshift screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-redshift-2.png)
 
-![Amazon Redshift screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-redshift-3.png)
+![Amazon Redshift screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-redshift-3.png)

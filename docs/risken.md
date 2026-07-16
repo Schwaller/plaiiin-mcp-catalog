@@ -64,4 +64,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![RISKEN screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/risken-1.png)
+![RISKEN screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/risken-1.png)

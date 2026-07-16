@@ -219,4 +219,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Oxylabs screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/oxylabs-1.png)
+![Oxylabs screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/oxylabs-1.png)

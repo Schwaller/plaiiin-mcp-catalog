@@ -482,8 +482,8 @@ isolate queries for different user groups and control query execution settings.
 
 ## Screenshots
 
-![AWS Data Processing screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-dataprocessing-1.png)
+![AWS Data Processing screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-dataprocessing-1.png)
 
-![AWS Data Processing screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-dataprocessing-2.png)
+![AWS Data Processing screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-dataprocessing-2.png)
 
-![AWS Data Processing screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-dataprocessing-3.png)
+![AWS Data Processing screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-dataprocessing-3.png)

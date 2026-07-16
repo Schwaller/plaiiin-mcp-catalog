@@ -292,8 +292,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS Terraform screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-terraform-1.png)
+![AWS Terraform screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-terraform-1.png)
 
-![AWS Terraform screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-terraform-2.png)
+![AWS Terraform screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-terraform-2.png)
 
-![AWS Terraform screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-terraform-3.png)
+![AWS Terraform screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-terraform-3.png)

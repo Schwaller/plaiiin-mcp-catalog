@@ -54,8 +54,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon Kendra Index screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-kendra-index-1.png)
+![Amazon Kendra Index screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-kendra-index-1.png)
 
-![Amazon Kendra Index screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-kendra-index-2.png)
+![Amazon Kendra Index screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-kendra-index-2.png)
 
-![Amazon Kendra Index screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-kendra-index-3.png)
+![Amazon Kendra Index screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-kendra-index-3.png)

@@ -831,8 +831,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon ElastiCache/MemoryDB for Valkey screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-valkey-1.png)
+![Amazon ElastiCache/MemoryDB for Valkey screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-valkey-1.png)
 
-![Amazon ElastiCache/MemoryDB for Valkey screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-valkey-2.png)
+![Amazon ElastiCache/MemoryDB for Valkey screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-valkey-2.png)
 
-![Amazon ElastiCache/MemoryDB for Valkey screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-valkey-3.png)
+![Amazon ElastiCache/MemoryDB for Valkey screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-valkey-3.png)

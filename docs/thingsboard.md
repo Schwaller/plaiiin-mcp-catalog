@@ -320,8 +320,8 @@ Returns all attributes that belong to specified entity. Use optional 'keys' para
 
 ## Screenshots
 
-![ThingsBoard screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/thingsboard-1.png)
+![ThingsBoard screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/thingsboard-1.png)
 
-![ThingsBoard screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/thingsboard-2.png)
+![ThingsBoard screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/thingsboard-2.png)
 
-![ThingsBoard screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/thingsboard-3.png)
+![ThingsBoard screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/thingsboard-3.png)

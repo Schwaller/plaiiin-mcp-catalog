@@ -120,4 +120,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![LINE screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/line-1.png)
+![LINE screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/line-1.png)

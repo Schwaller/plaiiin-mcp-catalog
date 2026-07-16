@@ -209,4 +209,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Dynatrace screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/dynatrace-mcp-server-1.png)
+![Dynatrace screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/dynatrace-mcp-server-1.png)

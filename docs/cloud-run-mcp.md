@@ -89,8 +89,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Cloud Run screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/cloud-run-mcp-1.gif)
+![Cloud Run screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/cloud-run-mcp-1.gif)
 
-![Cloud Run screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/cloud-run-mcp-2.gif)
+![Cloud Run screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/cloud-run-mcp-2.gif)
 
-![Cloud Run screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/cloud-run-mcp-3.gif)
+![Cloud Run screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/cloud-run-mcp-3.gif)

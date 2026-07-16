@@ -22,8 +22,8 @@ ALWAYS Use this tool first to understand the user's query and translate it into 
 
 ## Screenshots
 
-![AWS Core screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-core-mcp-server-1.png)
+![AWS Core screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-core-mcp-server-1.png)
 
-![AWS Core screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-core-mcp-server-2.png)
+![AWS Core screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-core-mcp-server-2.png)
 
-![AWS Core screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-core-mcp-server-3.png)
+![AWS Core screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-core-mcp-server-3.png)

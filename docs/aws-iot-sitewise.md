@@ -513,8 +513,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS IoT SiteWise screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-iot-sitewise-1.png)
+![AWS IoT SiteWise screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-iot-sitewise-1.png)
 
-![AWS IoT SiteWise screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-iot-sitewise-2.png)
+![AWS IoT SiteWise screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-iot-sitewise-2.png)
 
-![AWS IoT SiteWise screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-iot-sitewise-3.png)
+![AWS IoT SiteWise screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-iot-sitewise-3.png)

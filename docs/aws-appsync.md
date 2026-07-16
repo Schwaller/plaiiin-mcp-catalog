@@ -212,8 +212,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS AppSync screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-appsync-1.png)
+![AWS AppSync screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-appsync-1.png)
 
-![AWS AppSync screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-appsync-2.png)
+![AWS AppSync screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-appsync-2.png)
 
-![AWS AppSync screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-appsync-3.png)
+![AWS AppSync screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-appsync-3.png)

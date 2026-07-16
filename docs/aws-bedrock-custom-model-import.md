@@ -211,8 +211,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS Bedrock Custom Model Import screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-bedrock-custom-model-import-1.png)
+![AWS Bedrock Custom Model Import screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-bedrock-custom-model-import-1.png)
 
-![AWS Bedrock Custom Model Import screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-bedrock-custom-model-import-2.png)
+![AWS Bedrock Custom Model Import screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-bedrock-custom-model-import-2.png)
 
-![AWS Bedrock Custom Model Import screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-bedrock-custom-model-import-3.png)
+![AWS Bedrock Custom Model Import screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-bedrock-custom-model-import-3.png)

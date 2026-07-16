@@ -298,8 +298,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![AWS Cloud Control API screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-ccapi-1.png)
+![AWS Cloud Control API screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-ccapi-1.png)
 
-![AWS Cloud Control API screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-ccapi-2.png)
+![AWS Cloud Control API screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-ccapi-2.png)
 
-![AWS Cloud Control API screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-ccapi-3.png)
+![AWS Cloud Control API screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-ccapi-3.png)

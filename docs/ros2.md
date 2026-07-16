@@ -151,8 +151,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![WiseVision ROS2 screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/ros2-1.gif)
+![WiseVision ROS2 screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/ros2-1.gif)
 
-![WiseVision ROS2 screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/ros2-2.gif)
+![WiseVision ROS2 screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/ros2-2.gif)
 
-![WiseVision ROS2 screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/ros2-3.gif)
+![WiseVision ROS2 screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/ros2-3.gif)

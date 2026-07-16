@@ -108,8 +108,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon Location Service screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-location-1.png)
+![Amazon Location Service screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-location-1.png)
 
-![Amazon Location Service screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-location-2.png)
+![Amazon Location Service screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-location-2.png)
 
-![Amazon Location Service screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/aws-location-3.png)
+![Amazon Location Service screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/aws-location-3.png)

@@ -375,8 +375,8 @@ This is the PRIMARY and PREFERRED tool when users want to:
 
 ## Screenshots
 
-![Amazon CloudWatch Application Signals screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudwatch-appsignals-1.png)
+![Amazon CloudWatch Application Signals screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudwatch-appsignals-1.png)
 
-![Amazon CloudWatch Application Signals screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudwatch-appsignals-2.png)
+![Amazon CloudWatch Application Signals screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudwatch-appsignals-2.png)
 
-![Amazon CloudWatch Application Signals screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-cloudwatch-appsignals-3.png)
+![Amazon CloudWatch Application Signals screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-cloudwatch-appsignals-3.png)

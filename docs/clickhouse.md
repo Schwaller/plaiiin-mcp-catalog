@@ -39,4 +39,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Official ClickHouse screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/clickhouse-1.jpg)
+![Official ClickHouse screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/clickhouse-1.jpg)

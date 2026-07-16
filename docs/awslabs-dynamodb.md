@@ -239,8 +239,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon DynamoDB screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-dynamodb-1.png)
+![Amazon DynamoDB screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-dynamodb-1.png)
 
-![Amazon DynamoDB screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-dynamodb-2.png)
+![Amazon DynamoDB screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-dynamodb-2.png)
 
-![Amazon DynamoDB screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-dynamodb-3.png)
+![Amazon DynamoDB screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-dynamodb-3.png)

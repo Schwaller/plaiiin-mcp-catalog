@@ -353,8 +353,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Notion screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/notion-1.png)
+![Notion screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/notion-1.png)
 
-![Notion screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/notion-2.png)
+![Notion screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/notion-2.png)
 
-![Notion screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/notion-3.png)
+![Notion screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/notion-3.png)

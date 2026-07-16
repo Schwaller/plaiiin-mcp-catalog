@@ -355,4 +355,4 @@ UNHCR's Refugee data provides information about displaced people in a crisis. Se
 
 ## Screenshots
 
-![Humanitarian Data Exchange screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/hdx-1.png)
+![Humanitarian Data Exchange screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/hdx-1.png)

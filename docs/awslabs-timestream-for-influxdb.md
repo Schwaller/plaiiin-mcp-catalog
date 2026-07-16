@@ -324,8 +324,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon Timestream for InfluxDB screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-timestream-for-influxdb-1.png)
+![Amazon Timestream for InfluxDB screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-timestream-for-influxdb-1.png)
 
-![Amazon Timestream for InfluxDB screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-timestream-for-influxdb-2.png)
+![Amazon Timestream for InfluxDB screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-timestream-for-influxdb-2.png)
 
-![Amazon Timestream for InfluxDB screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-timestream-for-influxdb-3.png)
+![Amazon Timestream for InfluxDB screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-timestream-for-influxdb-3.png)

@@ -37,4 +37,4 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Ref - Up-To-Date Docs screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/ref-1.png)
+![Ref - Up-To-Date Docs screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/ref-1.png)

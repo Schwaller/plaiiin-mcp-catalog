@@ -517,8 +517,8 @@ or provided directly. Use this to get full documentation pages including:
 
 ## Screenshots
 
-![AWS Bedrock AgentCore screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-bedrock-agentcore-1.png)
+![AWS Bedrock AgentCore screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-bedrock-agentcore-1.png)
 
-![AWS Bedrock AgentCore screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-bedrock-agentcore-2.png)
+![AWS Bedrock AgentCore screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-bedrock-agentcore-2.png)
 
-![AWS Bedrock AgentCore screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-bedrock-agentcore-3.png)
+![AWS Bedrock AgentCore screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-bedrock-agentcore-3.png)

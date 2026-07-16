@@ -28,8 +28,8 @@ Parameters|Type|Description
 
 ## Screenshots
 
-![Amazon Q Business screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-qbusiness-anonymous-1.png)
+![Amazon Q Business screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-qbusiness-anonymous-1.png)
 
-![Amazon Q Business screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-qbusiness-anonymous-2.png)
+![Amazon Q Business screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-qbusiness-anonymous-2.png)
 
-![Amazon Q Business screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/amazon-qbusiness-anonymous-3.png)
+![Amazon Q Business screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/amazon-qbusiness-anonymous-3.png)

@@ -379,8 +379,8 @@ DIMENSION REFERENCE:
 
 ## Screenshots
 
-![AWS Billing and Cost Management screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-billing-cost-management-1.png)
+![AWS Billing and Cost Management screenshot 1](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-billing-cost-management-1.png)
 
-![AWS Billing and Cost Management screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-billing-cost-management-2.png)
+![AWS Billing and Cost Management screenshot 2](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-billing-cost-management-2.png)
 
-![AWS Billing and Cost Management screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/img/awslabs-billing-cost-management-3.png)
+![AWS Billing and Cost Management screenshot 3](https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/assets/img/awslabs-billing-cost-management-3.png)
