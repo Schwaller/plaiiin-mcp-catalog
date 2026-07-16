@@ -10,7 +10,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/executeautomation/mcp-playwright",
-    "category": "AI & Knowledge"
+    "category": "AI & Knowledge",
+    "provider": "executeautomation"
   },
   {
     "id": "gemini-api-docs",
@@ -23,7 +24,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/gemini-api-docs-mcp",
-    "category": "AI & Knowledge"
+    "category": "AI & Knowledge",
+    "provider": "kgprs"
   },
   {
     "id": "hdx",
@@ -46,7 +48,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "dividor"
   },
   {
     "id": "novita",
@@ -59,7 +62,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/novitalabs/novita-mcp-server",
-    "category": "AI & Knowledge"
+    "category": "AI & Knowledge",
+    "provider": "novitalabs"
   },
   {
     "id": "okta-mcp-fctr",
@@ -112,7 +116,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "fctr-id"
   },
   {
     "id": "omi",
@@ -135,7 +140,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "BasedHardware"
   },
   {
     "id": "paper-search",
@@ -148,7 +154,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/openags/paper-search-mcp",
-    "category": "AI & Knowledge"
+    "category": "AI & Knowledge",
+    "provider": "openags"
   },
   {
     "id": "pia",
@@ -171,7 +178,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Program-Integrity-Alliance"
   },
   {
     "id": "wikipedia-mcp",
@@ -184,7 +192,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/Rudra-ravi/wikipedia-mcp",
-    "category": "AI & Knowledge"
+    "category": "AI & Knowledge",
+    "provider": "Rudra-ravi"
   },
   {
     "id": "wolfram-alpha",
@@ -207,7 +216,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "SecretiveShell"
   },
   {
     "id": "awslabs-cloudwatch",
@@ -238,7 +248,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-cloudwatch-appsignals",
@@ -269,7 +280,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-dynamodb",
@@ -300,7 +312,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-elasticache",
@@ -331,7 +344,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-memcached",
@@ -362,7 +376,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-valkey",
@@ -393,7 +408,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "amazon-kendra-index",
@@ -432,7 +448,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-location",
@@ -487,7 +504,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-msk",
@@ -542,7 +560,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "amazon-neptune",
@@ -581,7 +600,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "amazon-qbusiness-anonymous",
@@ -644,7 +664,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-redshift",
@@ -675,7 +696,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-timestream-for-influxdb",
@@ -706,7 +728,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-api",
@@ -761,7 +784,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-appsync",
@@ -816,7 +840,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-bedrock-custom-model-import",
@@ -879,7 +904,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-bedrock-data-automation",
@@ -918,7 +944,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-billing-cost-management",
@@ -957,7 +984,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-ccapi",
@@ -1004,7 +1032,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-cfn",
@@ -1059,7 +1088,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-cloudtrail",
@@ -1082,7 +1112,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-cost-explorer",
@@ -1137,7 +1168,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-dataprocessing",
@@ -1168,7 +1200,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-healthomics",
@@ -1199,7 +1232,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-iam",
@@ -1246,7 +1280,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-iot-sitewise",
@@ -1277,7 +1312,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-kb-retrieval-server",
@@ -1308,7 +1344,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "modelcontextprotocol"
   },
   {
     "id": "awslabs-nova-canvas",
@@ -1363,7 +1400,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "aws-pricing",
@@ -1418,7 +1456,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "awslabs-s3-tables",
@@ -1473,7 +1512,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "awslabs"
   },
   {
     "id": "browserbase",
@@ -1512,7 +1552,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "browserbase"
   },
   {
     "id": "hyperbrowser",
@@ -1535,7 +1576,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "hyperbrowserai"
   },
   {
     "id": "playwright",
@@ -1548,7 +1590,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/microsoft/playwright-mcp",
-    "category": "Browser & Scraping"
+    "category": "Browser & Scraping",
+    "provider": "microsoft"
   },
   {
     "id": "scrapegraph",
@@ -1571,7 +1614,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "ScrapeGraphAI"
   },
   {
     "id": "scrapezy",
@@ -1594,7 +1638,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Scrapezy"
   },
   {
     "id": "explorium",
@@ -1617,7 +1662,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "explorium-ai"
   },
   {
     "id": "hackle",
@@ -1640,7 +1686,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "hackle-io"
   },
   {
     "id": "nasdaq-data-link",
@@ -1663,7 +1710,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "stefanoamorelli"
   },
   {
     "id": "osp-marketing-tools",
@@ -1676,7 +1724,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/open-strategy-partners/osp_marketing_tools",
-    "category": "Business & Finance"
+    "category": "Business & Finance",
+    "provider": "open-strategy-partners"
   },
   {
     "id": "quantconnect",
@@ -1710,7 +1759,8 @@
     ],
     "env": {
       "AGENT_NAME": "MCP Server"
-    }
+    },
+    "provider": "QuantConnect"
   },
   {
     "id": "stripe",
@@ -1733,7 +1783,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "stripe"
   },
   {
     "id": "triplewhale",
@@ -1756,7 +1807,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Triple-Whale"
   },
   {
     "id": "zerodha-kite",
@@ -1803,7 +1855,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "anshuljain90"
   },
   {
     "id": "mcp-api-gateway",
@@ -1842,7 +1895,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "rflpazini"
   },
   {
     "id": "atlas-docs",
@@ -1865,7 +1919,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "CartographAI"
   },
   {
     "id": "audiense-insights",
@@ -1904,7 +1959,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "AudienseCo"
   },
   {
     "id": "amazon-bedrock-agentcore",
@@ -1917,7 +1973,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "awslabs"
   },
   {
     "id": "aws-cdk-mcp-server",
@@ -1930,7 +1987,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "awslabs"
   },
   {
     "id": "aws-core-mcp-server",
@@ -1943,7 +2001,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "awslabs"
   },
   {
     "id": "aws-documentation",
@@ -1956,7 +2015,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "awslabs"
   },
   {
     "id": "aws-terraform",
@@ -1969,7 +2029,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "awslabs"
   },
   {
     "id": "bitrefill",
@@ -2000,7 +2061,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "bitrefill"
   },
   {
     "id": "box",
@@ -2031,7 +2093,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "dgageot"
   },
   {
     "id": "buildkite",
@@ -2054,7 +2117,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "buildkite"
   },
   {
     "id": "cdata-connectcloud",
@@ -2085,7 +2149,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "CDataSoftware"
   },
   {
     "id": "circleci",
@@ -2116,7 +2181,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "cmrigney"
   },
   {
     "id": "cloud-run-mcp",
@@ -2132,7 +2198,8 @@
     "category": "Cloud & DevOps",
     "env": {
       "GOOGLE_APPLICATION_CREDENTIALS": "/app/.config/gcloud/application_default_credentials.json"
-    }
+    },
+    "provider": "GoogleCloudPlatform"
   },
   {
     "id": "dart",
@@ -2163,7 +2230,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "its-dart"
   },
   {
     "id": "databutton",
@@ -2176,7 +2244,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/databutton/databutton-mcp",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "databutton"
   },
   {
     "id": "descope",
@@ -2207,7 +2276,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "descope-sample-apps"
   },
   {
     "id": "devhub-cms",
@@ -2246,7 +2316,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "devhub"
   },
   {
     "id": "dockerhub",
@@ -2269,7 +2340,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "docker"
   },
   {
     "id": "edubase",
@@ -2308,7 +2380,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "EduBase"
   },
   {
     "id": "fibery",
@@ -2339,7 +2412,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "Fibery-inc"
   },
   {
     "id": "flexprice",
@@ -2370,7 +2444,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "flexprice"
   },
   {
     "id": "gitlab",
@@ -2401,7 +2476,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "modelcontextprotocol"
   },
   {
     "id": "glif",
@@ -2444,7 +2520,8 @@
           "false"
         ]
       }
-    ]
+    ],
+    "provider": "glifxyz"
   },
   {
     "id": "heroku",
@@ -2467,7 +2544,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "heroku"
   },
   {
     "id": "hostinger-mcp-server",
@@ -2490,7 +2568,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "hostinger"
   },
   {
     "id": "husqvarna-automower",
@@ -2521,7 +2600,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "jeanlaurent"
   },
   {
     "id": "hyperspell",
@@ -2564,7 +2644,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "hyperspell"
   },
   {
     "id": "iaptic",
@@ -2595,7 +2676,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "iaptic"
   },
   {
     "id": "jetbrains",
@@ -2618,7 +2700,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "GannaChernyshova"
   },
   {
     "id": "kagisearch",
@@ -2649,7 +2732,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "kagisearch"
   },
   {
     "id": "keboola-mcp",
@@ -2680,7 +2764,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "keboola"
   },
   {
     "id": "kong",
@@ -2711,7 +2796,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "Kong"
   },
   {
     "id": "lara",
@@ -2742,7 +2828,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "translated"
   },
   {
     "id": "line",
@@ -2773,7 +2860,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "line"
   },
   {
     "id": "multiversx-mx",
@@ -2804,7 +2892,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "multiversx"
   },
   {
     "id": "neo4j",
@@ -2875,7 +2964,8 @@
           "false"
         ]
       }
-    ]
+    ],
+    "provider": "neo4j"
   },
   {
     "id": "neo4j-cloud-aura-api",
@@ -2954,7 +3044,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "neo4j-contrib"
   },
   {
     "id": "neo4j-cypher",
@@ -3093,7 +3184,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "neo4j-contrib"
   },
   {
     "id": "neo4j-data-modeling",
@@ -3156,7 +3248,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "neo4j-contrib"
   },
   {
     "id": "neo4j-memory",
@@ -3251,7 +3344,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "neo4j-contrib"
   },
   {
     "id": "openapi-schema",
@@ -3264,7 +3358,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/slimslenderslacks/mcp-openapi-schema",
-    "category": "Cloud & DevOps"
+    "category": "Cloud & DevOps",
+    "provider": "slimslenderslacks"
   },
   {
     "id": "opik",
@@ -3303,7 +3398,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "comet-ml"
   },
   {
     "id": "oxylabs",
@@ -3334,7 +3430,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "oxylabs"
   },
   {
     "id": "pica",
@@ -3365,7 +3462,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "picahq"
   },
   {
     "id": "pulumi",
@@ -3388,7 +3486,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "pulumi"
   },
   {
     "id": "puppeteer",
@@ -3404,7 +3503,8 @@
     "category": "Cloud & DevOps",
     "env": {
       "DOCKER_CONTAINER": "true"
-    }
+    },
+    "provider": "modelcontextprotocol"
   },
   {
     "id": "razorpay",
@@ -3435,7 +3535,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "razorpay"
   },
   {
     "id": "render",
@@ -3458,7 +3559,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "render-oss"
   },
   {
     "id": "risken",
@@ -3489,7 +3591,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "ca-risken"
   },
   {
     "id": "sequa",
@@ -3520,7 +3623,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "sequa-ai"
   },
   {
     "id": "smartbear",
@@ -3607,7 +3711,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "SmartBear"
   },
   {
     "id": "tembo",
@@ -3630,7 +3735,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "tembo-io"
   },
   {
     "id": "temporal",
@@ -3693,7 +3799,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "GethosTheWalrus"
   },
   {
     "id": "testkube",
@@ -3740,7 +3847,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "kubeshop"
   },
   {
     "id": "text-to-graphql",
@@ -3779,7 +3887,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Arize-ai"
   },
   {
     "id": "tigris",
@@ -3818,7 +3927,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "tigrisdata"
   },
   {
     "id": "webflow",
@@ -3841,7 +3951,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "slimslenderslacks"
   },
   {
     "id": "mcp-discord",
@@ -3864,7 +3975,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "slimslenderslacks"
   },
   {
     "id": "mcp-reddit",
@@ -3911,7 +4023,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "KrishnaRandad2023"
   },
   {
     "id": "resend",
@@ -3950,7 +4063,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "slimslenderslacks"
   },
   {
     "id": "securenote-link-mcp-server",
@@ -3963,7 +4077,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/jackalterman/securenote-link-MCP-server",
-    "category": "Communication"
+    "category": "Communication",
+    "provider": "jackalterman"
   },
   {
     "id": "slack",
@@ -4002,7 +4117,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "modelcontextprotocol"
   },
   {
     "id": "astra-db",
@@ -4033,7 +4149,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "datastax"
   },
   {
     "id": "atlan",
@@ -4064,7 +4181,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "atlanhq"
   },
   {
     "id": "chroma",
@@ -4087,7 +4205,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "chroma-core"
   },
   {
     "id": "cockroachdb",
@@ -4174,7 +4293,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "amineelkouhen"
   },
   {
     "id": "couchbase",
@@ -4229,7 +4349,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "Couchbase-Ecosystem"
   },
   {
     "id": "dreamfactory-mcp",
@@ -4260,7 +4381,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "dreamfactorysoftware"
   },
   {
     "id": "maestro-mcp-server",
@@ -4283,7 +4405,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "maestro-org"
   },
   {
     "id": "metabase",
@@ -4330,7 +4453,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "easecloudio"
   },
   {
     "id": "mongodb",
@@ -4353,7 +4477,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "mongodb-js"
   },
   {
     "id": "neon",
@@ -4376,7 +4501,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "neondatabase-labs"
   },
   {
     "id": "clickhouse",
@@ -4455,7 +4581,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "ClickHouse"
   },
   {
     "id": "oracle",
@@ -4494,7 +4621,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "samscarrow"
   },
   {
     "id": "pinecone",
@@ -4525,7 +4653,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "pinecone-io"
   },
   {
     "id": "redis",
@@ -4636,7 +4765,8 @@
           "false"
         ]
       }
-    ]
+    ],
+    "provider": "redis"
   },
   {
     "id": "redis-cloud",
@@ -4667,7 +4797,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "redis"
   },
   {
     "id": "schemacrawler-ai",
@@ -4754,7 +4885,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "schemacrawler"
   },
   {
     "id": "singlestore",
@@ -4777,7 +4909,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "singlestore-labs"
   },
   {
     "id": "sqlite-mcp-server",
@@ -4790,7 +4923,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/neverinfamous/sqlite-mcp-server",
-    "category": "Data & Databases"
+    "category": "Data & Databases",
+    "provider": "neverinfamous"
   },
   {
     "id": "vizro",
@@ -4803,7 +4937,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/mckinsey/vizro",
-    "category": "Data & Databases"
+    "category": "Data & Databases",
+    "provider": "mckinsey"
   },
   {
     "id": "e2b",
@@ -4826,7 +4961,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "e2b-dev"
   },
   {
     "id": "effect-mcp",
@@ -4839,7 +4975,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/tim-smart/effect-mcp",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "tim-smart"
   },
   {
     "id": "github-chat",
@@ -4862,7 +4999,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "AsyncFuncAI"
   },
   {
     "id": "next-devtools-mcp",
@@ -4875,7 +5013,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/next-devtools-mcp",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "kgprs"
   },
   {
     "id": "node-code-sandbox",
@@ -4888,7 +5027,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/alfonsograziano/node-code-sandbox-mcp",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "alfonsograziano"
   },
   {
     "id": "npm-sentinel",
@@ -4901,7 +5041,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/Nekzus/npm-sentinel-mcp",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "Nekzus"
   },
   {
     "id": "postman",
@@ -4924,7 +5065,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "postmanlabs"
   },
   {
     "id": "pref-editor",
@@ -4937,7 +5079,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/charlesmuchene/pref-editor-mcp-server",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "charlesmuchene"
   },
   {
     "id": "mcp-code-interpreter",
@@ -4950,7 +5093,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/akuadane/mcp-code-interpreter",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "akuadane"
   },
   {
     "id": "mcp-python-refactoring",
@@ -4963,7 +5107,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/slamer59/mcp-python-refactoring",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "slamer59"
   },
   {
     "id": "ref",
@@ -4986,7 +5131,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "ref-tools"
   },
   {
     "id": "ros2",
@@ -4999,7 +5145,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/wise-vision/mcp_server_ros_2",
-    "category": "Dev & Code"
+    "category": "Dev & Code",
+    "provider": "wise-vision"
   },
   {
     "id": "zen",
@@ -5046,7 +5193,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "beehiveinnovations"
   },
   {
     "id": "unreal-engine-mcp-server",
@@ -5099,7 +5247,8 @@
           "error"
         ]
       }
-    ]
+    ],
+    "provider": "ChiR24"
   },
   {
     "id": "openbnb-airbnb",
@@ -5112,7 +5261,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/openbnb-org/mcp-server-airbnb",
-    "category": "Maps & Travel"
+    "category": "Maps & Travel",
+    "provider": "openbnb-org"
   },
   {
     "id": "google-flights",
@@ -5125,7 +5275,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/Google-Flights-MCP-Server",
-    "category": "Maps & Travel"
+    "category": "Maps & Travel",
+    "provider": "kgprs"
   },
   {
     "id": "mapbox",
@@ -5148,7 +5299,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "mapbox"
   },
   {
     "id": "openweather",
@@ -5171,7 +5323,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "mschneider82"
   },
   {
     "id": "everart",
@@ -5194,7 +5347,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "modelcontextprotocol"
   },
   {
     "id": "gyazo",
@@ -5217,7 +5371,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "nota"
   },
   {
     "id": "handwriting-ocr",
@@ -5240,7 +5395,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Handwriting-OCR"
   },
   {
     "id": "minecraft-wiki",
@@ -5253,7 +5409,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/L3-N0X/Minecraft-Wiki-MCP",
-    "category": "Media"
+    "category": "Media",
+    "provider": "L3-N0X"
   },
   {
     "id": "schogini-mcp-image-border",
@@ -5266,7 +5423,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/schogini/schogini_mcp_image_border",
-    "category": "Media"
+    "category": "Media",
+    "provider": "schogini"
   },
   {
     "id": "youtube-transcript",
@@ -5279,7 +5437,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/jkawamoto/mcp-youtube-transcript",
-    "category": "Media"
+    "category": "Media",
+    "provider": "jkawamoto"
   },
   {
     "id": "dynatrace-mcp-server",
@@ -5318,7 +5477,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "dynatrace-oss"
   },
   {
     "id": "grafana",
@@ -5349,7 +5509,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "grafana"
   },
   {
     "id": "suzieq",
@@ -5380,7 +5541,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "PovedaAqui"
   },
   {
     "id": "thingsboard",
@@ -5419,7 +5581,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "thingsboard"
   },
   {
     "id": "mcp-hackernews",
@@ -5432,7 +5595,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/AayushBahukhandi/hackernews-mcp",
-    "category": "News"
+    "category": "News",
+    "provider": "AayushBahukhandi"
   },
   {
     "id": "airtable-mcp-server",
@@ -5463,7 +5627,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "domdomegg"
   },
   {
     "id": "apify-mcp-server",
@@ -5494,7 +5659,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "apify"
   },
   {
     "id": "atlassian",
@@ -5573,7 +5739,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "sooperset"
   },
   {
     "id": "camunda",
@@ -5596,7 +5763,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "lepoco"
   },
   {
     "id": "charmhealth-mcp-server",
@@ -5667,7 +5835,8 @@
         "required": false,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "CharmHealth"
   },
   {
     "id": "n8n",
@@ -5698,7 +5867,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "czlonkowski"
   },
   {
     "id": "notion",
@@ -5721,7 +5891,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "makenotion"
   },
   {
     "id": "obsidian",
@@ -5747,7 +5918,8 @@
     ],
     "env": {
       "OBSIDIAN_HOST": "host.docker.internal"
-    }
+    },
+    "provider": "docker"
   },
   {
     "id": "onlyoffice-docspace",
@@ -5778,7 +5950,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "ONLYOFFICE"
   },
   {
     "id": "openapi",
@@ -5801,7 +5974,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "lepoco"
   },
   {
     "id": "pluggedin-mcp-proxy",
@@ -5832,7 +6006,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "VeriTeknik"
   },
   {
     "id": "pomodash",
@@ -5858,7 +6033,8 @@
     ],
     "env": {
       "POMODASH_API_URL": "https://mcp.pomodash.mindsnapz.de"
-    }
+    },
+    "provider": "dannyytv"
   },
   {
     "id": "rust-mcp-filesystem",
@@ -5897,7 +6073,8 @@
           "false"
         ]
       }
-    ]
+    ],
+    "provider": "rust-mcp-stack"
   },
   {
     "id": "sonarqube",
@@ -5936,7 +6113,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "SonarSource"
   },
   {
     "id": "teamwork",
@@ -5959,7 +6137,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "teamwork"
   },
   {
     "id": "veyrax",
@@ -5982,7 +6161,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "VeyraX"
   },
   {
     "id": "brave",
@@ -6008,7 +6188,8 @@
     ],
     "env": {
       "BRAVE_MCP_TRANSPORT": "stdio"
-    }
+    },
+    "provider": "brave"
   },
   {
     "id": "dappier",
@@ -6031,7 +6212,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "dappierai"
   },
   {
     "id": "elasticsearch",
@@ -6062,7 +6244,8 @@
         "required": true,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "elastic"
   },
   {
     "id": "exa",
@@ -6085,7 +6268,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "exa-labs"
   },
   {
     "id": "firecrawl",
@@ -6164,7 +6348,8 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "mendableai"
   },
   {
     "id": "needle-mcp",
@@ -6187,7 +6372,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "needle-ai"
   },
   {
     "id": "perplexity-ask",
@@ -6210,7 +6396,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "ppl-ai"
   },
   {
     "id": "tavily",
@@ -6233,7 +6420,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "tavily-ai"
   },
   {
     "id": "beagle-security",
@@ -6256,7 +6444,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "beaglesecurity"
   },
   {
     "id": "cylera-mcp-server",
@@ -6295,7 +6484,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Cylera"
   },
   {
     "id": "firewalla-mcp-server",
@@ -6345,7 +6535,8 @@
       "MCP_CACHE_TTL": "300",
       "MCP_RATE_LIMIT_WINDOW": "60000",
       "MCP_RATE_LIMIT_MAX_REQUESTS": "100"
-    }
+    },
+    "provider": "amittell"
   },
   {
     "id": "ramparts",
@@ -6361,7 +6552,8 @@
     "category": "Security",
     "env": {
       "RUST_LOG": "info"
-    }
+    },
+    "provider": "getjavelin"
   },
   {
     "id": "sentry",
@@ -6384,7 +6576,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "modelcontextprotocol"
   },
   {
     "id": "cyreslab-ai-shodan",
@@ -6407,7 +6600,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "Cyreslab-AI"
   },
   {
     "id": "stackhawk",
@@ -6430,7 +6624,8 @@
         "required": true,
         "binds": "secretKey"
       }
-    ]
+    ],
+    "provider": "stackhawk"
   },
   {
     "id": "vuln-nist-mcp-server",
@@ -6443,7 +6638,8 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/HaroldFinchIFT/vuln-nist-mcp-server",
-    "category": "Security"
+    "category": "Security",
+    "provider": "HaroldFinchIFT"
   },
   {
     "id": "zscaler-mcp-server",
@@ -6538,6 +6734,7 @@
         "required": false,
         "binds": "envVar"
       }
-    ]
+    ],
+    "provider": "zscaler"
   }
 ]
