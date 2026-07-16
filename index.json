@@ -1,21 +1,8 @@
 [
   {
-    "id": "amazon-bedrock-agentcore",
-    "name": "AWS Bedrock AgentCore",
-    "description": "Documentation on AgentCore platform services.",
-    "iconSystemName": "sparkles",
-    "runtime": "docker",
-    "image": "mcp/amazon-bedrock-agentcore-mcp-server:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/awslabs/mcp",
-    "category": "AI"
-  },
-  {
     "id": "gemini-api-docs",
     "name": "Gemini API Docs",
-    "description": "Provides tools to search and retrieve Google Gemini API documentation.",
+    "description": "Search and retrieve Google Gemini API documentation.",
     "iconSystemName": "sparkles",
     "runtime": "docker",
     "image": "mcp/gemini-api-docs-mcp:latest",
@@ -23,25 +10,35 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/gemini-api-docs-mcp",
-    "category": "AI"
+    "category": "AI & Knowledge"
   },
   {
-    "id": "memory",
-    "name": "Memory (Reference)",
-    "description": "Knowledge graph-based persistent memory system.",
+    "id": "hdx",
+    "name": "Humanitarian Data Exchange",
+    "description": "Access humanitarian datasets from the HDX platform.",
     "iconSystemName": "sparkles",
     "runtime": "docker",
-    "image": "mcp/memory:latest",
+    "image": "mcp/hdx:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "AI"
+    "docsURL": "https://github.com/dividor/hdx-mcp",
+    "category": "AI & Knowledge",
+    "fields": [
+      {
+        "id": "HDX_APP_IDENTIFIER",
+        "kind": "secret",
+        "label": "Hdx App Identifier",
+        "help": "Required by hdx. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
   },
   {
     "id": "omi",
     "name": "Omi",
-    "description": "A Model Context Protocol server for Omi interaction and automation. This server provides tools to read, search, and manipulate Memories and Conversations.",
+    "description": "Interact with and automate the Omi wearable AI.",
     "iconSystemName": "sparkles",
     "runtime": "docker",
     "image": "mcp/omi:latest",
@@ -49,7 +46,7 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/BasedHardware/omi",
-    "category": "AI",
+    "category": "AI & Knowledge",
     "fields": [
       {
         "id": "OMI_API_KEY",
@@ -62,9 +59,22 @@
     ]
   },
   {
+    "id": "paper-search",
+    "name": "Paper Search",
+    "description": "Search academic papers across arXiv, PubMed and more.",
+    "iconSystemName": "sparkles",
+    "runtime": "docker",
+    "image": "mcp/paper-search:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/openags/paper-search-mcp",
+    "category": "AI & Knowledge"
+  },
+  {
     "id": "pia",
     "name": "Program Integrity Alliance",
-    "description": "An MCP server to help make U.S. Government open datasets AI-friendly.",
+    "description": "Make U.S. government open datasets AI-friendly.",
     "iconSystemName": "sparkles",
     "runtime": "docker",
     "image": "mcp/pia:latest",
@@ -72,7 +82,7 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/Program-Integrity-Alliance/pia-mcp-local",
-    "category": "AI",
+    "category": "AI & Knowledge",
     "fields": [
       {
         "id": "PIA_API_KEY",
@@ -85,266 +95,36 @@
     ]
   },
   {
-    "id": "sequentialthinking",
-    "name": "Sequential Thinking (Reference)",
-    "description": "Dynamic and reflective problem-solving through thought sequences.",
+    "id": "wikipedia-mcp",
+    "name": "Wikipedia",
+    "description": "Search Wikipedia and read article content and summaries.",
     "iconSystemName": "sparkles",
     "runtime": "docker",
-    "image": "mcp/sequentialthinking:latest",
+    "image": "mcp/wikipedia-mcp:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "AI"
+    "docsURL": "https://github.com/Rudra-ravi/wikipedia-mcp",
+    "category": "AI & Knowledge"
   },
   {
-    "id": "securenote-link-mcp-server",
-    "name": "Securenote.link",
-    "description": "SecureNote.link MCP Server - allowing AI agents to securely share sensitive information through end-to-end encrypted notes.",
-    "iconSystemName": "bubble.left.and.bubble.right",
+    "id": "wolfram-alpha",
+    "name": "WolframAlpha",
+    "description": "Computational answers, math and curated facts from Wolfram Alpha.",
+    "iconSystemName": "sparkles",
     "runtime": "docker",
-    "image": "mcp/securenote-link-mcp-server:latest",
+    "image": "mcp/wolfram-alpha:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/jackalterman/securenote-link-MCP-server",
-    "category": "Communication"
-  },
-  {
-    "id": "vizro",
-    "name": "Vizro",
-    "description": "provides tools and templates to create a functioning Vizro chart or dashboard step by step",
-    "iconSystemName": "chart.bar",
-    "runtime": "docker",
-    "image": "mcp/vizro:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/mckinsey/vizro",
-    "category": "Data"
-  },
-  {
-    "id": "atlan",
-    "name": "Atlan",
-    "description": "MCP server for interacting with Atlan services including asset search, updates, and lineage traversal for comprehensive data governance and discovery.",
-    "iconSystemName": "cylinder.split.1x2",
-    "runtime": "docker",
-    "image": "mcp/atlan:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/atlanhq/agent-toolkit",
-    "category": "Database",
+    "docsURL": "https://github.com/SecretiveShell/MCP-wolfram-alpha",
+    "category": "AI & Knowledge",
     "fields": [
       {
-        "id": "ATLAN_API_KEY",
+        "id": "WOLFRAM_API_KEY",
         "kind": "secret",
-        "label": "Atlan Api Key",
-        "help": "Required by atlan. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      },
-      {
-        "id": "ATLAN_BASE_URL",
-        "kind": "secret",
-        "label": "Atlan Base Url",
-        "help": "Required by atlan. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "mongodb",
-    "name": "MongoDB",
-    "description": "MongoDB",
-    "iconSystemName": "cylinder.split.1x2",
-    "runtime": "docker",
-    "image": "mcp/mongodb:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/mongodb-js/mongodb-mcp-server",
-    "category": "Database",
-    "fields": [
-      {
-        "id": "MDB_MCP_CONNECTION_STRING",
-        "kind": "secret",
-        "label": "Mdb Mcp Connection String",
-        "help": "Required by mongodb. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "neon",
-    "name": "Neon",
-    "description": "Neon",
-    "iconSystemName": "cylinder.split.1x2",
-    "runtime": "docker",
-    "image": "mcp/neon:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/neondatabase-labs/mcp-server-neon",
-    "category": "Database",
-    "fields": [
-      {
-        "id": "NEON_API_KEY",
-        "kind": "secret",
-        "label": "Neon Api Key",
-        "help": "Required by neon. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "singlestore",
-    "name": "Singlestore",
-    "description": "Singlestore",
-    "iconSystemName": "cylinder.split.1x2",
-    "runtime": "docker",
-    "image": "mcp/singlestore:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/singlestore-labs/mcp-server-singlestore",
-    "category": "Database",
-    "fields": [
-      {
-        "id": "MCP_API_KEY",
-        "kind": "secret",
-        "label": "Mcp Api Key",
-        "help": "Required by singlestore. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "sqlite",
-    "name": "SQLite (Archived)",
-    "description": "Database interaction and business intelligence capabilities.",
-    "iconSystemName": "cylinder.split.1x2",
-    "runtime": "docker",
-    "image": "mcp/sqlite:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "Database"
-  },
-  {
-    "id": "sqlite-mcp-server",
-    "name": "SQLite",
-    "description": "The SQLite MCP Server transforms SQLite into a powerful, AI-ready database engine. It combines standard relational operations with advanced analytics, text and vector search, geospatial capabilities, and intelligent workflow automation. By layering business intelligence tools, s\u2026",
-    "iconSystemName": "cylinder.split.1x2",
-    "runtime": "docker",
-    "image": "mcp/sqlite-mcp-server:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/neverinfamous/sqlite-mcp-server",
-    "category": "Database"
-  },
-  {
-    "id": "mcp-python-refactoring",
-    "name": "Python Refactoring Assistant",
-    "description": "Educational Python refactoring assistant that provides guided suggestions for AI assistants.",
-    "iconSystemName": "chevron.left.forwardslash.chevron.right",
-    "runtime": "docker",
-    "image": "mcp/mcp-python-refactoring:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/slamer59/mcp-python-refactoring",
-    "category": "Dev"
-  },
-  {
-    "id": "next-devtools-mcp",
-    "name": "Next.js DevTools",
-    "description": "next-devtools-mcp is a Model Context Protocol (MCP) server that provides Next.js development tools and utilities for AI coding assistants.",
-    "iconSystemName": "chevron.left.forwardslash.chevron.right",
-    "runtime": "docker",
-    "image": "mcp/next-devtools-mcp:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/kgprs/next-devtools-mcp",
-    "category": "Dev"
-  },
-  {
-    "id": "aws-cdk-mcp-server",
-    "name": "AWS CDK",
-    "description": "AWS Cloud Development Kit (CDK) best practices, infrastructure as code patterns, and security compliance with CDK Nag.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/aws-cdk-mcp-server:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/awslabs/mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "aws-core-mcp-server",
-    "name": "AWS Core",
-    "description": "Starting point for using the awslabs MCP servers.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/aws-core-mcp-server:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/awslabs/mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "aws-documentation",
-    "name": "AWS Documentation",
-    "description": "Tools to access AWS documentation, search for content, and get recommendations.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/aws-documentation:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/awslabs/mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "aws-terraform",
-    "name": "AWS Terraform",
-    "description": "Terraform on AWS best practices, infrastructure as code patterns, and security compliance with Checkov",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/aws-terraform:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/awslabs/mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "beagle-security",
-    "name": "Beagle Security",
-    "description": "Connects with the Beagle Security backend using a user token to manage applications, run automated security tests, track vulnerabilities across environments, and gain intelligence from Application and API vulnerability data.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/beagle-security-mcp-server:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/beaglesecurity/beagle-security-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "BEAGLE_SECURITY_API_TOKEN",
-        "kind": "secret",
-        "label": "Beagle Security Api Token",
-        "help": "Required by beagle-security. Stored in your Keychain, never on disk.",
+        "label": "Wolfram Api Key",
+        "help": "Required by wolfram-alpha. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
@@ -353,15 +133,15 @@
   {
     "id": "browserbase",
     "name": "Browserbase",
-    "description": "Allow LLMs to control a browser with Browserbase and Stagehand for AI-powered web automation, intelligent data extraction, and screenshot capture.",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Run and control a cloud browser for AI automation via Browserbase.",
+    "iconSystemName": "cursorarrow.rays",
     "runtime": "docker",
     "image": "mcp/browserbase:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/browserbase/mcp-server-browserbase",
-    "category": "DevOps",
+    "category": "Browser & Scraping",
     "fields": [
       {
         "id": "BROWSERBASE_API_KEY",
@@ -390,378 +170,17 @@
     ]
   },
   {
-    "id": "buildkite",
-    "name": "Buildkite",
-    "description": "Buildkite MCP lets agents interact with Buildkite Builds, Jobs, Logs, Packages and Test Suites",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/buildkite:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/buildkite/buildkite-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "BUILDKITE_API_TOKEN",
-        "kind": "secret",
-        "label": "Buildkite Api Token",
-        "help": "Required by buildkite. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "chroma",
-    "name": "Chroma",
-    "description": "Chroma",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/chroma:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/chroma-core/chroma-mcp",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "CHROMA_API_KEY",
-        "kind": "secret",
-        "label": "Chroma Api Key",
-        "help": "Required by chroma. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "cyreslab-ai-shodan",
-    "name": "Shodan",
-    "description": "Shodan",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/cyreslab-ai-shodan:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/Cyreslab-AI/shodan-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "SHODAN_API_KEY",
-        "kind": "secret",
-        "label": "Shodan Api Key",
-        "help": "Required by cyreslab-ai-shodan. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "dappier",
-    "name": "Dappier",
-    "description": "Dappier",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/dappier:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/dappierai/dappier-mcp",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "DAPPIER_API_KEY",
-        "kind": "secret",
-        "label": "Dappier Api Key",
-        "help": "Required by dappier. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "databutton",
-    "name": "Databutton",
-    "description": "Databutton",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/databutton:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/databutton/databutton-mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "duckduckgo",
-    "name": "Private Web Search",
-    "description": "Community-maintained server for DuckDuckGo search. Not published by or affiliated with DuckDuckGo.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/duckduckgo:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/nickclyde/duckduckgo-mcp-server",
-    "category": "DevOps"
-  },
-  {
-    "id": "e2b",
-    "name": "E2B",
-    "description": "E2B",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/e2b:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/e2b-dev/mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "E2B_API_KEY",
-        "kind": "secret",
-        "label": "E2B Api Key",
-        "help": "Required by e2b. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "fetch",
-    "name": "Fetch (Reference)",
-    "description": "Fetches a URL from the internet and extracts its contents as markdown",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/fetch:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "DevOps"
-  },
-  {
-    "id": "github",
-    "name": "GitHub (Archived)",
-    "description": "Tools for interacting with the GitHub API, enabling file operations, repository management, search functionality, and more.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/github:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "GITHUB_PERSONAL_ACCESS_TOKEN",
-        "kind": "secret",
-        "label": "Github Personal Access Token",
-        "help": "Required by github. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "github-chat",
-    "name": "GitHub Chat",
-    "description": "GitHub Chat",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/github-chat:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/AsyncFuncAI/github-chat-mcp",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "GITHUB_API_KEY",
-        "kind": "secret",
-        "label": "Github Api Key",
-        "help": "Required by github-chat. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "google-maps",
-    "name": "Google Maps (Archived)",
-    "description": "Tools for interacting with the Google Maps API.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/google-maps:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "GOOGLE_MAPS_API_KEY",
-        "kind": "secret",
-        "label": "Google Maps Api Key",
-        "help": "Required by google-maps. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "google-maps-comprehensive",
-    "name": "Google Maps Comprehensive",
-    "description": "Complete Google Maps integration with 8 tools including geocoding, places search, directions, elevation data, and more using Google's latest APIs.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/google-maps-comprehensive:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/vicpeacock/google-maps-comprehensive-mcp",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "GOOGLE_MAPS_API_KEY",
-        "kind": "secret",
-        "label": "Google Maps Api Key",
-        "help": "Google Maps API key with Places API, Routes API, Geocoding API, and Elevation API enabled",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "gyazo",
-    "name": "Gyazo",
-    "description": "Gyazo",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/gyazo:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/nota/gyazo-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "GYAZO_ACCESS_TOKEN",
-        "kind": "secret",
-        "label": "Gyazo Access Token",
-        "help": "Required by gyazo. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "hackle",
-    "name": "Hackle",
-    "description": "Hackle",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/hackle:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/hackle-io/hackle-mcp",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "API_KEY",
-        "kind": "secret",
-        "label": "Api Key",
-        "help": "Required by hackle. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "handwriting-ocr",
-    "name": "Handwriting OCR",
-    "description": "Handwriting OCR",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/handwriting-ocr:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/Handwriting-OCR/handwriting-ocr-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "API_TOKEN",
-        "kind": "secret",
-        "label": "Api Token",
-        "help": "Required by handwriting-ocr. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "heroku",
-    "name": "Heroku",
-    "description": "Heroku",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/heroku:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/heroku/heroku-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "HEROKU_API_KEY",
-        "kind": "secret",
-        "label": "Heroku Api Key",
-        "help": "Required by heroku. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "hostinger-mcp-server",
-    "name": "Hostinger API",
-    "description": "Interact with Hostinger services over the Hostinger API.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/api-mcp-server:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/hostinger/api-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "APITOKEN",
-        "kind": "secret",
-        "label": "Apitoken",
-        "help": "Required by hostinger-mcp-server. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
     "id": "hyperbrowser",
     "name": "Hyperbrowser",
-    "description": "Hyperbrowser",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Cloud browsers for scraping, crawling and automation at scale.",
+    "iconSystemName": "cursorarrow.rays",
     "runtime": "docker",
     "image": "mcp/hyperbrowser:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/hyperbrowserai/mcp",
-    "category": "DevOps",
+    "category": "Browser & Scraping",
     "fields": [
       {
         "id": "HYPERBROWSER_API_KEY",
@@ -774,256 +193,30 @@
     ]
   },
   {
-    "id": "mapbox-devkit",
-    "name": "Mapbox Developer",
-    "description": "Direct access to Mapbox developer APIs for AI assistants. Enables style management, token management, GeoJSON preview, and other developer tools for building Mapbox applications.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/mapbox-devkit:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/mapbox/mcp-devkit-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "MAPBOX_ACCESS_TOKEN",
-        "kind": "secret",
-        "label": "Mapbox Access Token",
-        "help": "Required by mapbox-devkit. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "mcp-discord",
-    "name": "Discord",
-    "description": "Interact with the Discord platform.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/mcp-discord:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/slimslenderslacks/mcp-discord",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "DISCORD_TOKEN",
-        "kind": "secret",
-        "label": "Discord Token",
-        "help": "You can obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications)",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "node-code-sandbox",
-    "name": "Node.js Sandbox",
-    "description": "Node.js Sandbox",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/node-code-sandbox:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/alfonsograziano/node-code-sandbox-mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "npm-sentinel",
-    "name": "NPM Sentinel",
-    "description": "MCP server that enables intelligent NPM package analysis powered by AI.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/npm-sentinel:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/Nekzus/npm-sentinel-mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "osp-marketing-tools",
-    "name": "OSP Marketing Tools",
-    "description": "OSP Marketing Tools",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/osp_marketing_tools:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/open-strategy-partners/osp_marketing_tools",
-    "category": "DevOps"
-  },
-  {
-    "id": "perplexity-ask",
-    "name": "Perplexity",
-    "description": "Connector for Perplexity API, to enable real-time, web-wide research.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/perplexity-ask:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/ppl-ai/modelcontextprotocol",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "PERPLEXITY_API_KEY",
-        "kind": "secret",
-        "label": "Perplexity Api Key",
-        "help": "See the [Get a Sonar API key](https://github.com/perplexityai/modelcontextprotocol/tree/f0a927c250e04b389ff5c34f6a2a85ad625668e8?tab=readme-ov-file#step-2-get-a-sonar-api-key) section in the Perplexi\u2026",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
     "id": "playwright",
     "name": "Playwright",
-    "description": "Playwright",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Drive a real browser (Playwright) to navigate, act on and read pages.",
+    "iconSystemName": "cursorarrow.rays",
     "runtime": "docker",
     "image": "mcp/playwright:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/microsoft/playwright-mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "postman",
-    "name": "Postman",
-    "description": "Postman's MCP server connects AI agents, assistants, and chatbots directly to your APIs on Postman. Use natural language to prompt AI to automate work across your Postman collections, environments, workspaces, and more.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/postman:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/postmanlabs/postman-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "POSTMAN_API_KEY",
-        "kind": "secret",
-        "label": "Postman Api Key",
-        "help": "Required by postman. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "pref-editor",
-    "name": "Pref Editor",
-    "description": "Pref Editor is a tool for viewing and editing Android app preferences during development.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/pref-editor:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/charlesmuchene/pref-editor-mcp-server",
-    "category": "DevOps"
-  },
-  {
-    "id": "pulumi",
-    "name": "Pulumi",
-    "description": "Pulumi MCP server enables AI-powered coding assistants to help you codify cloud architectures and get diffs for infrastructure changes right in your development environment.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/pulumi:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/pulumi/mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "PULUMI_ACCESS_TOKEN",
-        "kind": "secret",
-        "label": "Pulumi Access Token",
-        "help": "Required by pulumi. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "ref",
-    "name": "Ref - Up-To-Date Docs",
-    "description": "Ref powerful search tool connets your coding tools with documentation context. It includes an up-to-date index of public documentation and it can ingest your private documentation (eg. GitHub repos, PDFs) as well.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/ref-tools-mcp:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/ref-tools/ref-tools-mcp",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "REF_API_KEY",
-        "kind": "secret",
-        "label": "Ref Api Key",
-        "help": "Required by ref. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "render",
-    "name": "Render",
-    "description": "Interact with your Render resources via LLMs.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/render:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/render-oss/render-mcp-server",
-    "category": "DevOps",
-    "fields": [
-      {
-        "id": "RENDER_API_KEY",
-        "kind": "secret",
-        "label": "Render Api Key",
-        "help": "Required by render. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "ros2",
-    "name": "WiseVision ROS2",
-    "description": "Python server implementing Model Context Protocol (MCP) for ROS2.",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/ros2:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/wise-vision/mcp_server_ros_2",
-    "category": "DevOps"
+    "category": "Browser & Scraping"
   },
   {
     "id": "scrapegraph",
     "name": "ScrapeGraph",
-    "description": "ScrapeGraph",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Turn any website into structured data with ScrapeGraph.",
+    "iconSystemName": "cursorarrow.rays",
     "runtime": "docker",
     "image": "mcp/scrapegraph:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/ScrapeGraphAI/scrapegraph-mcp",
-    "category": "DevOps",
+    "category": "Browser & Scraping",
     "fields": [
       {
         "id": "SGAI_API_KEY",
@@ -1038,15 +231,15 @@
   {
     "id": "scrapezy",
     "name": "Scrapezy",
-    "description": "A Model Context Protocol server for Scrapezy that enables AI models to extract structured data from websites.",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Extract structured data from any website.",
+    "iconSystemName": "cursorarrow.rays",
     "runtime": "docker",
     "image": "mcp/scrapezy:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/Scrapezy/mcp",
-    "category": "DevOps",
+    "category": "Browser & Scraping",
     "fields": [
       {
         "id": "SCRAPEZY_API_KEY",
@@ -1059,99 +252,122 @@
     ]
   },
   {
-    "id": "sentry",
-    "name": "Sentry (Archived)",
-    "description": "A Model Context Protocol server for retrieving and analyzing issues from Sentry.io. This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
-    "iconSystemName": "wrench.and.screwdriver",
+    "id": "explorium",
+    "name": "Explorium B2B Data",
+    "description": "Company, contact and B2B firmographic data from Explorium.",
+    "iconSystemName": "dollarsign.circle",
     "runtime": "docker",
-    "image": "mcp/sentry:latest",
+    "image": "mcp/explorium:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "DevOps",
+    "docsURL": "https://github.com/explorium-ai/mcp-explorium",
+    "category": "Business & Finance",
     "fields": [
       {
-        "id": "SENTRY_AUTH_TOKEN",
+        "id": "API_ACCESS_TOKEN",
         "kind": "secret",
-        "label": "Sentry Auth Token",
-        "help": "Required by sentry. Stored in your Keychain, never on disk.",
+        "label": "Api Access Token",
+        "help": "Required by explorium. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
-    "id": "stackhawk",
-    "name": "StackHawk",
-    "description": "A Model Context Protocol (MCP) server for integrating with StackHawk's security scanning platform. Provides security analytics, YAML configuration management, sensitive data/threat surface analysis, and anti-hallucination tools for LLMs.",
-    "iconSystemName": "wrench.and.screwdriver",
+    "id": "hackle",
+    "name": "Hackle",
+    "description": "Feature flags and A/B experiment data from Hackle.",
+    "iconSystemName": "dollarsign.circle",
     "runtime": "docker",
-    "image": "mcp/stackhawk:latest",
+    "image": "mcp/hackle:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/stackhawk/stackhawk-mcp",
-    "category": "DevOps",
+    "docsURL": "https://github.com/hackle-io/hackle-mcp",
+    "category": "Business & Finance",
     "fields": [
       {
-        "id": "STACKHAWK_API_KEY",
+        "id": "API_KEY",
         "kind": "secret",
-        "label": "Stackhawk Api Key",
-        "help": "Required by stackhawk. Stored in your Keychain, never on disk.",
+        "label": "Api Key",
+        "help": "Required by hackle. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
-    "id": "tembo",
-    "name": "Tembo",
-    "description": "Tembo",
-    "iconSystemName": "wrench.and.screwdriver",
+    "id": "nasdaq-data-link",
+    "name": "Nasdaq Data Link",
+    "description": "Pull financial and economic data feeds from Nasdaq Data Link.",
+    "iconSystemName": "dollarsign.circle",
     "runtime": "docker",
-    "image": "mcp/tembo:latest",
+    "image": "mcp/nasdaq-data-link:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/tembo-io/mcp-server-tembo",
-    "category": "DevOps",
+    "docsURL": "https://github.com/stefanoamorelli/nasdaq-data-link-mcp",
+    "category": "Business & Finance",
     "fields": [
       {
-        "id": "TEMBO_API_KEY",
+        "id": "NASDAQ_DATA_LINK_API_KEY",
         "kind": "secret",
-        "label": "Tembo Api Key",
-        "help": "Required by tembo. Stored in your Keychain, never on disk.",
+        "label": "Nasdaq Data Link Api Key",
+        "help": "Required by nasdaq-data-link. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
-    "id": "time",
-    "name": "Time (Reference)",
-    "description": "Time and timezone conversion capabilities",
-    "iconSystemName": "wrench.and.screwdriver",
+    "id": "osp-marketing-tools",
+    "name": "OSP Marketing Tools",
+    "description": "Marketing content and product-messaging helpers (OSP).",
+    "iconSystemName": "dollarsign.circle",
     "runtime": "docker",
-    "image": "mcp/time:latest",
+    "image": "mcp/osp_marketing_tools:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "DevOps"
+    "docsURL": "https://github.com/open-strategy-partners/osp_marketing_tools",
+    "category": "Business & Finance"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "description": "Manage payments, customers and subscriptions via the Stripe API.",
+    "iconSystemName": "dollarsign.circle",
+    "runtime": "docker",
+    "image": "mcp/stripe:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/stripe/agent-toolkit",
+    "category": "Business & Finance",
+    "fields": [
+      {
+        "id": "STRIPE_SECRET_KEY",
+        "kind": "secret",
+        "label": "Stripe Secret Key",
+        "help": "Required by stripe. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
   },
   {
     "id": "triplewhale",
     "name": "Triplewhale",
-    "description": "Triplewhale",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "E-commerce analytics and attribution from Triple Whale.",
+    "iconSystemName": "dollarsign.circle",
     "runtime": "docker",
     "image": "mcp/triplewhale:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/Triple-Whale/mcp-server-triplewhale",
-    "category": "DevOps",
+    "category": "Business & Finance",
     "fields": [
       {
         "id": "TRIPLEWHALE_API_KEY",
@@ -1164,23 +380,216 @@
     ]
   },
   {
-    "id": "veyrax",
-    "name": "VeyraX",
-    "description": "VeyraX MCP is the only connection you need to access all your tools in any MCP-compatible environment.",
-    "iconSystemName": "wrench.and.screwdriver",
+    "id": "amazon-bedrock-agentcore",
+    "name": "AWS Bedrock AgentCore",
+    "description": "Docs and tools for AWS Bedrock AgentCore.",
+    "iconSystemName": "cloud",
     "runtime": "docker",
-    "image": "mcp/veyrax:latest",
+    "image": "mcp/amazon-bedrock-agentcore-mcp-server:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/VeyraX/veyrax-mcp",
-    "category": "DevOps",
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "aws-cdk-mcp-server",
+    "name": "AWS CDK",
+    "description": "AWS CDK best-practice guidance and infrastructure-as-code patterns.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-cdk-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "aws-core-mcp-server",
+    "name": "AWS Core",
+    "description": "Entry point for the AWS Labs MCP server family.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-core-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "aws-documentation",
+    "name": "AWS Documentation",
+    "description": "Search AWS documentation and get recommendations.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-documentation:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "aws-terraform",
+    "name": "AWS Terraform",
+    "description": "Terraform-on-AWS best practices and IaC patterns.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/aws-terraform:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/awslabs/mcp",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "buildkite",
+    "name": "Buildkite",
+    "description": "Inspect Buildkite builds, jobs, logs and pipelines.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/buildkite:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/buildkite/buildkite-mcp-server",
+    "category": "Cloud & DevOps",
     "fields": [
       {
-        "id": "VEYRAX_API_KEY",
+        "id": "BUILDKITE_API_TOKEN",
         "kind": "secret",
-        "label": "Veyrax Api Key",
-        "help": "Required by veyrax. Stored in your Keychain, never on disk.",
+        "label": "Buildkite Api Token",
+        "help": "Required by buildkite. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "databutton",
+    "name": "Databutton",
+    "description": "Build and deploy data apps with Databutton.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/databutton:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/databutton/databutton-mcp",
+    "category": "Cloud & DevOps"
+  },
+  {
+    "id": "heroku",
+    "name": "Heroku",
+    "description": "Manage Heroku apps, dynos and add-ons.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/heroku:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/heroku/heroku-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "HEROKU_API_KEY",
+        "kind": "secret",
+        "label": "Heroku Api Key",
+        "help": "Required by heroku. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "hostinger-mcp-server",
+    "name": "Hostinger API",
+    "description": "Manage Hostinger hosting, domains and VPS.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/api-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/hostinger/api-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "APITOKEN",
+        "kind": "secret",
+        "label": "Apitoken",
+        "help": "Required by hostinger-mcp-server. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "pulumi",
+    "name": "Pulumi",
+    "description": "Author and manage Pulumi infrastructure-as-code.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/pulumi:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/pulumi/mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "PULUMI_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Pulumi Access Token",
+        "help": "Required by pulumi. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "render",
+    "name": "Render",
+    "description": "Manage your Render services and deployments.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/render:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/render-oss/render-mcp-server",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "RENDER_API_KEY",
+        "kind": "secret",
+        "label": "Render Api Key",
+        "help": "Required by render. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "tembo",
+    "name": "Tembo",
+    "description": "Manage Tembo managed-Postgres platform resources.",
+    "iconSystemName": "cloud",
+    "runtime": "docker",
+    "image": "mcp/tembo:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/tembo-io/mcp-server-tembo",
+    "category": "Cloud & DevOps",
+    "fields": [
+      {
+        "id": "TEMBO_API_KEY",
+        "kind": "secret",
+        "label": "Tembo Api Key",
+        "help": "Required by tembo. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
@@ -1189,15 +598,15 @@
   {
     "id": "webflow",
     "name": "Webflow",
-    "description": "Webflow",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Manage Webflow sites, CMS collections and content.",
+    "iconSystemName": "cloud",
     "runtime": "docker",
     "image": "mcp/webflow:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/slimslenderslacks/mcp-server",
-    "category": "DevOps",
+    "category": "Cloud & DevOps",
     "fields": [
       {
         "id": "WEBFLOW_TOKEN",
@@ -1210,53 +619,421 @@
     ]
   },
   {
-    "id": "wikipedia-mcp",
-    "name": "Wikipedia",
-    "description": "Wikipedia",
-    "iconSystemName": "wrench.and.screwdriver",
+    "id": "mcp-discord",
+    "name": "Discord",
+    "description": "Read and post to Discord servers and channels.",
+    "iconSystemName": "bubble.left.and.bubble.right",
     "runtime": "docker",
-    "image": "mcp/wikipedia-mcp:latest",
+    "image": "mcp/mcp-discord:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/Rudra-ravi/wikipedia-mcp",
-    "category": "DevOps"
-  },
-  {
-    "id": "wolfram-alpha",
-    "name": "WolframAlpha",
-    "description": "WolframAlpha",
-    "iconSystemName": "wrench.and.screwdriver",
-    "runtime": "docker",
-    "image": "mcp/wolfram-alpha:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/SecretiveShell/MCP-wolfram-alpha",
-    "category": "DevOps",
+    "docsURL": "https://github.com/slimslenderslacks/mcp-discord",
+    "category": "Communication",
     "fields": [
       {
-        "id": "WOLFRAM_API_KEY",
+        "id": "DISCORD_TOKEN",
         "kind": "secret",
-        "label": "Wolfram Api Key",
-        "help": "Required by wolfram-alpha. Stored in your Keychain, never on disk.",
+        "label": "Discord Token",
+        "help": "You can obtain a token from the [Discord Developer Portal](https://discord.com/developers/applications)",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
+    "id": "securenote-link-mcp-server",
+    "name": "Securenote.link",
+    "description": "Share secrets and sensitive notes securely with an agent.",
+    "iconSystemName": "bubble.left.and.bubble.right",
+    "runtime": "docker",
+    "image": "mcp/securenote-link-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/jackalterman/securenote-link-MCP-server",
+    "category": "Communication"
+  },
+  {
+    "id": "atlan",
+    "name": "Atlan",
+    "description": "Search and manage data assets and lineage in Atlan.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/atlan:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/atlanhq/agent-toolkit",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "ATLAN_API_KEY",
+        "kind": "secret",
+        "label": "Atlan Api Key",
+        "help": "Required by atlan. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      },
+      {
+        "id": "ATLAN_BASE_URL",
+        "kind": "secret",
+        "label": "Atlan Base Url",
+        "help": "Required by atlan. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "chroma",
+    "name": "Chroma",
+    "description": "Store and search vector embeddings in the Chroma vector database.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/chroma:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/chroma-core/chroma-mcp",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "CHROMA_API_KEY",
+        "kind": "secret",
+        "label": "Chroma Api Key",
+        "help": "Required by chroma. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "maestro-mcp-server",
+    "name": "Maestro",
+    "description": "Query Bitcoin blockchain data via Maestro.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/maestro-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/maestro-org/maestro-mcp-server",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "API_KEY_API_KEY",
+        "kind": "secret",
+        "label": "Api Key Api Key",
+        "help": "Required by maestro-mcp-server. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "description": "Query and manage MongoDB collections and documents.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/mongodb:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/mongodb-js/mongodb-mcp-server",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "MDB_MCP_CONNECTION_STRING",
+        "kind": "secret",
+        "label": "Mdb Mcp Connection String",
+        "help": "Required by mongodb. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "description": "Manage Neon serverless Postgres databases and branches.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/neon:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neondatabase-labs/mcp-server-neon",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "NEON_API_KEY",
+        "kind": "secret",
+        "label": "Neon Api Key",
+        "help": "Required by neon. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "singlestore",
+    "name": "Singlestore",
+    "description": "Query SingleStore's real-time SQL database.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/singlestore:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/singlestore-labs/mcp-server-singlestore",
+    "category": "Data & Databases",
+    "fields": [
+      {
+        "id": "MCP_API_KEY",
+        "kind": "secret",
+        "label": "Mcp Api Key",
+        "help": "Required by singlestore. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "sqlite-mcp-server",
+    "name": "SQLite",
+    "description": "Query a SQLite database and run lightweight analytics on it.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/sqlite-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/neverinfamous/sqlite-mcp-server",
+    "category": "Data & Databases"
+  },
+  {
+    "id": "vizro",
+    "name": "Vizro",
+    "description": "Build charts and dashboards from data with Vizro.",
+    "iconSystemName": "cylinder.split.1x2",
+    "runtime": "docker",
+    "image": "mcp/vizro:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/mckinsey/vizro",
+    "category": "Data & Databases"
+  },
+  {
+    "id": "e2b",
+    "name": "E2B",
+    "description": "Run AI-generated code in a secure E2B cloud sandbox.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/e2b:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/e2b-dev/mcp-server",
+    "category": "Dev & Code",
+    "fields": [
+      {
+        "id": "E2B_API_KEY",
+        "kind": "secret",
+        "label": "E2B Api Key",
+        "help": "Required by e2b. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "effect-mcp",
+    "name": "Effect",
+    "description": "Tools and references for writing Effect (TypeScript) code.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/effect-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/tim-smart/effect-mcp",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "github-chat",
+    "name": "GitHub Chat",
+    "description": "Ask questions about any GitHub repository in natural language.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/github-chat:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/AsyncFuncAI/github-chat-mcp",
+    "category": "Dev & Code",
+    "fields": [
+      {
+        "id": "GITHUB_API_KEY",
+        "kind": "secret",
+        "label": "Github Api Key",
+        "help": "Required by github-chat. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "next-devtools-mcp",
+    "name": "Next.js DevTools",
+    "description": "Inspect and debug a Next.js app via its devtools.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/next-devtools-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/kgprs/next-devtools-mcp",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "node-code-sandbox",
+    "name": "Node.js Sandbox",
+    "description": "Run Node.js code safely in an isolated sandbox.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/node-code-sandbox:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/alfonsograziano/node-code-sandbox-mcp",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "npm-sentinel",
+    "name": "NPM Sentinel",
+    "description": "AI-powered analysis of npm packages \u2014 security, versions, health.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/npm-sentinel:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/Nekzus/npm-sentinel-mcp",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "description": "Drive Postman collections and APIs from the model.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/postman:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/postmanlabs/postman-mcp-server",
+    "category": "Dev & Code",
+    "fields": [
+      {
+        "id": "POSTMAN_API_KEY",
+        "kind": "secret",
+        "label": "Postman Api Key",
+        "help": "Required by postman. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "pref-editor",
+    "name": "Pref Editor",
+    "description": "View and edit an Android app's shared-preferences.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/pref-editor:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/charlesmuchene/pref-editor-mcp-server",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "mcp-code-interpreter",
+    "name": "Python Interpreter",
+    "description": "Run Python in a sandbox, like a Jupyter cell.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/mcp-code-interpreter:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/akuadane/mcp-code-interpreter",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "mcp-python-refactoring",
+    "name": "Python Refactoring Assistant",
+    "description": "Guided, educational Python refactoring suggestions.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/mcp-python-refactoring:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/slamer59/mcp-python-refactoring",
+    "category": "Dev & Code"
+  },
+  {
+    "id": "ref",
+    "name": "Ref - Up-To-Date Docs",
+    "description": "Search current documentation for your coding tools and libraries.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/ref-tools-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/ref-tools/ref-tools-mcp",
+    "category": "Dev & Code",
+    "fields": [
+      {
+        "id": "REF_API_KEY",
+        "kind": "secret",
+        "label": "Ref Api Key",
+        "help": "Required by ref. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "ros2",
+    "name": "WiseVision ROS2",
+    "description": "Bridge the model to a ROS2 robotics stack.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
+    "runtime": "docker",
+    "image": "mcp/ros2:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/wise-vision/mcp_server_ros_2",
+    "category": "Dev & Code"
+  },
+  {
     "id": "zen",
     "name": "Zen",
-    "description": "Bridges multiple AI models and CLIs, enabling orchestrated workflows across Claude Code, Gemini CLI, Codex CLI, and other AI development tools.",
-    "iconSystemName": "wrench.and.screwdriver",
+    "description": "Orchestrate multiple AI models and CLIs in one workflow.",
+    "iconSystemName": "chevron.left.forwardslash.chevron.right",
     "runtime": "docker",
     "image": "mcp/zen:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/beehiveinnovations/zen-mcp-server",
-    "category": "DevOps",
+    "category": "Dev & Code",
     "fields": [
       {
         "id": "OPENROUTER_API_KEY",
@@ -1293,68 +1070,35 @@
     ]
   },
   {
-    "id": "nasdaq-data-link",
-    "name": "Nasdaq Data Link",
-    "description": "MCP server to interact with the data feeds provided by the Nasdaq Data Link. Developed by the community and maintained by Stefano Amorelli.",
-    "iconSystemName": "dollarsign.circle",
+    "id": "openbnb-airbnb",
+    "name": "Airbnb Search",
+    "description": "Search Airbnb listings and pull listing details.",
+    "iconSystemName": "map",
     "runtime": "docker",
-    "image": "mcp/nasdaq-data-link:latest",
+    "image": "mcp/openbnb-airbnb:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/stefanoamorelli/nasdaq-data-link-mcp",
-    "category": "Finance",
-    "fields": [
-      {
-        "id": "NASDAQ_DATA_LINK_API_KEY",
-        "kind": "secret",
-        "label": "Nasdaq Data Link Api Key",
-        "help": "Required by nasdaq-data-link. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
+    "docsURL": "https://github.com/openbnb-org/mcp-server-airbnb",
+    "category": "Maps & Travel"
   },
   {
-    "id": "stripe",
-    "name": "Stripe",
-    "description": "Interact with Stripe services over the Stripe API.",
-    "iconSystemName": "dollarsign.circle",
+    "id": "google-flights",
+    "name": "Google Flights",
+    "description": "Search one-way, round-trip and multi-city flights on Google Flights.",
+    "iconSystemName": "map",
     "runtime": "docker",
-    "image": "mcp/stripe:latest",
+    "image": "mcp/google-flights:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/stripe/agent-toolkit",
-    "category": "Finance",
-    "fields": [
-      {
-        "id": "STRIPE_SECRET_KEY",
-        "kind": "secret",
-        "label": "Stripe Secret Key",
-        "help": "Required by stripe. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "minecraft-wiki",
-    "name": "Minecraft Wiki",
-    "description": "Minecraft Wiki",
-    "iconSystemName": "gamecontroller",
-    "runtime": "docker",
-    "image": "mcp/minecraft-wiki:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/L3-N0X/Minecraft-Wiki-MCP",
-    "category": "Games"
+    "docsURL": "https://github.com/kgprs/Google-Flights-MCP-Server",
+    "category": "Maps & Travel"
   },
   {
     "id": "mapbox",
     "name": "Mapbox",
-    "description": "Transform any AI agent into a geospatially-aware system with Mapbox APIs. Provides geocoding, POI search, routing, travel time matrices, isochrones, and static map generation.",
+    "description": "Geospatial APIs \u2014 geocoding, routing and maps via Mapbox.",
     "iconSystemName": "map",
     "runtime": "docker",
     "image": "mcp/mapbox:latest",
@@ -1362,7 +1106,7 @@
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/mapbox/mcp-server",
-    "category": "Maps",
+    "category": "Maps & Travel",
     "fields": [
       {
         "id": "MAPBOX_ACCESS_TOKEN",
@@ -1375,32 +1119,140 @@
     ]
   },
   {
-    "id": "maestro-mcp-server",
-    "name": "Maestro",
-    "description": "A Model Context Protocol (MCP) server exposing Bitcoin blockchain data through the Maestro API platform. Provides tools to explore blocks, transactions, addresses, inscriptions, runes, and other metaprotocol data.",
-    "iconSystemName": "waveform.path.ecg",
+    "id": "openweather",
+    "name": "Openweather",
+    "description": "Current weather and a 5-day forecast for any location.",
+    "iconSystemName": "map",
     "runtime": "docker",
-    "image": "mcp/maestro-mcp-server:latest",
+    "image": "mcp/openweather:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/maestro-org/maestro-mcp-server",
-    "category": "Monitoring",
+    "docsURL": "https://github.com/mschneider82/mcp-openweather",
+    "category": "Maps & Travel",
     "fields": [
       {
-        "id": "API_KEY_API_KEY",
+        "id": "OWM_API_KEY",
         "kind": "secret",
-        "label": "Api Key Api Key",
-        "help": "Required by maestro-mcp-server. Stored in your Keychain, never on disk.",
+        "label": "Owm Api Key",
+        "help": "Required by openweather. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
+    "id": "everart",
+    "name": "EverArt",
+    "description": "Generate images with EverArt.",
+    "iconSystemName": "play.rectangle",
+    "runtime": "docker",
+    "image": "mcp/everart:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/modelcontextprotocol/servers",
+    "category": "Media",
+    "fields": [
+      {
+        "id": "EVERART_API_KEY",
+        "kind": "secret",
+        "label": "Everart Api Key",
+        "help": "Required by everart. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "gyazo",
+    "name": "Gyazo",
+    "description": "Capture, upload and fetch Gyazo screenshots.",
+    "iconSystemName": "play.rectangle",
+    "runtime": "docker",
+    "image": "mcp/gyazo:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/nota/gyazo-mcp-server",
+    "category": "Media",
+    "fields": [
+      {
+        "id": "GYAZO_ACCESS_TOKEN",
+        "kind": "secret",
+        "label": "Gyazo Access Token",
+        "help": "Required by gyazo. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "handwriting-ocr",
+    "name": "Handwriting OCR",
+    "description": "Turn handwriting in images into text (OCR).",
+    "iconSystemName": "play.rectangle",
+    "runtime": "docker",
+    "image": "mcp/handwriting-ocr:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/Handwriting-OCR/handwriting-ocr-mcp-server",
+    "category": "Media",
+    "fields": [
+      {
+        "id": "API_TOKEN",
+        "kind": "secret",
+        "label": "Api Token",
+        "help": "Required by handwriting-ocr. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "minecraft-wiki",
+    "name": "Minecraft Wiki",
+    "description": "Search the Minecraft Wiki for items, blocks and recipes.",
+    "iconSystemName": "play.rectangle",
+    "runtime": "docker",
+    "image": "mcp/minecraft-wiki:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/L3-N0X/Minecraft-Wiki-MCP",
+    "category": "Media"
+  },
+  {
+    "id": "schogini-mcp-image-border",
+    "name": "Schogini Image Border",
+    "description": "Add a border to an image and return it encoded.",
+    "iconSystemName": "play.rectangle",
+    "runtime": "docker",
+    "image": "mcp/schogini_mcp_image_border:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/schogini/schogini_mcp_image_border",
+    "category": "Media"
+  },
+  {
+    "id": "youtube-transcript",
+    "name": "YouTube Transcripts",
+    "description": "Pull the transcript of any YouTube video from its URL.",
+    "iconSystemName": "play.rectangle",
+    "runtime": "docker",
+    "image": "mcp/youtube-transcript:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/jkawamoto/mcp-youtube-transcript",
+    "category": "Media"
+  },
+  {
     "id": "mcp-hackernews",
     "name": "Hacker News",
-    "description": "A Model Context Protocol (MCP) server that provides access to Hacker News stories, comments, and user data, with support for search and content retrieval.",
+    "description": "Read stories, comments and users from Hacker News.",
     "iconSystemName": "newspaper",
     "runtime": "docker",
     "image": "mcp/hackernews-mcp:latest",
@@ -1411,17 +1263,224 @@
     "category": "News"
   },
   {
+    "id": "notion",
+    "name": "Notion",
+    "description": "Read and update Notion pages and databases.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/notion:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/makenotion/notion-mcp-server",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "INTERNAL_INTEGRATION_TOKEN",
+        "kind": "secret",
+        "label": "Internal Integration Token",
+        "help": "Required by notion. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "teamwork",
+    "name": "Teamwork",
+    "description": "Manage projects and tasks in Teamwork.com.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/teamwork:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/teamwork/mcp",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "TW_MCP_BEARER_TOKEN",
+        "kind": "secret",
+        "label": "Tw Mcp Bearer Token",
+        "help": "Required by teamwork. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "veyrax",
+    "name": "VeyraX",
+    "description": "One connection to reach many of your tools via VeyraX.",
+    "iconSystemName": "checklist",
+    "runtime": "docker",
+    "image": "mcp/veyrax:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/VeyraX/veyrax-mcp",
+    "category": "Productivity",
+    "fields": [
+      {
+        "id": "VEYRAX_API_KEY",
+        "kind": "secret",
+        "label": "Veyrax Api Key",
+        "help": "Required by veyrax. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "dappier",
+    "name": "Dappier",
+    "description": "Real-time web and premium content search via Dappier.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/dappier:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/dappierai/dappier-mcp",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "DAPPIER_API_KEY",
+        "kind": "secret",
+        "label": "Dappier Api Key",
+        "help": "Required by dappier. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "exa",
+    "name": "Exa",
+    "description": "Neural web search built for AI, with full-content retrieval.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/exa:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/exa-labs/exa-mcp-server",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "EXA_API_KEY",
+        "kind": "secret",
+        "label": "Exa Api Key",
+        "help": "Required by exa. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "needle-mcp",
+    "name": "Needle",
+    "description": "Production RAG \u2014 search and retrieve across your own documents.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/needle-mcp:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/needle-ai/needle-mcp",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "NEEDLE_API_KEY",
+        "kind": "secret",
+        "label": "Needle Api Key",
+        "help": "Required by needle-mcp. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "perplexity-ask",
+    "name": "Perplexity",
+    "description": "Real-time, web-wide research answers via the Perplexity API.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/perplexity-ask:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/ppl-ai/modelcontextprotocol",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "PERPLEXITY_API_KEY",
+        "kind": "secret",
+        "label": "Perplexity Api Key",
+        "help": "See the [Get a Sonar API key](https://github.com/perplexityai/modelcontextprotocol/tree/f0a927c250e04b389ff5c34f6a2a85ad625668e8?tab=readme-ov-file#step-2-get-a-sonar-api-key) section in the Perplexi\u2026",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "tavily",
+    "name": "Tavily",
+    "description": "LLM-tuned search that returns answers, not just links.",
+    "iconSystemName": "magnifyingglass",
+    "runtime": "docker",
+    "image": "mcp/tavily:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/tavily-ai/tavily-mcp",
+    "category": "Search",
+    "fields": [
+      {
+        "id": "TAVILY_API_KEY",
+        "kind": "secret",
+        "label": "Tavily Api Key",
+        "help": "Required by tavily. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
+    "id": "beagle-security",
+    "name": "Beagle Security",
+    "description": "Run and manage automated web app pentests via Beagle Security.",
+    "iconSystemName": "lock.shield",
+    "runtime": "docker",
+    "image": "mcp/beagle-security-mcp-server:latest",
+    "npmPackage": null,
+    "defaultCommand": [],
+    "secretKeys": [],
+    "docsURL": "https://github.com/beaglesecurity/beagle-security-mcp-server",
+    "category": "Security",
+    "fields": [
+      {
+        "id": "BEAGLE_SECURITY_API_TOKEN",
+        "kind": "secret",
+        "label": "Beagle Security Api Token",
+        "help": "Required by beagle-security. Stored in your Keychain, never on disk.",
+        "required": true,
+        "binds": "secretKey"
+      }
+    ]
+  },
+  {
     "id": "cylera-mcp-server",
     "name": "Cylera",
-    "description": "Brings context about device inventory, threats, risks and utilization powered by the Cylera Partner API into an LLM.",
-    "iconSystemName": "checklist",
+    "description": "Healthcare IoT device inventory, threats and risk from Cylera.",
+    "iconSystemName": "lock.shield",
     "runtime": "docker",
     "image": "mcp/cylera-mcp-server:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/Cylera/cylera-mcp-server",
-    "category": "Productivity",
+    "category": "Security",
     "fields": [
       {
         "id": "CYLERA_BASE_URL",
@@ -1450,272 +1509,69 @@
     ]
   },
   {
-    "id": "effect-mcp",
-    "name": "Effect",
-    "description": "Tools and resources for writing Effect code in Typescript.",
-    "iconSystemName": "checklist",
+    "id": "sentry",
+    "name": "Sentry",
+    "description": "Retrieve and analyze application errors from Sentry.",
+    "iconSystemName": "lock.shield",
     "runtime": "docker",
-    "image": "mcp/effect-mcp:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/tim-smart/effect-mcp",
-    "category": "Productivity"
-  },
-  {
-    "id": "mcp-code-interpreter",
-    "name": "Python Interpreter",
-    "description": "A Python-based execution tool that mimics a Jupyter notebook environment. It accepts code snippets, executes them, and maintains state across sessions \u2014 preserving variables, imports, and past results. Ideal for iterative development, debugging, or code execution.",
-    "iconSystemName": "checklist",
-    "runtime": "docker",
-    "image": "mcp/mcp-code-interpreter:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/akuadane/mcp-code-interpreter",
-    "category": "Productivity"
-  },
-  {
-    "id": "notion",
-    "name": "Notion",
-    "description": "Notion",
-    "iconSystemName": "checklist",
-    "runtime": "docker",
-    "image": "mcp/notion:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/makenotion/notion-mcp-server",
-    "category": "Productivity",
-    "fields": [
-      {
-        "id": "INTERNAL_INTEGRATION_TOKEN",
-        "kind": "secret",
-        "label": "Internal Integration Token",
-        "help": "Required by notion. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "schogini-mcp-image-border",
-    "name": "Schogini Image Border",
-    "description": "This adds a border to an image and returns base64 encoded image",
-    "iconSystemName": "checklist",
-    "runtime": "docker",
-    "image": "mcp/schogini_mcp_image_border:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/schogini/schogini_mcp_image_border",
-    "category": "Productivity"
-  },
-  {
-    "id": "teamwork",
-    "name": "Teamwork",
-    "description": "Tools for Teamwork.com products.",
-    "iconSystemName": "checklist",
-    "runtime": "docker",
-    "image": "mcp/teamwork:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/teamwork/mcp",
-    "category": "Productivity",
-    "fields": [
-      {
-        "id": "TW_MCP_BEARER_TOKEN",
-        "kind": "secret",
-        "label": "Tw Mcp Bearer Token",
-        "help": "Required by teamwork. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "everart",
-    "name": "EverArt (Archived)",
-    "description": "Image generation server using EverArt's API.",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/everart:latest",
+    "image": "mcp/sentry:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/modelcontextprotocol/servers",
-    "category": "Search",
+    "category": "Security",
     "fields": [
       {
-        "id": "EVERART_API_KEY",
+        "id": "SENTRY_AUTH_TOKEN",
         "kind": "secret",
-        "label": "Everart Api Key",
-        "help": "Required by everart. Stored in your Keychain, never on disk.",
+        "label": "Sentry Auth Token",
+        "help": "Required by sentry. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
-    "id": "exa",
-    "name": "Exa",
-    "description": "Exa",
-    "iconSystemName": "magnifyingglass",
+    "id": "cyreslab-ai-shodan",
+    "name": "Shodan",
+    "description": "Query Shodan for internet-exposed hosts, ports and services.",
+    "iconSystemName": "lock.shield",
     "runtime": "docker",
-    "image": "mcp/exa:latest",
+    "image": "mcp/cyreslab-ai-shodan:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/exa-labs/exa-mcp-server",
-    "category": "Search",
+    "docsURL": "https://github.com/Cyreslab-AI/shodan-mcp-server",
+    "category": "Security",
     "fields": [
       {
-        "id": "EXA_API_KEY",
+        "id": "SHODAN_API_KEY",
         "kind": "secret",
-        "label": "Exa Api Key",
-        "help": "Required by exa. Stored in your Keychain, never on disk.",
+        "label": "Shodan Api Key",
+        "help": "Required by cyreslab-ai-shodan. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
     ]
   },
   {
-    "id": "explorium",
-    "name": "Explorium B2B Data",
-    "description": "Discover companies, contacts, and business insights\u2014powered by dozens of trusted external data sources.",
-    "iconSystemName": "magnifyingglass",
+    "id": "stackhawk",
+    "name": "StackHawk",
+    "description": "Trigger and read StackHawk DAST security scans.",
+    "iconSystemName": "lock.shield",
     "runtime": "docker",
-    "image": "mcp/explorium:latest",
+    "image": "mcp/stackhawk:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
-    "docsURL": "https://github.com/explorium-ai/mcp-explorium",
-    "category": "Search",
+    "docsURL": "https://github.com/stackhawk/stackhawk-mcp",
+    "category": "Security",
     "fields": [
       {
-        "id": "API_ACCESS_TOKEN",
+        "id": "STACKHAWK_API_KEY",
         "kind": "secret",
-        "label": "Api Access Token",
-        "help": "Required by explorium. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "hdx",
-    "name": "Humanitarian Data Exchange",
-    "description": "HDX MCP Server provides access to humanitarian data through the Humanitarian Data Exchange (HDX) API - https://data.humdata.org/hapi. This server offers 33 specialized tools for retrieving humanitarian information including affected populations (refugees, IDPs, returnees), basel\u2026",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/hdx:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/dividor/hdx-mcp",
-    "category": "Search",
-    "fields": [
-      {
-        "id": "HDX_APP_IDENTIFIER",
-        "kind": "secret",
-        "label": "Hdx App Identifier",
-        "help": "Required by hdx. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "needle-mcp",
-    "name": "Needle",
-    "description": "Production-ready RAG service to search and retrieve data from your documents.",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/needle-mcp:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/needle-ai/needle-mcp",
-    "category": "Search",
-    "fields": [
-      {
-        "id": "NEEDLE_API_KEY",
-        "kind": "secret",
-        "label": "Needle Api Key",
-        "help": "Required by needle-mcp. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "openbnb-airbnb",
-    "name": "Airbnb Search",
-    "description": "MCP Server for searching Airbnb and get listing details.",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/openbnb-airbnb:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/openbnb-org/mcp-server-airbnb",
-    "category": "Search"
-  },
-  {
-    "id": "openweather",
-    "name": "Openweather",
-    "description": "A simple MCP service that provides current weather and 5-day forecast using the free OpenWeatherMap API.",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/openweather:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/mschneider82/mcp-openweather",
-    "category": "Search",
-    "fields": [
-      {
-        "id": "OWM_API_KEY",
-        "kind": "secret",
-        "label": "Owm Api Key",
-        "help": "Required by openweather. Stored in your Keychain, never on disk.",
-        "required": true,
-        "binds": "secretKey"
-      }
-    ]
-  },
-  {
-    "id": "paper-search",
-    "name": "Paper Search",
-    "description": "Paper Search",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/paper-search:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/openags/paper-search-mcp",
-    "category": "Search"
-  },
-  {
-    "id": "tavily",
-    "name": "Tavily",
-    "description": "The Tavily MCP server provides seamless interaction with the tavily-search and tavily-extract tools, real-time web search capabilities through the tavily-search tool and Intelligent data extraction from web pages via the tavily-extract tool.",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/tavily:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/tavily-ai/tavily-mcp",
-    "category": "Search",
-    "fields": [
-      {
-        "id": "TAVILY_API_KEY",
-        "kind": "secret",
-        "label": "Tavily Api Key",
-        "help": "Required by tavily. Stored in your Keychain, never on disk.",
+        "label": "Stackhawk Api Key",
+        "help": "Required by stackhawk. Stored in your Keychain, never on disk.",
         "required": true,
         "binds": "secretKey"
       }
@@ -1724,40 +1580,14 @@
   {
     "id": "vuln-nist-mcp-server",
     "name": "Vuln NIST",
-    "description": "This MCP server exposes tools to query the NVD/CVE REST API and return formatted text results suitable for LLM consumption via the MCP protocol. It includes automatic query chunking for large date ranges and parallel processing for improved performance.",
-    "iconSystemName": "magnifyingglass",
+    "description": "Look up CVEs and vulnerabilities from the NIST NVD.",
+    "iconSystemName": "lock.shield",
     "runtime": "docker",
     "image": "mcp/vuln-nist-mcp-server:latest",
     "npmPackage": null,
     "defaultCommand": [],
     "secretKeys": [],
     "docsURL": "https://github.com/HaroldFinchIFT/vuln-nist-mcp-server",
-    "category": "Search"
-  },
-  {
-    "id": "youtube-transcript",
-    "name": "YouTube Transcripts",
-    "description": "Retrieves transcripts for given YouTube video URLs",
-    "iconSystemName": "magnifyingglass",
-    "runtime": "docker",
-    "image": "mcp/youtube-transcript:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/jkawamoto/mcp-youtube-transcript",
-    "category": "Search"
-  },
-  {
-    "id": "google-flights",
-    "name": "Google Flights",
-    "description": "Interact with Google Flights data to search for one-way, round-trip, and date range flight options between airports",
-    "iconSystemName": "airplane",
-    "runtime": "docker",
-    "image": "mcp/google-flights:latest",
-    "npmPackage": null,
-    "defaultCommand": [],
-    "secretKeys": [],
-    "docsURL": "https://github.com/kgprs/Google-Flights-MCP-Server",
-    "category": "Travel"
+    "category": "Security"
   }
 ]
