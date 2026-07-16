@@ -1,0 +1,543 @@
+Access to Redis database operations.
+
+## MCP Info
+Attribute|Details|
+|-|-|
+**Docker Image**|[mcp/redis](https://hub.docker.com/repository/docker/mcp/redis)
+**Author**|[redis](https://github.com/redis)
+**Repository**|https://github.com/redis/mcp-redis
+
+## Available Tools (53)
+Tools provided by this Server|Short Description
+-|-
+`client_list`|Get a list of connected clients to the Redis server.|
+`create_vector_index_hash`|Create a Redis 8 vector similarity index using HNSW on a Redis hash.|
+`dbsize`|Get the number of keys stored in the Redis database|
+`delete`|Delete a Redis key.|
+`expire`|Set an expiration time for a Redis key.|
+`get`|Get a Redis string value.|
+`get_index_info`|Retrieve schema and information about a specific Redis index using FT.INFO.|
+`get_indexed_keys_number`|Retrieve the number of indexed keys by the index|
+`get_indexes`|List of indexes in the Redis database|
+`get_vector_from_hash`|Retrieve a vector from a Redis hash and convert it back from binary blob.|
+`hdel`|Delete a field from a Redis hash.|
+`hexists`|Check if a field exists in a Redis hash.|
+`hget`|Get the value of a field in a Redis hash.|
+`hgetall`|Get all fields and values from a Redis hash.|
+`hset`|Set a field in a hash stored at key with an optional expiration time.|
+`hybrid_search`|Perform a hybrid search combining a Redis filter expression with KNN vector similarity.|
+`info`|Get Redis server information and statistics.|
+`json_del`|Delete a JSON value from Redis at a given path.|
+`json_get`|Retrieve a JSON value from Redis at a given path.|
+`json_set`|Set a JSON value in Redis at a given path with an optional expiration time.|
+`llen`|Get the length of a Redis list.|
+`lpop`|Remove and return the first element from a Redis list.|
+`lpush`|Push a value onto the left of a Redis list and optionally set an expiration time.|
+`lrange`|Get elements from a Redis list within a specific range.|
+`lrem`|Remove elements from a Redis list.|
+`psubscribe`|Subscribe to Redis channels using a pattern.|
+`publish`|Publish a message to a Redis channel.|
+`read_messages`|Read pending pub/sub messages for an existing subscription.|
+`rename`|Renames a Redis key from old_key to new_key.|
+`rpop`|Remove and return the last element from a Redis list.|
+`rpush`|Push a value onto the right of a Redis list and optionally set an expiration time.|
+`sadd`|Add a value to a Redis set with an optional expiration time.|
+`scan_all_keys`|Scan and return ALL keys matching a pattern using multiple SCAN iterations.|
+`scan_keys`|Scan keys in the Redis database using the SCAN command (non-blocking, production-safe).|
+`search_redis_documents`|Search Redis documentation and knowledge base to learn about Redis concepts and use cases.|
+`set`|Set a Redis string value with an optional expiration time.|
+`set_vector_in_hash`|Store a vector as a field in a Redis hash.|
+`smembers`|Get all members of a Redis set.|
+`srem`|Remove a value from a Redis set.|
+`subscribe`|Subscribe to a Redis channel and return a reusable subscription handle.|
+`type`|Returns the string representation of the type of the value stored at key|
+`unsubscribe`|Unsubscribe and close an existing pub/sub subscription.|
+`vector_search_hash`|Perform a KNN vector similarity search using Redis 8 or later version on vectors stored in hash data structures.|
+`xack`|Acknowledge entries that were processed by a consumer group.|
+`xadd`|Add an entry to a Redis stream with an optional expiration time.|
+`xdel`|Delete an entry from a Redis stream.|
+`xgroup_create`|Create a consumer group for a Redis stream.|
+`xgroup_destroy`|Destroy a consumer group for a Redis stream.|
+`xrange`|Read entries from a Redis stream.|
+`xreadgroup`|Read entries from a Redis stream using a consumer group.|
+`zadd`|Add a member to a Redis sorted set with an optional expiration time.|
+`zrange`|Retrieve a range of members from a Redis sorted set.|
+`zrem`|Remove a member from a Redis sorted set.|
+
+---
+## Tools Details
+
+#### Tool: **`client_list`**
+Get a list of connected clients to the Redis server.
+#### Tool: **`create_vector_index_hash`**
+Create a Redis 8 vector similarity index using HNSW on a Redis hash.
+
+This function sets up a Redis index for approximate nearest neighbor (ANN)
+search using the HNSW algorithm and float32 vector embeddings.
+Parameters|Type|Description
+-|-|-
+`dim`|`integer` *optional*|The dimensionality of the vectors stored under the vector_field.
+`distance_metric`|`string` *optional*|The distance function to use (e.g., 'COSINE', 'L2', 'IP').
+`index_name`|`string` *optional*|The name of the Redis index to create. Unless specifically required, use the default name for the index.
+`prefix`|`string` *optional*|The key prefix used to identify documents to index (e.g., 'doc:'). Unless specifically required, use the default prefix.
+`vector_field`|`string` *optional*|The name of the vector field to be indexed for similarity search. Unless specifically required, use the default field name
+
+---
+#### Tool: **`dbsize`**
+Get the number of keys stored in the Redis database
+#### Tool: **`delete`**
+Delete a Redis key.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+
+---
+#### Tool: **`expire`**
+Set an expiration time for a Redis key.
+Parameters|Type|Description
+-|-|-
+`expire_seconds`|`integer`|Time in seconds after which the key should expire.
+`name`|`string`|The Redis key.
+
+---
+#### Tool: **`get`**
+Get a Redis string value.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+
+---
+#### Tool: **`get_index_info`**
+Retrieve schema and information about a specific Redis index using FT.INFO.
+Parameters|Type|Description
+-|-|-
+`index_name`|`string`|
+
+---
+#### Tool: **`get_indexed_keys_number`**
+Retrieve the number of indexed keys by the index
+Parameters|Type|Description
+-|-|-
+`index_name`|`string`|
+
+---
+#### Tool: **`get_indexes`**
+List of indexes in the Redis database
+
+Returns:
+    str: A JSON string containing the list of indexes or an error message.
+#### Tool: **`get_vector_from_hash`**
+Retrieve a vector from a Redis hash and convert it back from binary blob.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis hash key.
+`vector_field`|`string` *optional*|The field name inside the hash. Unless specifically required, use the default field name
+
+---
+#### Tool: **`hdel`**
+Delete a field from a Redis hash.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|The field name inside the hash.
+`name`|`string`|The Redis hash key.
+
+---
+#### Tool: **`hexists`**
+Check if a field exists in a Redis hash.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|The field name inside the hash.
+`name`|`string`|The Redis hash key.
+
+---
+#### Tool: **`hget`**
+Get the value of a field in a Redis hash.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|The field name inside the hash.
+`name`|`string`|The Redis hash key.
+
+---
+#### Tool: **`hgetall`**
+Get all fields and values from a Redis hash.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis hash key.
+
+---
+#### Tool: **`hset`**
+Set a field in a hash stored at key with an optional expiration time.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|The field name inside the hash.
+`name`|`string`|The Redis hash key.
+`value`|`string`|The value to set.
+`expire_seconds`|`string` *optional*|Optional; time in seconds after which the key should expire.
+
+---
+#### Tool: **`hybrid_search`**
+Perform a hybrid search combining a Redis filter expression with KNN vector similarity.
+
+Hybrid search pre-filters documents by metadata before ranking by vector similarity —
+the standard pattern for production RAG and semantic search pipelines.
+
+Filter expression examples:
+    "*"                              → no filter, pure vector search (same as vector_search_hash)
+    "@category:{news}"              → tag filter
+    "@year:[2020 2024]"             → numeric range
+    "@lang:{en} @year:[2022 +inf]"  → combined tag + range
+    "@title:redis"                  → full-text match on a text field
+
+Full filter syntax: https://redis.io/docs/latest/develop/interact/search-and-query/query/
+Parameters|Type|Description
+-|-|-
+`query_vector`|`array`|List of floats to use as the query vector.
+`filter_expression`|`string` *optional*|Redis filter expression to restrict candidates before KNN ranking.
+`index_name`|`string` *optional*|Name of the Redis index (default: 'vector_index').
+`k`|`integer` *optional*|Number of nearest neighbors to return.
+`return_fields`|`string` *optional*|Additional fields to include in results (optional).
+`vector_field`|`string` *optional*|Name of the indexed vector field (default: 'vector').
+
+---
+#### Tool: **`info`**
+Get Redis server information and statistics.
+Parameters|Type|Description
+-|-|-
+`section`|`string` *optional*|The section of the info command (default, memory, cpu, etc.).
+
+---
+#### Tool: **`json_del`**
+Delete a JSON value from Redis at a given path.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis key where the JSON document is stored.
+`path`|`string` *optional*|The JSON path to delete (default: root '$').
+
+---
+#### Tool: **`json_get`**
+Retrieve a JSON value from Redis at a given path.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis key where the JSON document is stored.
+`path`|`string` *optional*|The JSON path to retrieve (default: root '$').
+
+---
+#### Tool: **`json_set`**
+Set a JSON value in Redis at a given path with an optional expiration time.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis key where the JSON document is stored.
+`path`|`string`|The JSON path where the value should be set.
+`value`|`string`|The JSON value to store (as JSON string, or will be auto-converted).
+`expire_seconds`|`string` *optional*|Optional; time in seconds after which the key should expire.
+
+---
+#### Tool: **`llen`**
+Get the length of a Redis list.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|
+
+---
+#### Tool: **`lpop`**
+Remove and return the first element from a Redis list.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|
+
+---
+#### Tool: **`lpush`**
+Push a value onto the left of a Redis list and optionally set an expiration time.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|
+`value`|`string`|
+`expire`|`string` *optional*|
+
+---
+#### Tool: **`lrange`**
+Get elements from a Redis list within a specific range.
+
+Returns:
+str: A JSON string containing the list of elements or an error message.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|
+`start`|`integer`|
+`stop`|`integer`|
+
+---
+#### Tool: **`lrem`**
+Remove elements from a Redis list.
+Parameters|Type|Description
+-|-|-
+`count`|`integer`|Number of elements to remove (0 = all, positive = from head, negative = from tail)
+`element`|`string`|The element value to remove
+`name`|`string`|The name of the list
+
+---
+#### Tool: **`psubscribe`**
+Subscribe to Redis channels using a pattern.
+Parameters|Type|Description
+-|-|-
+`pattern`|`string`|The Redis channel pattern to subscribe to.
+
+---
+#### Tool: **`publish`**
+Publish a message to a Redis channel.
+Parameters|Type|Description
+-|-|-
+`channel`|`string`|The Redis channel to publish to.
+`message`|`string`|The message to send.
+
+---
+#### Tool: **`read_messages`**
+Read pending pub/sub messages for an existing subscription.
+Parameters|Type|Description
+-|-|-
+`subscription_id`|`string`|The ID returned by subscribe() or psubscribe().
+`max_messages`|`integer` *optional*|Maximum number of messages to return in one call.
+`timeout_ms`|`integer` *optional*|Time to wait for messages in milliseconds. Use 0 for non-blocking.
+
+---
+#### Tool: **`rename`**
+Renames a Redis key from old_key to new_key.
+Parameters|Type|Description
+-|-|-
+`new_key`|`string`|
+`old_key`|`string`|
+
+---
+#### Tool: **`rpop`**
+Remove and return the last element from a Redis list.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|
+
+---
+#### Tool: **`rpush`**
+Push a value onto the right of a Redis list and optionally set an expiration time.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|
+`value`|`string`|
+`expire`|`string` *optional*|
+
+---
+#### Tool: **`sadd`**
+Add a value to a Redis set with an optional expiration time.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis set key.
+`value`|`string`|The value to add to the set.
+`expire_seconds`|`string` *optional*|Optional; time in seconds after which the set should expire.
+
+---
+#### Tool: **`scan_all_keys`**
+Scan and return ALL keys matching a pattern using multiple SCAN iterations.
+
+This function automatically handles the SCAN cursor iteration to collect all matching keys.
+It's safer than KEYS * for large databases but will still collect all results in memory.
+
+⚠️  WARNING: With very large datasets (millions of keys), this may consume significant memory.
+For large-scale operations, consider using scan_keys() with manual iteration instead.
+Parameters|Type|Description
+-|-|-
+`batch_size`|`integer` *optional*|Number of keys to scan per iteration (default 100).
+`pattern`|`string` *optional*|Pattern to match keys against (default is "*" for all keys).
+
+---
+#### Tool: **`scan_keys`**
+Scan keys in the Redis database using the SCAN command (non-blocking, production-safe).
+
+⚠️  IMPORTANT: This returns PARTIAL results from one iteration. Use scan_all_keys()
+to get ALL matching keys, or call this function multiple times with the returned cursor
+until cursor becomes 0.
+
+The SCAN command iterates through the keyspace in small chunks, making it safe to use
+on large databases without blocking other operations.
+Parameters|Type|Description
+-|-|-
+`count`|`integer` *optional*|Hint for the number of keys to return per iteration (default 100).
+`cursor`|`integer` *optional*|The cursor position to start scanning from (0 to start from beginning).
+`pattern`|`string` *optional*|Pattern to match keys against (default is "*" for all keys).
+
+---
+#### Tool: **`search_redis_documents`**
+Search Redis documentation and knowledge base to learn about Redis concepts and use cases.
+
+This tool exposes updated and curated documentation, and must be invoked every time the user wants to learn more in areas including:
+
+**Common Use Cases:**
+- Session Management: User session storage and management
+- Caching: Application-level and database query caching
+- Rate Limiting: API throttling and request limiting
+- Leaderboards: Gaming and ranking systems
+- Semantic Search: AI-powered similarity search
+- Agentic Workflows: AI agent state and memory management
+- RAG (Retrieval-Augmented Generation): Vector storage for AI applications
+- Real-time Analytics: Counters, metrics, and time-series data
+- Message Queues: Task queues and job processing
+- Geospatial: Location-based queries and proximity search
+Parameters|Type|Description
+-|-|-
+`question`|`string`|The question about Redis concepts, data structures, features, or use cases
+
+---
+#### Tool: **`set`**
+Set a Redis string value with an optional expiration time.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+`value`|`string`|
+`expiration`|`string` *optional*|
+
+---
+#### Tool: **`set_vector_in_hash`**
+Store a vector as a field in a Redis hash.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis hash key.
+`vector`|`array`|The vector (list of numbers) to store in the hash.
+`vector_field`|`string` *optional*|The field name inside the hash. Unless specifically required, use the default field name
+
+---
+#### Tool: **`smembers`**
+Get all members of a Redis set.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis set key.
+
+---
+#### Tool: **`srem`**
+Remove a value from a Redis set.
+Parameters|Type|Description
+-|-|-
+`name`|`string`|The Redis set key.
+`value`|`string`|The value to remove from the set.
+
+---
+#### Tool: **`subscribe`**
+Subscribe to a Redis channel and return a reusable subscription handle.
+Parameters|Type|Description
+-|-|-
+`channel`|`string`|The Redis channel to subscribe to.
+
+---
+#### Tool: **`type`**
+Returns the string representation of the type of the value stored at key
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+
+---
+#### Tool: **`unsubscribe`**
+Unsubscribe and close an existing pub/sub subscription.
+Parameters|Type|Description
+-|-|-
+`subscription_id`|`string`|The ID returned by subscribe() or psubscribe().
+
+---
+#### Tool: **`vector_search_hash`**
+Perform a KNN vector similarity search using Redis 8 or later version on vectors stored in hash data structures.
+Parameters|Type|Description
+-|-|-
+`query_vector`|`array`|List of floats to use as the query vector.
+`index_name`|`string` *optional*|Name of the Redis index. Unless specifically specified, use the default index name.
+`k`|`integer` *optional*|Number of nearest neighbors to return.
+`return_fields`|`string` *optional*|List of fields to return (optional).
+`vector_field`|`string` *optional*|Name of the indexed vector field. Unless specifically required, use the default field name
+
+---
+#### Tool: **`xack`**
+Acknowledge entries that were processed by a consumer group.
+Parameters|Type|Description
+-|-|-
+`entry_ids`|`array`|
+`group_name`|`string`|
+`key`|`string`|
+
+---
+#### Tool: **`xadd`**
+Add an entry to a Redis stream with an optional expiration time.
+Parameters|Type|Description
+-|-|-
+`fields`|`object`|
+`key`|`string`|
+`expiration`|`string` *optional*|
+
+---
+#### Tool: **`xdel`**
+Delete an entry from a Redis stream.
+Parameters|Type|Description
+-|-|-
+`entry_id`|`string`|
+`key`|`string`|
+
+---
+#### Tool: **`xgroup_create`**
+Create a consumer group for a Redis stream.
+Parameters|Type|Description
+-|-|-
+`group_name`|`string`|
+`key`|`string`|
+`mkstream`|`boolean` *optional*|
+`start_id`|`string` *optional*|
+
+---
+#### Tool: **`xgroup_destroy`**
+Destroy a consumer group for a Redis stream.
+Parameters|Type|Description
+-|-|-
+`group_name`|`string`|
+`key`|`string`|
+
+---
+#### Tool: **`xrange`**
+Read entries from a Redis stream.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+`count`|`integer` *optional*|
+
+---
+#### Tool: **`xreadgroup`**
+Read entries from a Redis stream using a consumer group.
+Parameters|Type|Description
+-|-|-
+`consumer_name`|`string`|
+`group_name`|`string`|
+`key`|`string`|
+`block_ms`|`string` *optional*|
+`count`|`integer` *optional*|
+`stream_id`|`string` *optional*|
+
+---
+#### Tool: **`zadd`**
+Add a member to a Redis sorted set with an optional expiration time.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+`member`|`string`|
+`score`|`number`|
+`expiration`|`string` *optional*|
+
+---
+#### Tool: **`zrange`**
+Retrieve a range of members from a Redis sorted set.
+Parameters|Type|Description
+-|-|-
+`end`|`integer`|
+`key`|`string`|
+`start`|`integer`|
+`with_scores`|`boolean` *optional*|
+
+---
+#### Tool: **`zrem`**
+Remove a member from a Redis sorted set.
+Parameters|Type|Description
+-|-|-
+`key`|`string`|
+`member`|`string`|
+
+---

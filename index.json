@@ -2,7 +2,7 @@
   {
     "id": "playwright-mcp-server",
     "name": "ExecuteAutomation Playwright",
-    "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More \ud83d\udd0c",
+    "description": "Playwright Model Context Protocol Server - Tool to automate Browsers and APIs in Claude Desktop, Cline, Cursor IDE and More 🔌",
     "iconSystemName": "sparkles",
     "runtime": "docker",
     "image": "mcp/mcp-playwright:latest",
@@ -11,7 +11,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/executeautomation/mcp-playwright",
     "category": "AI & Knowledge",
-    "provider": "executeautomation"
+    "provider": "executeautomation",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/playwright-mcp-server.md"
   },
   {
     "id": "gemini-api-docs",
@@ -25,7 +26,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/gemini-api-docs-mcp",
     "category": "AI & Knowledge",
-    "provider": "kgprs"
+    "provider": "kgprs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/gemini-api-docs.md"
   },
   {
     "id": "hdx",
@@ -49,7 +51,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "dividor"
+    "provider": "dividor",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/hdx.md"
   },
   {
     "id": "novita",
@@ -63,7 +66,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/novitalabs/novita-mcp-server",
     "category": "AI & Knowledge",
-    "provider": "novitalabs"
+    "provider": "novitalabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/novita.md"
   },
   {
     "id": "okta-mcp-fctr",
@@ -117,7 +121,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "fctr-id"
+    "provider": "fctr-id",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/okta-mcp-fctr.md"
   },
   {
     "id": "omi",
@@ -141,7 +146,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "BasedHardware"
+    "provider": "BasedHardware",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/omi.md"
   },
   {
     "id": "paper-search",
@@ -155,7 +161,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/openags/paper-search-mcp",
     "category": "AI & Knowledge",
-    "provider": "openags"
+    "provider": "openags",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/paper-search.md"
   },
   {
     "id": "pia",
@@ -179,7 +186,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Program-Integrity-Alliance"
+    "provider": "Program-Integrity-Alliance",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pia.md"
   },
   {
     "id": "wikipedia-mcp",
@@ -193,7 +201,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/Rudra-ravi/wikipedia-mcp",
     "category": "AI & Knowledge",
-    "provider": "Rudra-ravi"
+    "provider": "Rudra-ravi",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/wikipedia-mcp.md"
   },
   {
     "id": "wolfram-alpha",
@@ -217,7 +226,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "SecretiveShell"
+    "provider": "SecretiveShell",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/wolfram-alpha.md"
   },
   {
     "id": "awslabs-cloudwatch",
@@ -249,7 +259,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-cloudwatch.md"
   },
   {
     "id": "awslabs-cloudwatch-appsignals",
@@ -281,7 +292,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-cloudwatch-appsignals.md"
   },
   {
     "id": "awslabs-dynamodb",
@@ -313,7 +325,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-dynamodb.md"
   },
   {
     "id": "awslabs-elasticache",
@@ -345,7 +358,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-elasticache.md"
   },
   {
     "id": "awslabs-memcached",
@@ -377,7 +391,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-memcached.md"
   },
   {
     "id": "awslabs-valkey",
@@ -409,7 +424,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-valkey.md"
   },
   {
     "id": "amazon-kendra-index",
@@ -449,7 +465,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/amazon-kendra-index.md"
   },
   {
     "id": "aws-location",
@@ -505,7 +522,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-location.md"
   },
   {
     "id": "aws-msk",
@@ -561,7 +579,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-msk.md"
   },
   {
     "id": "amazon-neptune",
@@ -601,7 +620,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/amazon-neptune.md"
   },
   {
     "id": "amazon-qbusiness-anonymous",
@@ -665,7 +685,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/amazon-qbusiness-anonymous.md"
   },
   {
     "id": "awslabs-redshift",
@@ -697,7 +718,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-redshift.md"
   },
   {
     "id": "awslabs-timestream-for-influxdb",
@@ -729,7 +751,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-timestream-for-influxdb.md"
   },
   {
     "id": "aws-api",
@@ -785,7 +808,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-api.md"
   },
   {
     "id": "aws-appsync",
@@ -841,7 +865,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-appsync.md"
   },
   {
     "id": "aws-bedrock-custom-model-import",
@@ -905,7 +930,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-bedrock-custom-model-import.md"
   },
   {
     "id": "aws-bedrock-data-automation",
@@ -945,7 +971,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-bedrock-data-automation.md"
   },
   {
     "id": "awslabs-billing-cost-management",
@@ -985,7 +1012,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-billing-cost-management.md"
   },
   {
     "id": "awslabs-ccapi",
@@ -1033,7 +1061,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-ccapi.md"
   },
   {
     "id": "awslabs-cfn",
@@ -1089,7 +1118,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-cfn.md"
   },
   {
     "id": "awslabs-cloudtrail",
@@ -1113,7 +1143,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-cloudtrail.md"
   },
   {
     "id": "awslabs-cost-explorer",
@@ -1169,7 +1200,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-cost-explorer.md"
   },
   {
     "id": "aws-dataprocessing",
@@ -1201,7 +1233,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-dataprocessing.md"
   },
   {
     "id": "aws-healthomics",
@@ -1233,7 +1266,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-healthomics.md"
   },
   {
     "id": "awslabs-iam",
@@ -1281,7 +1315,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-iam.md"
   },
   {
     "id": "aws-iot-sitewise",
@@ -1313,7 +1348,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-iot-sitewise.md"
   },
   {
     "id": "aws-kb-retrieval-server",
@@ -1345,7 +1381,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "modelcontextprotocol"
+    "provider": "modelcontextprotocol",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-kb-retrieval-server.md"
   },
   {
     "id": "awslabs-nova-canvas",
@@ -1401,7 +1438,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-nova-canvas.md"
   },
   {
     "id": "aws-pricing",
@@ -1457,7 +1495,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-pricing.md"
   },
   {
     "id": "awslabs-s3-tables",
@@ -1513,7 +1552,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/awslabs-s3-tables.md"
   },
   {
     "id": "browserbase",
@@ -1553,7 +1593,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "browserbase"
+    "provider": "browserbase",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/browserbase.md"
   },
   {
     "id": "hyperbrowser",
@@ -1577,7 +1618,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "hyperbrowserai"
+    "provider": "hyperbrowserai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/hyperbrowser.md"
   },
   {
     "id": "playwright",
@@ -1591,7 +1633,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/microsoft/playwright-mcp",
     "category": "Browser & Scraping",
-    "provider": "microsoft"
+    "provider": "microsoft",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/playwright.md"
   },
   {
     "id": "scrapegraph",
@@ -1615,7 +1658,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "ScrapeGraphAI"
+    "provider": "ScrapeGraphAI",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/scrapegraph.md"
   },
   {
     "id": "scrapezy",
@@ -1639,7 +1683,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Scrapezy"
+    "provider": "Scrapezy",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/scrapezy.md"
   },
   {
     "id": "explorium",
@@ -1663,7 +1708,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "explorium-ai"
+    "provider": "explorium-ai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/explorium.md"
   },
   {
     "id": "hackle",
@@ -1687,7 +1733,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "hackle-io"
+    "provider": "hackle-io",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/hackle.md"
   },
   {
     "id": "nasdaq-data-link",
@@ -1711,7 +1758,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "stefanoamorelli"
+    "provider": "stefanoamorelli",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/nasdaq-data-link.md"
   },
   {
     "id": "osp-marketing-tools",
@@ -1725,12 +1773,13 @@
     "secretKeys": [],
     "docsURL": "https://github.com/open-strategy-partners/osp_marketing_tools",
     "category": "Business & Finance",
-    "provider": "open-strategy-partners"
+    "provider": "open-strategy-partners",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/osp-marketing-tools.md"
   },
   {
     "id": "quantconnect",
     "name": "QuantConnect",
-    "description": "The QuantConnect MCP Server is a bridge for AIs (such as Claude and OpenAI o3 Pro) to interact with our cloud platform. When equipped with our MCP, the AI can perform tasks on your behalf through our API such as updating projects, writing strategies, backtesting, and deploying s\u2026",
+    "description": "The QuantConnect MCP Server is a bridge for AIs (such as Claude and OpenAI o3 Pro) to interact with our cloud platform. When equipped with our MCP, the AI can perform tasks on your behalf through our API such as updating projects, writing strategies, backtesting, and deploying s…",
     "iconSystemName": "dollarsign.circle",
     "runtime": "docker",
     "image": "mcp/quantconnect:latest",
@@ -1760,7 +1809,8 @@
     "env": {
       "AGENT_NAME": "MCP Server"
     },
-    "provider": "QuantConnect"
+    "provider": "QuantConnect",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/quantconnect.md"
   },
   {
     "id": "stripe",
@@ -1784,7 +1834,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "stripe"
+    "provider": "stripe",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/stripe.md"
   },
   {
     "id": "triplewhale",
@@ -1808,7 +1859,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Triple-Whale"
+    "provider": "Triple-Whale",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/triplewhale.md"
   },
   {
     "id": "zerodha-kite",
@@ -1856,7 +1908,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "anshuljain90"
+    "provider": "anshuljain90",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/zerodha-kite.md"
   },
   {
     "id": "mcp-api-gateway",
@@ -1896,7 +1949,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "rflpazini"
+    "provider": "rflpazini",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mcp-api-gateway.md"
   },
   {
     "id": "atlas-docs",
@@ -1920,7 +1974,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "CartographAI"
+    "provider": "CartographAI",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/atlas-docs.md"
   },
   {
     "id": "audiense-insights",
@@ -1960,7 +2015,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "AudienseCo"
+    "provider": "AudienseCo",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/audiense-insights.md"
   },
   {
     "id": "amazon-bedrock-agentcore",
@@ -1974,7 +2030,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
     "category": "Cloud & DevOps",
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/amazon-bedrock-agentcore.md"
   },
   {
     "id": "aws-cdk-mcp-server",
@@ -1988,7 +2045,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
     "category": "Cloud & DevOps",
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-cdk-mcp-server.md"
   },
   {
     "id": "aws-core-mcp-server",
@@ -2002,7 +2060,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
     "category": "Cloud & DevOps",
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-core-mcp-server.md"
   },
   {
     "id": "aws-documentation",
@@ -2016,7 +2075,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
     "category": "Cloud & DevOps",
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-documentation.md"
   },
   {
     "id": "aws-terraform",
@@ -2030,7 +2090,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/awslabs/mcp",
     "category": "Cloud & DevOps",
-    "provider": "awslabs"
+    "provider": "awslabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/aws-terraform.md"
   },
   {
     "id": "bitrefill",
@@ -2062,7 +2123,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "bitrefill"
+    "provider": "bitrefill",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/bitrefill.md"
   },
   {
     "id": "box",
@@ -2094,7 +2156,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "dgageot"
+    "provider": "dgageot",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/box.md"
   },
   {
     "id": "buildkite",
@@ -2118,7 +2181,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "buildkite"
+    "provider": "buildkite",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/buildkite.md"
   },
   {
     "id": "cdata-connectcloud",
@@ -2150,7 +2214,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "CDataSoftware"
+    "provider": "CDataSoftware",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/cdata-connectcloud.md"
   },
   {
     "id": "circleci",
@@ -2182,7 +2247,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "cmrigney"
+    "provider": "cmrigney",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/circleci.md"
   },
   {
     "id": "cloud-run-mcp",
@@ -2199,7 +2265,8 @@
     "env": {
       "GOOGLE_APPLICATION_CREDENTIALS": "/app/.config/gcloud/application_default_credentials.json"
     },
-    "provider": "GoogleCloudPlatform"
+    "provider": "GoogleCloudPlatform",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/cloud-run-mcp.md"
   },
   {
     "id": "dart",
@@ -2231,7 +2298,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "its-dart"
+    "provider": "its-dart",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/dart.md"
   },
   {
     "id": "databutton",
@@ -2245,7 +2313,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/databutton/databutton-mcp",
     "category": "Cloud & DevOps",
-    "provider": "databutton"
+    "provider": "databutton",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/databutton.md"
   },
   {
     "id": "descope",
@@ -2277,7 +2346,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "descope-sample-apps"
+    "provider": "descope-sample-apps",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/descope.md"
   },
   {
     "id": "devhub-cms",
@@ -2317,7 +2387,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "devhub"
+    "provider": "devhub",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/devhub-cms.md"
   },
   {
     "id": "dockerhub",
@@ -2341,7 +2412,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "docker"
+    "provider": "docker",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/dockerhub.md"
   },
   {
     "id": "edubase",
@@ -2381,7 +2453,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "EduBase"
+    "provider": "EduBase",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/edubase.md"
   },
   {
     "id": "fibery",
@@ -2413,7 +2486,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "Fibery-inc"
+    "provider": "Fibery-inc",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/fibery.md"
   },
   {
     "id": "flexprice",
@@ -2445,7 +2519,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "flexprice"
+    "provider": "flexprice",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/flexprice.md"
   },
   {
     "id": "gitlab",
@@ -2477,7 +2552,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "modelcontextprotocol"
+    "provider": "modelcontextprotocol",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/gitlab.md"
   },
   {
     "id": "glif",
@@ -2521,7 +2597,8 @@
         ]
       }
     ],
-    "provider": "glifxyz"
+    "provider": "glifxyz",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/glif.md"
   },
   {
     "id": "heroku",
@@ -2545,7 +2622,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "heroku"
+    "provider": "heroku",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/heroku.md"
   },
   {
     "id": "hostinger-mcp-server",
@@ -2569,7 +2647,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "hostinger"
+    "provider": "hostinger",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/hostinger-mcp-server.md"
   },
   {
     "id": "husqvarna-automower",
@@ -2601,7 +2680,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "jeanlaurent"
+    "provider": "jeanlaurent",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/husqvarna-automower.md"
   },
   {
     "id": "hyperspell",
@@ -2645,7 +2725,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "hyperspell"
+    "provider": "hyperspell",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/hyperspell.md"
   },
   {
     "id": "iaptic",
@@ -2677,7 +2758,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "iaptic"
+    "provider": "iaptic",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/iaptic.md"
   },
   {
     "id": "jetbrains",
@@ -2701,7 +2783,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "GannaChernyshova"
+    "provider": "GannaChernyshova",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/jetbrains.md"
   },
   {
     "id": "kagisearch",
@@ -2733,7 +2816,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "kagisearch"
+    "provider": "kagisearch",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/kagisearch.md"
   },
   {
     "id": "keboola-mcp",
@@ -2765,7 +2849,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "keboola"
+    "provider": "keboola",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/keboola-mcp.md"
   },
   {
     "id": "kong",
@@ -2797,7 +2882,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "Kong"
+    "provider": "Kong",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/kong.md"
   },
   {
     "id": "lara",
@@ -2829,7 +2915,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "translated"
+    "provider": "translated",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/lara.md"
   },
   {
     "id": "line",
@@ -2861,7 +2948,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "line"
+    "provider": "line",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/line.md"
   },
   {
     "id": "multiversx-mx",
@@ -2893,7 +2981,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "multiversx"
+    "provider": "multiversx",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/multiversx-mx.md"
   },
   {
     "id": "neo4j",
@@ -2965,7 +3054,8 @@
         ]
       }
     ],
-    "provider": "neo4j"
+    "provider": "neo4j",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/neo4j.md"
   },
   {
     "id": "neo4j-cloud-aura-api",
@@ -3045,7 +3135,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "neo4j-contrib"
+    "provider": "neo4j-contrib",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/neo4j-cloud-aura-api.md"
   },
   {
     "id": "neo4j-cypher",
@@ -3185,7 +3276,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "neo4j-contrib"
+    "provider": "neo4j-contrib",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/neo4j-cypher.md"
   },
   {
     "id": "neo4j-data-modeling",
@@ -3249,7 +3341,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "neo4j-contrib"
+    "provider": "neo4j-contrib",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/neo4j-data-modeling.md"
   },
   {
     "id": "neo4j-memory",
@@ -3345,7 +3438,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "neo4j-contrib"
+    "provider": "neo4j-contrib",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/neo4j-memory.md"
   },
   {
     "id": "openapi-schema",
@@ -3359,7 +3453,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/slimslenderslacks/mcp-openapi-schema",
     "category": "Cloud & DevOps",
-    "provider": "slimslenderslacks"
+    "provider": "slimslenderslacks",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/openapi-schema.md"
   },
   {
     "id": "opik",
@@ -3399,7 +3494,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "comet-ml"
+    "provider": "comet-ml",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/opik.md"
   },
   {
     "id": "oxylabs",
@@ -3431,7 +3527,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "oxylabs"
+    "provider": "oxylabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/oxylabs.md"
   },
   {
     "id": "pica",
@@ -3463,7 +3560,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "picahq"
+    "provider": "picahq",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pica.md"
   },
   {
     "id": "pulumi",
@@ -3487,7 +3585,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "pulumi"
+    "provider": "pulumi",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pulumi.md"
   },
   {
     "id": "puppeteer",
@@ -3504,7 +3603,8 @@
     "env": {
       "DOCKER_CONTAINER": "true"
     },
-    "provider": "modelcontextprotocol"
+    "provider": "modelcontextprotocol",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/puppeteer.md"
   },
   {
     "id": "razorpay",
@@ -3536,7 +3636,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "razorpay"
+    "provider": "razorpay",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/razorpay.md"
   },
   {
     "id": "render",
@@ -3560,7 +3661,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "render-oss"
+    "provider": "render-oss",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/render.md"
   },
   {
     "id": "risken",
@@ -3592,7 +3694,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "ca-risken"
+    "provider": "ca-risken",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/risken.md"
   },
   {
     "id": "sequa",
@@ -3624,7 +3727,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "sequa-ai"
+    "provider": "sequa-ai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/sequa.md"
   },
   {
     "id": "smartbear",
@@ -3712,7 +3816,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "SmartBear"
+    "provider": "SmartBear",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/smartbear.md"
   },
   {
     "id": "tembo",
@@ -3736,7 +3841,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "tembo-io"
+    "provider": "tembo-io",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/tembo.md"
   },
   {
     "id": "temporal",
@@ -3800,7 +3906,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "GethosTheWalrus"
+    "provider": "GethosTheWalrus",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/temporal.md"
   },
   {
     "id": "testkube",
@@ -3848,7 +3955,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "kubeshop"
+    "provider": "kubeshop",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/testkube.md"
   },
   {
     "id": "text-to-graphql",
@@ -3888,7 +3996,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Arize-ai"
+    "provider": "Arize-ai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/text-to-graphql.md"
   },
   {
     "id": "tigris",
@@ -3928,7 +4037,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "tigrisdata"
+    "provider": "tigrisdata",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/tigris.md"
   },
   {
     "id": "webflow",
@@ -3952,7 +4062,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "slimslenderslacks"
+    "provider": "slimslenderslacks",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/webflow.md"
   },
   {
     "id": "mcp-discord",
@@ -3976,7 +4087,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "slimslenderslacks"
+    "provider": "slimslenderslacks",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mcp-discord.md"
   },
   {
     "id": "mcp-reddit",
@@ -4024,7 +4136,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "KrishnaRandad2023"
+    "provider": "KrishnaRandad2023",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mcp-reddit.md"
   },
   {
     "id": "resend",
@@ -4064,7 +4177,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "slimslenderslacks"
+    "provider": "slimslenderslacks",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/resend.md"
   },
   {
     "id": "securenote-link-mcp-server",
@@ -4078,7 +4192,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/jackalterman/securenote-link-MCP-server",
     "category": "Communication",
-    "provider": "jackalterman"
+    "provider": "jackalterman",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/securenote-link-mcp-server.md"
   },
   {
     "id": "slack",
@@ -4118,7 +4233,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "modelcontextprotocol"
+    "provider": "modelcontextprotocol",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/slack.md"
   },
   {
     "id": "astra-db",
@@ -4150,7 +4266,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "datastax"
+    "provider": "datastax",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/astra-db.md"
   },
   {
     "id": "atlan",
@@ -4182,7 +4299,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "atlanhq"
+    "provider": "atlanhq",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/atlan.md"
   },
   {
     "id": "chroma",
@@ -4206,12 +4324,13 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "chroma-core"
+    "provider": "chroma-core",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/chroma.md"
   },
   {
     "id": "cockroachdb",
     "name": "CockroachDB",
-    "description": "Enable AI agents to manage, monitor, and query CockroachDB using natural language. Perform complex database operations, cluster management, and query execution seamlessly through AI-driven workflows. Integrate effortlessly with MCP clients for scalable and high-performance data\u2026",
+    "description": "Enable AI agents to manage, monitor, and query CockroachDB using natural language. Perform complex database operations, cluster management, and query execution seamlessly through AI-driven workflows. Integrate effortlessly with MCP clients for scalable and high-performance data…",
     "iconSystemName": "cylinder.split.1x2",
     "runtime": "docker",
     "image": "mcp/cockroachdb:latest",
@@ -4294,7 +4413,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "amineelkouhen"
+    "provider": "amineelkouhen",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/cockroachdb.md"
   },
   {
     "id": "couchbase",
@@ -4350,7 +4470,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "Couchbase-Ecosystem"
+    "provider": "Couchbase-Ecosystem",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/couchbase.md"
   },
   {
     "id": "dreamfactory-mcp",
@@ -4382,7 +4503,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "dreamfactorysoftware"
+    "provider": "dreamfactorysoftware",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/dreamfactory-mcp.md"
   },
   {
     "id": "maestro-mcp-server",
@@ -4406,7 +4528,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "maestro-org"
+    "provider": "maestro-org",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/maestro-mcp-server.md"
   },
   {
     "id": "metabase",
@@ -4454,7 +4577,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "easecloudio"
+    "provider": "easecloudio",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/metabase.md"
   },
   {
     "id": "mongodb",
@@ -4478,7 +4602,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "mongodb-js"
+    "provider": "mongodb-js",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mongodb.md"
   },
   {
     "id": "neon",
@@ -4502,7 +4627,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "neondatabase-labs"
+    "provider": "neondatabase-labs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/neon.md"
   },
   {
     "id": "clickhouse",
@@ -4582,7 +4708,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "ClickHouse"
+    "provider": "ClickHouse",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/clickhouse.md"
   },
   {
     "id": "oracle",
@@ -4622,7 +4749,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "samscarrow"
+    "provider": "samscarrow",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/oracle.md"
   },
   {
     "id": "pinecone",
@@ -4654,7 +4782,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "pinecone-io"
+    "provider": "pinecone-io",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pinecone.md"
   },
   {
     "id": "redis",
@@ -4766,7 +4895,8 @@
         ]
       }
     ],
-    "provider": "redis"
+    "provider": "redis",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/redis.md"
   },
   {
     "id": "redis-cloud",
@@ -4798,12 +4928,13 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "redis"
+    "provider": "redis",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/redis-cloud.md"
   },
   {
     "id": "schemacrawler-ai",
     "name": "SchemaCrawler AI",
-    "description": "The SchemaCrawler AI MCP Server enables natural language interaction with your database schema using an MCP client in \"Agent\" mode. It allows users to explore tables, columns, foreign keys, triggers, stored procedures and more simply by asking questions like \"Explain the code fo\u2026",
+    "description": "The SchemaCrawler AI MCP Server enables natural language interaction with your database schema using an MCP client in \"Agent\" mode. It allows users to explore tables, columns, foreign keys, triggers, stored procedures and more simply by asking questions like \"Explain the code fo…",
     "iconSystemName": "cylinder.split.1x2",
     "runtime": "docker",
     "image": "mcp/schemacrawler-ai:latest",
@@ -4886,7 +5017,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "schemacrawler"
+    "provider": "schemacrawler",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/schemacrawler-ai.md"
   },
   {
     "id": "singlestore",
@@ -4910,7 +5042,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "singlestore-labs"
+    "provider": "singlestore-labs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/singlestore.md"
   },
   {
     "id": "sqlite-mcp-server",
@@ -4924,7 +5057,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/neverinfamous/sqlite-mcp-server",
     "category": "Data & Databases",
-    "provider": "neverinfamous"
+    "provider": "neverinfamous",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/sqlite-mcp-server.md"
   },
   {
     "id": "vizro",
@@ -4938,7 +5072,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/mckinsey/vizro",
     "category": "Data & Databases",
-    "provider": "mckinsey"
+    "provider": "mckinsey",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/vizro.md"
   },
   {
     "id": "e2b",
@@ -4962,7 +5097,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "e2b-dev"
+    "provider": "e2b-dev",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/e2b.md"
   },
   {
     "id": "effect-mcp",
@@ -4976,7 +5112,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/tim-smart/effect-mcp",
     "category": "Dev & Code",
-    "provider": "tim-smart"
+    "provider": "tim-smart",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/effect-mcp.md"
   },
   {
     "id": "github-chat",
@@ -5000,7 +5137,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "AsyncFuncAI"
+    "provider": "AsyncFuncAI",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/github-chat.md"
   },
   {
     "id": "next-devtools-mcp",
@@ -5014,7 +5152,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/next-devtools-mcp",
     "category": "Dev & Code",
-    "provider": "kgprs"
+    "provider": "kgprs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/next-devtools-mcp.md"
   },
   {
     "id": "node-code-sandbox",
@@ -5028,12 +5167,13 @@
     "secretKeys": [],
     "docsURL": "https://github.com/alfonsograziano/node-code-sandbox-mcp",
     "category": "Dev & Code",
-    "provider": "alfonsograziano"
+    "provider": "alfonsograziano",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/node-code-sandbox.md"
   },
   {
     "id": "npm-sentinel",
     "name": "NPM Sentinel",
-    "description": "AI-powered analysis of npm packages \u2014 security, versions, health.",
+    "description": "AI-powered analysis of npm packages — security, versions, health.",
     "iconSystemName": "chevron.left.forwardslash.chevron.right",
     "runtime": "docker",
     "image": "mcp/npm-sentinel:latest",
@@ -5042,7 +5182,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/Nekzus/npm-sentinel-mcp",
     "category": "Dev & Code",
-    "provider": "Nekzus"
+    "provider": "Nekzus",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/npm-sentinel.md"
   },
   {
     "id": "postman",
@@ -5066,7 +5207,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "postmanlabs"
+    "provider": "postmanlabs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/postman.md"
   },
   {
     "id": "pref-editor",
@@ -5080,7 +5222,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/charlesmuchene/pref-editor-mcp-server",
     "category": "Dev & Code",
-    "provider": "charlesmuchene"
+    "provider": "charlesmuchene",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pref-editor.md"
   },
   {
     "id": "mcp-code-interpreter",
@@ -5094,7 +5237,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/akuadane/mcp-code-interpreter",
     "category": "Dev & Code",
-    "provider": "akuadane"
+    "provider": "akuadane",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mcp-code-interpreter.md"
   },
   {
     "id": "mcp-python-refactoring",
@@ -5108,7 +5252,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/slamer59/mcp-python-refactoring",
     "category": "Dev & Code",
-    "provider": "slamer59"
+    "provider": "slamer59",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mcp-python-refactoring.md"
   },
   {
     "id": "ref",
@@ -5132,7 +5277,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "ref-tools"
+    "provider": "ref-tools",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/ref.md"
   },
   {
     "id": "ros2",
@@ -5146,7 +5292,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/wise-vision/mcp_server_ros_2",
     "category": "Dev & Code",
-    "provider": "wise-vision"
+    "provider": "wise-vision",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/ros2.md"
   },
   {
     "id": "zen",
@@ -5194,7 +5341,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "beehiveinnovations"
+    "provider": "beehiveinnovations",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/zen.md"
   },
   {
     "id": "unreal-engine-mcp-server",
@@ -5213,7 +5361,7 @@
         "id": "UE_HOST",
         "kind": "text",
         "label": "Ue Host",
-        "help": "Unreal Engine host address. Use: host.docker.internal for local UE on Windows/Mac Docker, 127.0.0.1 for Linux without Docker, or actual IP address (e.g., 192.1\u2026",
+        "help": "Unreal Engine host address. Use: host.docker.internal for local UE on Windows/Mac Docker, 127.0.0.1 for Linux without Docker, or actual IP address (e.g., 192.1…",
         "required": true,
         "binds": "envVar"
       },
@@ -5248,7 +5396,8 @@
         ]
       }
     ],
-    "provider": "ChiR24"
+    "provider": "ChiR24",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/unreal-engine-mcp-server.md"
   },
   {
     "id": "openbnb-airbnb",
@@ -5262,7 +5411,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/openbnb-org/mcp-server-airbnb",
     "category": "Maps & Travel",
-    "provider": "openbnb-org"
+    "provider": "openbnb-org",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/openbnb-airbnb.md"
   },
   {
     "id": "google-flights",
@@ -5276,12 +5426,13 @@
     "secretKeys": [],
     "docsURL": "https://github.com/kgprs/Google-Flights-MCP-Server",
     "category": "Maps & Travel",
-    "provider": "kgprs"
+    "provider": "kgprs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/google-flights.md"
   },
   {
     "id": "mapbox",
     "name": "Mapbox",
-    "description": "Geospatial APIs \u2014 geocoding, routing and maps via Mapbox.",
+    "description": "Geospatial APIs — geocoding, routing and maps via Mapbox.",
     "iconSystemName": "map",
     "runtime": "docker",
     "image": "mcp/mapbox:latest",
@@ -5300,7 +5451,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "mapbox"
+    "provider": "mapbox",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mapbox.md"
   },
   {
     "id": "openweather",
@@ -5324,7 +5476,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "mschneider82"
+    "provider": "mschneider82",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/openweather.md"
   },
   {
     "id": "everart",
@@ -5348,7 +5501,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "modelcontextprotocol"
+    "provider": "modelcontextprotocol",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/everart.md"
   },
   {
     "id": "gyazo",
@@ -5372,7 +5526,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "nota"
+    "provider": "nota",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/gyazo.md"
   },
   {
     "id": "handwriting-ocr",
@@ -5396,7 +5551,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Handwriting-OCR"
+    "provider": "Handwriting-OCR",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/handwriting-ocr.md"
   },
   {
     "id": "minecraft-wiki",
@@ -5410,7 +5566,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/L3-N0X/Minecraft-Wiki-MCP",
     "category": "Media",
-    "provider": "L3-N0X"
+    "provider": "L3-N0X",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/minecraft-wiki.md"
   },
   {
     "id": "schogini-mcp-image-border",
@@ -5424,7 +5581,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/schogini/schogini_mcp_image_border",
     "category": "Media",
-    "provider": "schogini"
+    "provider": "schogini",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/schogini-mcp-image-border.md"
   },
   {
     "id": "youtube-transcript",
@@ -5438,7 +5596,8 @@
     "secretKeys": [],
     "docsURL": "https://github.com/jkawamoto/mcp-youtube-transcript",
     "category": "Media",
-    "provider": "jkawamoto"
+    "provider": "jkawamoto",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/youtube-transcript.md"
   },
   {
     "id": "dynatrace-mcp-server",
@@ -5478,7 +5637,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "dynatrace-oss"
+    "provider": "dynatrace-oss",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/dynatrace-mcp-server.md"
   },
   {
     "id": "grafana",
@@ -5510,7 +5670,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "grafana"
+    "provider": "grafana",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/grafana.md"
   },
   {
     "id": "suzieq",
@@ -5542,12 +5703,13 @@
         "binds": "envVar"
       }
     ],
-    "provider": "PovedaAqui"
+    "provider": "PovedaAqui",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/suzieq.md"
   },
   {
     "id": "thingsboard",
     "name": "ThingsBoard",
-    "description": "Connect your AI workflows to the ThingsBoard IoT Platform through this MCP server. Enables LLMs to query device telemetry, manage IoT entities (devices, assets, customers), and analyze sensor data - all through natural language. Perfect for building AI-powered IoT monitoring, pr\u2026",
+    "description": "Connect your AI workflows to the ThingsBoard IoT Platform through this MCP server. Enables LLMs to query device telemetry, manage IoT entities (devices, assets, customers), and analyze sensor data - all through natural language. Perfect for building AI-powered IoT monitoring, pr…",
     "iconSystemName": "waveform.path.ecg",
     "runtime": "docker",
     "image": "mcp/thingsboard:latest",
@@ -5582,7 +5744,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "thingsboard"
+    "provider": "thingsboard",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/thingsboard.md"
   },
   {
     "id": "mcp-hackernews",
@@ -5596,12 +5759,13 @@
     "secretKeys": [],
     "docsURL": "https://github.com/AayushBahukhandi/hackernews-mcp",
     "category": "News",
-    "provider": "AayushBahukhandi"
+    "provider": "AayushBahukhandi",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/mcp-hackernews.md"
   },
   {
     "id": "airtable-mcp-server",
     "name": "Airtable",
-    "description": "Provides AI assistants with direct access to Airtable bases, allowing them to read schemas, query records, and interact with your Airtable data. Supports listing bases, retrieving table structures, and searching through records to help automate workflows and answer questions abo\u2026",
+    "description": "Provides AI assistants with direct access to Airtable bases, allowing them to read schemas, query records, and interact with your Airtable data. Supports listing bases, retrieving table structures, and searching through records to help automate workflows and answer questions abo…",
     "iconSystemName": "checklist",
     "runtime": "docker",
     "image": "mcp/airtable-mcp-server:latest",
@@ -5628,7 +5792,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "domdomegg"
+    "provider": "domdomegg",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/airtable-mcp-server.md"
   },
   {
     "id": "apify-mcp-server",
@@ -5655,12 +5820,13 @@
         "id": "TOOLS",
         "kind": "text",
         "label": "Tools",
-        "help": "Comma-separated list of tools to enable. Can be either a tool category, a specific tool, or an Apify Actor. For example: \"actors,docs,apify/rag-web-browser\". F\u2026",
+        "help": "Comma-separated list of tools to enable. Can be either a tool category, a specific tool, or an Apify Actor. For example: \"actors,docs,apify/rag-web-browser\". F…",
         "required": false,
         "binds": "envVar"
       }
     ],
-    "provider": "apify"
+    "provider": "apify",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/apify-mcp-server.md"
   },
   {
     "id": "atlassian",
@@ -5740,12 +5906,13 @@
         "binds": "envVar"
       }
     ],
-    "provider": "sooperset"
+    "provider": "sooperset",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/atlassian.md"
   },
   {
     "id": "camunda",
     "name": "Camunda BPM Process Engine",
-    "description": "Tools to interact with the Camunda 7 Community Edition Engine using the Model Context Protocol (MCP). Whether you're automating workflows, querying process instances, or integrating with external systems, Camunda MCP Server is your agentic solution for seamless interaction with\u2026",
+    "description": "Tools to interact with the Camunda 7 Community Edition Engine using the Model Context Protocol (MCP). Whether you're automating workflows, querying process instances, or integrating with external systems, Camunda MCP Server is your agentic solution for seamless interaction with…",
     "iconSystemName": "checklist",
     "runtime": "docker",
     "image": "mcp/camunda:latest",
@@ -5764,7 +5931,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "lepoco"
+    "provider": "lepoco",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/camunda.md"
   },
   {
     "id": "charmhealth-mcp-server",
@@ -5836,7 +6004,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "CharmHealth"
+    "provider": "CharmHealth",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/charmhealth-mcp-server.md"
   },
   {
     "id": "n8n",
@@ -5868,7 +6037,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "czlonkowski"
+    "provider": "czlonkowski",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/n8n.md"
   },
   {
     "id": "notion",
@@ -5892,7 +6062,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "makenotion"
+    "provider": "makenotion",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/notion.md"
   },
   {
     "id": "obsidian",
@@ -5919,7 +6090,8 @@
     "env": {
       "OBSIDIAN_HOST": "host.docker.internal"
     },
-    "provider": "docker"
+    "provider": "docker",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/obsidian.md"
   },
   {
     "id": "onlyoffice-docspace",
@@ -5951,7 +6123,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "ONLYOFFICE"
+    "provider": "ONLYOFFICE",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/onlyoffice-docspace.md"
   },
   {
     "id": "openapi",
@@ -5975,7 +6148,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "lepoco"
+    "provider": "lepoco",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/openapi.md"
   },
   {
     "id": "pluggedin-mcp-proxy",
@@ -6007,7 +6181,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "VeriTeknik"
+    "provider": "VeriTeknik",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pluggedin-mcp-proxy.md"
   },
   {
     "id": "pomodash",
@@ -6034,12 +6209,13 @@
     "env": {
       "POMODASH_API_URL": "https://mcp.pomodash.mindsnapz.de"
     },
-    "provider": "dannyytv"
+    "provider": "dannyytv",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/pomodash.md"
   },
   {
     "id": "rust-mcp-filesystem",
     "name": "Rust Filesystem",
-    "description": "The Rust MCP Filesystem is a high-performance, asynchronous, and lightweight Model Context Protocol (MCP) server built in Rust for secure and efficient filesystem operations. Designed with security in mind, it operates in read-only mode by default and restricts clients from upda\u2026",
+    "description": "The Rust MCP Filesystem is a high-performance, asynchronous, and lightweight Model Context Protocol (MCP) server built in Rust for secure and efficient filesystem operations. Designed with security in mind, it operates in read-only mode by default and restricts clients from upda…",
     "iconSystemName": "checklist",
     "runtime": "docker",
     "image": "mcp/rust-mcp-filesystem:latest",
@@ -6074,7 +6250,8 @@
         ]
       }
     ],
-    "provider": "rust-mcp-stack"
+    "provider": "rust-mcp-stack",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/rust-mcp-filesystem.md"
   },
   {
     "id": "sonarqube",
@@ -6114,7 +6291,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "SonarSource"
+    "provider": "SonarSource",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/sonarqube.md"
   },
   {
     "id": "teamwork",
@@ -6138,7 +6316,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "teamwork"
+    "provider": "teamwork",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/teamwork.md"
   },
   {
     "id": "veyrax",
@@ -6162,7 +6341,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "VeyraX"
+    "provider": "VeyraX",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/veyrax.md"
   },
   {
     "id": "brave",
@@ -6189,7 +6369,8 @@
     "env": {
       "BRAVE_MCP_TRANSPORT": "stdio"
     },
-    "provider": "brave"
+    "provider": "brave",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/brave.md"
   },
   {
     "id": "dappier",
@@ -6213,7 +6394,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "dappierai"
+    "provider": "dappierai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/dappier.md"
   },
   {
     "id": "elasticsearch",
@@ -6245,7 +6427,8 @@
         "binds": "envVar"
       }
     ],
-    "provider": "elastic"
+    "provider": "elastic",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/elasticsearch.md"
   },
   {
     "id": "exa",
@@ -6269,7 +6452,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "exa-labs"
+    "provider": "exa-labs",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/exa.md"
   },
   {
     "id": "firecrawl",
@@ -6349,12 +6533,13 @@
         "binds": "envVar"
       }
     ],
-    "provider": "mendableai"
+    "provider": "mendableai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/firecrawl.md"
   },
   {
     "id": "needle-mcp",
     "name": "Needle",
-    "description": "Production RAG \u2014 search and retrieve across your own documents.",
+    "description": "Production RAG — search and retrieve across your own documents.",
     "iconSystemName": "magnifyingglass",
     "runtime": "docker",
     "image": "mcp/needle-mcp:latest",
@@ -6373,7 +6558,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "needle-ai"
+    "provider": "needle-ai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/needle-mcp.md"
   },
   {
     "id": "perplexity-ask",
@@ -6392,12 +6578,13 @@
         "id": "PERPLEXITY_API_KEY",
         "kind": "secret",
         "label": "Perplexity Api Key",
-        "help": "See the [Get a Sonar API key](https://github.com/perplexityai/modelcontextprotocol/tree/f0a927c250e04b389ff5c34f6a2a85ad625668e8?tab=readme-ov-file#step-2-get-a-sonar-api-key) section in the Perplexi\u2026",
+        "help": "See the [Get a Sonar API key](https://github.com/perplexityai/modelcontextprotocol/tree/f0a927c250e04b389ff5c34f6a2a85ad625668e8?tab=readme-ov-file#step-2-get-a-sonar-api-key) section in the Perplexi…",
         "required": true,
         "binds": "secretKey"
       }
     ],
-    "provider": "ppl-ai"
+    "provider": "ppl-ai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/perplexity-ask.md"
   },
   {
     "id": "tavily",
@@ -6421,7 +6608,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "tavily-ai"
+    "provider": "tavily-ai",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/tavily.md"
   },
   {
     "id": "beagle-security",
@@ -6445,7 +6633,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "beaglesecurity"
+    "provider": "beaglesecurity",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/beagle-security.md"
   },
   {
     "id": "cylera-mcp-server",
@@ -6485,7 +6674,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Cylera"
+    "provider": "Cylera",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/cylera-mcp-server.md"
   },
   {
     "id": "firewalla-mcp-server",
@@ -6536,7 +6726,8 @@
       "MCP_RATE_LIMIT_WINDOW": "60000",
       "MCP_RATE_LIMIT_MAX_REQUESTS": "100"
     },
-    "provider": "amittell"
+    "provider": "amittell",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/firewalla-mcp-server.md"
   },
   {
     "id": "ramparts",
@@ -6553,7 +6744,8 @@
     "env": {
       "RUST_LOG": "info"
     },
-    "provider": "getjavelin"
+    "provider": "getjavelin",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/ramparts.md"
   },
   {
     "id": "sentry",
@@ -6577,7 +6769,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "modelcontextprotocol"
+    "provider": "modelcontextprotocol",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/sentry.md"
   },
   {
     "id": "cyreslab-ai-shodan",
@@ -6601,7 +6794,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "Cyreslab-AI"
+    "provider": "Cyreslab-AI",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/cyreslab-ai-shodan.md"
   },
   {
     "id": "stackhawk",
@@ -6625,7 +6819,8 @@
         "binds": "secretKey"
       }
     ],
-    "provider": "stackhawk"
+    "provider": "stackhawk",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/stackhawk.md"
   },
   {
     "id": "vuln-nist-mcp-server",
@@ -6639,12 +6834,13 @@
     "secretKeys": [],
     "docsURL": "https://github.com/HaroldFinchIFT/vuln-nist-mcp-server",
     "category": "Security",
-    "provider": "HaroldFinchIFT"
+    "provider": "HaroldFinchIFT",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/vuln-nist-mcp-server.md"
   },
   {
     "id": "zscaler-mcp-server",
     "name": "Zscaler",
-    "description": "Manage the Zscaler Zero Trust Exchange platform via 300+ tools across ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), ZTW (workload segmentation), ZMS (microsegmentation), EASM (attack surface management), Z-Insights (security analy\u2026",
+    "description": "Manage the Zscaler Zero Trust Exchange platform via 300+ tools across ZPA (private access), ZIA (internet access), ZDX (digital experience), ZCC (client connector), ZTW (workload segmentation), ZMS (microsegmentation), EASM (attack surface management), Z-Insights (security analy…",
     "iconSystemName": "lock.shield",
     "runtime": "docker",
     "image": "mcp/zscaler-mcp-server:latest",
@@ -6735,6 +6931,7 @@
         "binds": "envVar"
       }
     ],
-    "provider": "zscaler"
+    "provider": "zscaler",
+    "detailURL": "https://raw.githubusercontent.com/Schwaller/plaiiin-mcp-catalog/main/docs/zscaler-mcp-server.md"
   }
 ]
